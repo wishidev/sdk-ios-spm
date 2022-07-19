@@ -3,5 +3,5 @@ Wishi SDK Swift package
 
 ## Package url
 ```
-https://github.com/wishidev/wishi-sdk-ios-spm.git
+https://github.com/wishidev/wishi-sdk-ios-spm
 ```
