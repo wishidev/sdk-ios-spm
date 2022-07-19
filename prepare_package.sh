@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 # Check for arguments
 if [ $# -eq 0 ]; then
     echo "No arguments provided. First argument has to be version, e.g. '1.8.1'"
