@@ -5,7 +5,7 @@ import PackageDescription
 
 let version = "0.1.0"
 let moduleName = "WishiSDK"
-let checksum = "8d037151ca211be68988514b661f060af09268cf4e157af603774668fd989c1c"
+let checksum = "8d99a248dc7b0b10b3d108cc65f124145c2ffb2bb023154e814a81d60ef6c83d"
 
 let package = Package(
     name: moduleName,
