@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: moduleName,
-            url: "https://github.com/wishidev/wishi-sdk-ios-spm/releases/download/\(version)/\(moduleName).xcframework.zip",
+            url: "https://github.com/wishidev/sdk-ios-spm/releases/download/\(version)/\(moduleName).xcframework.zip",
             checksum: checksum
         )
     ]
