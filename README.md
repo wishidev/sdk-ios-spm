@@ -1,5 +1,5 @@
-# wishi-sdk-ios-spm
-Wishi SDK Swift package
+# sdk-ios-spm
+SDK Swift package
 
 ## Package url
 ```
