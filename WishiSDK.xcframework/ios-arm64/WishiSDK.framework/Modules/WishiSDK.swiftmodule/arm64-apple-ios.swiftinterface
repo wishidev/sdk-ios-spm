@@ -97,7 +97,7 @@ public protocol WishiClientSDKDelegate : AnyObject {
   public typealias ClientSDKFailure = ((Swift.Error?, Any?) -> Swift.Void)?
   weak public var delegate: WishiSDK.WishiClientSDKDelegate?
   final public let id: Foundation.UUID
-  public static let sharedInstance: WishiSDK.Wishi
+  public static let shared: WishiSDK.Wishi
   public func isMockTesting() -> Swift.Bool
   public func launch(from presentingController: UIKit.UIViewController)
   public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, enviroment: WishiSDK.Enviroment, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiClientSDKDelegate)
