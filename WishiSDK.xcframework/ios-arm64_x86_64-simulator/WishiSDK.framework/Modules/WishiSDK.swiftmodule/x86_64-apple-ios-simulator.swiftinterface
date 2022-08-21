@@ -70,6 +70,10 @@ public enum ConfigurationStyle {
 public struct Configurations {
   public init(configuration: [WishiSDK.ConfigurationStyle : Any])
 }
+@_hasMissingDesignatedInitializers public class DefaultConfigurations {
+  public static func getDefaultConfigurations() -> WishiSDK.Configurations
+  @objc deinit
+}
 @objc public class WSQuiz : ObjectiveC.NSObject {
   public init(dictionary: [Swift.AnyHashable : Any])
   public func showImageScreen() -> Swift.Bool
@@ -99,8 +103,8 @@ public protocol WishiClientSDKDelegate : AnyObject {
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
   public func isMockTesting() -> Swift.Bool
-  public func launch(from presentingController: UIKit.UIViewController)
-  public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, enviroment: WishiSDK.Enviroment, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiClientSDKDelegate)
+  public func launch(from presentingController: UIKit.UIViewController, completion: (((Swift.Bool) -> Swift.Void))?)
+  public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, enviroment: WishiSDK.Enviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public typealias ID = Foundation.UUID
   @objc deinit
