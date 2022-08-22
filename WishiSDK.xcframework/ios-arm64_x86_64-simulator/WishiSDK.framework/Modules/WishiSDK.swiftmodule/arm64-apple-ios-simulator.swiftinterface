@@ -88,6 +88,9 @@ public enum Gender : Swift.String {
     get
   }
 }
+public struct UserStatus {
+  public init(dictionary: [Swift.AnyHashable : Any])
+}
 public struct ClientInfo {
   public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil)
   public func dictionary() -> [Swift.String : Any]
