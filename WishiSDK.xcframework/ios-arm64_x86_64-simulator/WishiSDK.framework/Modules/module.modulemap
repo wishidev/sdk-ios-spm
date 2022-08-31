@@ -1,0 +1,11 @@
+framework module WishiSDK {
+  umbrella header "WishiSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module WishiSDK.Swift {
+    header "WishiSDK-Swift.h"
+    requires objc
+}
