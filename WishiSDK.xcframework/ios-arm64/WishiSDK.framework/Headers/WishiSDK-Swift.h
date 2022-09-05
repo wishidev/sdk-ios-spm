@@ -222,7 +222,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC8WishiSDK27QuizContainerViewController")
 @interface QuizContainerViewController : UIViewController
 - (void)viewDidLoad;
-- (void)viewDidLayoutSubviews;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -248,6 +247,14 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 
 
 
+
+
+
+SWIFT_CLASS("_TtC8WishiSDK14WSAnswersGroup")
+@interface WSAnswersGroup : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC8WishiSDK6WSQuiz")

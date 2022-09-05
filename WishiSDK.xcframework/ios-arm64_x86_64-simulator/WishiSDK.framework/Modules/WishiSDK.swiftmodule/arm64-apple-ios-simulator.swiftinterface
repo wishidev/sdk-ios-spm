@@ -9,17 +9,31 @@ import _Concurrency
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class QuizContainerViewController : UIKit.UIViewController, WishiSDK.QuizViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) public var configuration: WishiSDK.Configurations!
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
   @_Concurrency.MainActor(unsafe) public static func show(from presentingController: UIKit.UIViewController, configuration: WishiSDK.Configurations, completion: ((Swift.String?) -> Swift.Void)?)
   @_Concurrency.MainActor(unsafe) public init(completion: ((Swift.String?) -> Swift.Void)?)
   @_Concurrency.MainActor(unsafe) public func didSelectAnswers(answers: [WishiSDK.WSQuizAnswer])
   @_Concurrency.MainActor(unsafe) public func screenLoaded()
+  @_Concurrency.MainActor(unsafe) public func imageSelected(image: UIKit.UIImage)
   @_Concurrency.MainActor(unsafe) public func freeTextHasChanged(text: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func checkFinishGroupSelection(quizObject: WishiSDK.WSQuiz)
+  @_Concurrency.MainActor(unsafe) public func groupSelected(group: WishiSDK.WSAnswersGroup)
+  @_Concurrency.MainActor(unsafe) public func answerSelected(forGroup group: WishiSDK.WSAnswersGroup, controller: WishiSDK.QuizViewController)
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func drawDashedLines()
+}
+@objc public class WSAnswersGroup : ObjectiveC.NSObject {
+  public init(dictionary: [Swift.AnyHashable : Any])
   @objc deinit
 }
 public protocol QuizViewControllerDelegate : AnyObject {
   func didSelectAnswers(answers: [WishiSDK.WSQuizAnswer])
   func freeTextHasChanged(text: Swift.String)
+  func imageSelected(image: UIKit.UIImage)
+  func groupSelected(group: WishiSDK.WSAnswersGroup)
+  func answerSelected(forGroup group: WishiSDK.WSAnswersGroup, controller: WishiSDK.QuizViewController)
+  func checkFinishGroupSelection(quizObject: WishiSDK.WSQuiz)
   func screenLoaded()
 }
 public struct CollectionViewParameters {
@@ -33,7 +47,9 @@ public struct CollectionViewParameters {
   @_Concurrency.MainActor(unsafe) public func initiateUI()
   @_Concurrency.MainActor(unsafe) public func scrollToBottom()
   @_Concurrency.MainActor(unsafe) public func isOptionSelected(answer: WishiSDK.WSQuizAnswer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func isGroupOptionSelected(answerGroup: WishiSDK.WSAnswersGroup) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func addOrRemoveAnswer(answer: WishiSDK.WSQuizAnswer)
+  @_Concurrency.MainActor(unsafe) public func addOrRemoveGroup(group: WishiSDK.WSAnswersGroup)
   @_Concurrency.MainActor(unsafe) public func showFreeTextSection() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func createCollection(collectionParameters: WishiSDK.CollectionViewParameters, useLeftAlignedLayout: Swift.Bool, collectionView: inout UIKit.UICollectionView?, controller: WishiSDK.QuizViewController, customInit: (((UIKit.UICollectionView) -> Swift.Void))?)
   @_Concurrency.MainActor(unsafe) public func didSelectOptions(lastSelectedOption: WishiSDK.WSQuizAnswer)
@@ -56,17 +72,26 @@ public enum Enviroment {
 }
 public enum ConfigurationStyle {
   case headerFont
-  case headerBoldFont
+  case subheaderFont
+  case freeTextHeaderFont
+  case quizProgressHeaderFont
+  case quizProgressSubheaderFont
   case themeFont
   case themeBoldFont
+  case quizProgressHeaderColor
+  case quizProgressSubheaderColor
   case headerColor
+  case subheaderColor
   case themeColor
-  case notSelectedThemeColor
-  case buttonBackgroundColor
-  case buttonTextColor
-  case checkboxUnchecked
-  case checkboxChecked
+  case unselectedBorderColor
+  case nextButtonBackgroundColor
+  case nextButtonTextColor
   case freeTextCheckedImage
+  case uploadPhotoImage
+  case checkImage
+  case deleteImage
+  case closeImage
+  case backImage
   public static func == (a: WishiSDK.ConfigurationStyle, b: WishiSDK.ConfigurationStyle) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -82,7 +107,9 @@ public struct Configurations {
 }
 @objc public class WSQuiz : ObjectiveC.NSObject {
   public init(dictionary: [Swift.AnyHashable : Any])
+  public init(group: WishiSDK.WSAnswersGroup)
   public func showImageScreen() -> Swift.Bool
+  public func groupsSelectionHasFinished() -> Swift.Bool
   @objc deinit
 }
 public enum Gender : Swift.String {
