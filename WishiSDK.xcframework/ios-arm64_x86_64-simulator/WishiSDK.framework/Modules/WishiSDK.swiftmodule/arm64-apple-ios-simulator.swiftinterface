@@ -122,7 +122,7 @@ public enum Gender : Swift.String {
   }
 }
 public struct UserStatus {
-  public var lastMessage: Any?
+  public var lastMessage: Swift.String?
   public var messageCount: Swift.Int?
   public var quizStep: Swift.String?
   public var sessionStatus: Swift.String?
