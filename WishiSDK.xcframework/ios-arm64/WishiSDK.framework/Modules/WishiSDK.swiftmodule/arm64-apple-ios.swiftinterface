@@ -122,6 +122,11 @@ public enum Gender : Swift.String {
   }
 }
 public struct UserStatus {
+  public var lastMessage: Any?
+  public var messageCount: Swift.Int?
+  public var quizStep: Swift.String?
+  public var sessionStatus: Swift.String?
+  public var unreadMessageCount: Swift.Int?
   public init(dictionary: [Swift.AnyHashable : Any])
 }
 public struct ClientInfo {
