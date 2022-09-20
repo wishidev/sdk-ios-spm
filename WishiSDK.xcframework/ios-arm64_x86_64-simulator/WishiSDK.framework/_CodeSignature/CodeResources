@@ -4,9 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		7+yg2ts/FS41dE+3m17D5MbeoWc=
+		</data>
+		<key>BookingPaidTableViewCell.nib</key>
+		<data>
+		UDlahiQWEl3iG8XO87fhaHwzoPU=
+		</data>
+		<key>ChatSessionTableViewCell.nib</key>
+		<data>
+		i0tfDxvyAtPiZYUcFsCDTyHjNl8=
+		</data>
+		<key>ChatTextTableViewCell.nib</key>
+		<data>
+		zv1WOju9DWjqVU+8Q53EBzdS9FU=
+		</data>
+		<key>ConversationsApp.momd/ConversationsApp.mom</key>
+		<data>
+		tuwy+OpGLKOKpELScNzslaIeYpA=
+		</data>
+		<key>ConversationsApp.momd/VersionInfo.plist</key>
+		<data>
+		lIODdUyz3gS5DlaPQeF9lR/JaVE=
+		</data>
+		<key>ConversationsViewController.nib</key>
+		<data>
+		K1IOwFWudSHNhFjCir9a1MpN9LA=
+		</data>
 		<key>Headers/WishiSDK-Swift.h</key>
 		<data>
-		ZtaBjq37FfbD9MCxVXb6sQRYKXM=
+		QGcydi7xBtqX9lI/JnGbe3eFnwQ=
 		</data>
 		<key>Headers/WishiSDK.h</key>
 		<data>
@@ -14,44 +42,113 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vtgCD6xCY257XYJLoKUsJwVWVrQ=
+		ZtCa7ONmLpio+VyZpAhauHycGUE=
+		</data>
+		<key>MessagesViewController.nib</key>
+		<data>
+		KUjy44mCzCHum4V2uTqZBUu9VFI=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Fs0ky1dvrIJBEHF5exuscEqsDjU=
+		98Dmyw8sNltBFoUnSz27l/d6Rf8=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A+1L9EMGMGoMswaD6vTU5hkpEyA=
+		/aW3HaPt3CtKH/3H2gj1HO0Zz98=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JWdnj+vvmtZpN6DQJja4STYzh/A=
+		iVROn8vhtxakN9ye6AIe7YzpVrE=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mHd/vObEO7/UfytS6e4uCeG0+I0=
+		0hoX4sgGsN2frQFJl65bVdlf+Cc=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MAh0A9UMIX5fQNKjWbcuUabEZ/o=
+		3ngSsAHAuvS63ztqUg5As3XUPjc=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VWL9TYan5DNKfwiywDFoob+0dfI=
+		cgh8APT/tdjr60k5y7dQS38NgqU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		ANBOjWyBkAdzHNEMJA4mXh+BDUQ=
 		</data>
+		<key>SessionFlowHeadlineTableViewCell.nib</key>
+		<data>
+		VCJPRpQI0wW/jJgQcYZkdW5tQA8=
+		</data>
+		<key>SessionFlowSublineTableViewCell.nib</key>
+		<data>
+		+YIUmEFyY30qBJDFlnd2JTOvqM0=
+		</data>
+		<key>SessionFlowView.nib</key>
+		<data>
+		9tHm6nc50z18ymqhZYNy23r5DuU=
+		</data>
+		<key>match.json</key>
+		<data>
+		tAuWpDPhdqx5WsYke0RKuPMF0tI=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RBaeK+HwM5x6JK4wbfV4KzOptkrDqB53OIYP18hpM6s=
+			</data>
+		</dict>
+		<key>BookingPaidTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5lla44acs12YfuviDIdEf8eke2hhch/YGqfsuyhmCpE=
+			</data>
+		</dict>
+		<key>ChatSessionTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VtlOrQ8TuspiTFV2XTzxYRbOjEC1snESX86LdScMtv4=
+			</data>
+		</dict>
+		<key>ChatTextTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/Isu4C8LNBsOiiEUHV2uLxya5cuoF268ay2/jP0duec=
+			</data>
+		</dict>
+		<key>ConversationsApp.momd/ConversationsApp.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EitJxtDKHsYlO/DcigR+0kSU45wB6hN/YP6XgGl7Vv4=
+			</data>
+		</dict>
+		<key>ConversationsApp.momd/VersionInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5HgM8TdqQCUnsyhPN+3AjZox86OouIFIYmS2RANnCtA=
+			</data>
+		</dict>
+		<key>ConversationsViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vHmg/8umv3FatxdiRi0wjm8ujgDuu61xVMfM0wdy+GE=
+			</data>
+		</dict>
 		<key>Headers/WishiSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3yI/5sMA8Oz6FeTuN9uerTxLl9wFemFXKPb9nhVgR7M=
+			CTGfs+0FysCgZOMeoSjunhxVCF4IOzNjzY+XWjuzAA8=
 			</data>
 		</dict>
 		<key>Headers/WishiSDK.h</key>
@@ -61,46 +158,53 @@
 			22i0QI6qkw4aNfzzBQazqHHFLiIAQ03CuDpBbxZgaG0=
 			</data>
 		</dict>
+		<key>MessagesViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5kysOKX9gESwPZ5K0CRBKYGllQQIiiX5FHvm14SZ/A0=
+			</data>
+		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SRqHVCWdUb9GXR+/jxpXVIJIbdqbdcYKpxbbpKJ8u3U=
+			N/3LcMw9pdgaOjTsf+TNhLnJ5groVN7aCk8zBHisHNQ=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			muvOSJTlYY/+tWHbsMTxYM6MTqxzUpURKwtNYklZDek=
+			y8EBnBFQXoJPhAjTXsilXEvtWlyssvxtqophLLCa6ng=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kpi4NOOxs8KOZlJRsjcRp6zhO0amTK+Jwz91YGKx3rQ=
+			j3MwThSsn0h6+zX/TggjJXeWfanh8fq7L73xiuDI2h0=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r4Q15AGo+rwyUjSP8ERLd50CDDorMy7iTaIsyvBf8IU=
+			Sv9hP7zQqLbDZ21NazcCXXuJQnAirqNnBc3EsMowK6o=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O/W17byXmFtBi+Ijs6aN2YmyTVke16JMu7A+QUJWAag=
+			YdxYttZvnJYHyNrzJ0FLeBCGhpPyobtqOQak8lds0Q0=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MVqjcwL8jE/xKCWwCc6Tk3Xfx42ACuza9Z3vVXx+ZKk=
+			X8F9/MjsYqvYDUgnREln6se5oeCUk2K1gxrGYBgfWz8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -108,6 +212,34 @@
 			<key>hash2</key>
 			<data>
 			VXuUqwtJI/oN0H3mdmr33083CiUWWkx06JRrSu22Pho=
+			</data>
+		</dict>
+		<key>SessionFlowHeadlineTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9QR970ldreOD9afd7cpfD2dl9F6DZwFJiz+DJyblqQQ=
+			</data>
+		</dict>
+		<key>SessionFlowSublineTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zA54FshURlNz8MRirxr8Vbs6IQytsO+1d3SJkj2R0J8=
+			</data>
+		</dict>
+		<key>SessionFlowView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gTgTKQVoJPfxskEFFmn5YVv0emSw7VdEHIZUABlKGSc=
+			</data>
+		</dict>
+		<key>match.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u8WVI0DMVmtbmlhfiest9Zio9Op4lZpoN+dOl58Li+c=
 			</data>
 		</dict>
 	</dict>

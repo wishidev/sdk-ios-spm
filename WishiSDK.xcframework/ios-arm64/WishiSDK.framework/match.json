@@ -1,0 +1,21 @@
+{
+    "first_name": "Alan",
+    "last_name": "O",
+    "profile_pic_url": "https://d2pn5mqzo6inf0.cloudfront.net/uploads/profile/127659/large/1635246068.jpg",
+    "city": "New York",
+    "country": "USA",
+    "bio": "I started my career at Belstaff, and went on to become a buyer and then stylist at big digital-first brands. My aesthetic is tailored, simple, and streamlined, and I specialize in helping you feel and look good in your clothes.",
+    "style_philosophy": "I want you to be able to express who you are and feel comfortable doing it your own way. I'm here to help you put your best self forward.",
+    "gender": "male",
+    "moodboard": "https://d2pn5mqzo6inf0.cloudfront.net/uploads/stylist_moodboards/alan_saks_moodboard.png",
+    "name": "Alan",
+    "uuid": "7b11a73d-331b-11ec-8",
+    "match_percentage": 80,
+    "style_boards": [
+        "https://d2pn5mqzo6inf0.cloudfront.net/uploads/outfit/127659/small/1647459431.png"
+    ],
+    "reviews": [
+        {"name":"York", "title":"Amazing app!", "text":"Style advisor is the best ever. I wanted somethig to add to my closet and without notice replaced everything there!! Can't wait for more!"},
+        {"name":"Blala Lo", "title":"WOW", "text":"Purus sit amet volutpat consequat mauris nunc congue diam maecenas sed enim ut sem nisi vitae suscipit tellus mauris a diam maecenas sd enim ut sem viverra aliquet eaget"}
+    ]
+}

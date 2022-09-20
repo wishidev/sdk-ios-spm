@@ -197,6 +197,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreData;
+@import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -217,8 +220,172 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC8WishiSDK17NetworkingRequest")
+@interface NetworkingRequest : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURLSession;
+@class NSURLSessionTask;
+
+@interface NetworkingRequest (SWIFT_EXTENSION(WishiSDK)) <NSURLSessionTaskDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend;
+@end
+
 @class NSCoder;
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC8WishiSDK13NibDesignable")
+@interface NibDesignable : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC8WishiSDK35NibDesignableCollectionReusableView")
+@interface NibDesignableCollectionReusableView : UICollectionReusableView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC8WishiSDK20NibDesignableControl")
+@interface NibDesignableControl : UIControl
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("PersistentConversationDataItem")
+@interface PersistentConversationDataItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 @class NSString;
+@class NSDate;
+
+@interface PersistentConversationDataItem (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic, copy) NSString * _Nullable attributes;
+@property (nonatomic, copy) NSString * _Nullable contactFirstName;
+@property (nonatomic, copy) NSString * _Nullable contactImageString;
+@property (nonatomic, copy) NSString * _Nullable contactLastName;
+@property (nonatomic, copy) NSString * _Nullable createdBy;
+@property (nonatomic, copy) NSDate * _Nullable dateCreated;
+@property (nonatomic, copy) NSDate * _Nullable dateUpdated;
+@property (nonatomic, copy) NSString * _Nullable friendlyName;
+@property (nonatomic) BOOL isVip;
+@property (nonatomic, copy) NSString * _Nullable lastMessageAuthor;
+@property (nonatomic, copy) NSString * _Nullable lastMessageContent;
+@property (nonatomic, copy) NSDate * _Nullable lastMessageDate;
+@property (nonatomic, copy) NSString * _Nullable lastMessageDuration;
+@property (nonatomic, copy) NSString * _Nullable lastMessagePreview;
+@property (nonatomic, copy) NSString * _Nullable lastMessageSender;
+@property (nonatomic, copy) NSString * _Nullable lastMessageSid;
+@property (nonatomic, copy) NSString * _Nullable lastMessageType;
+@property (nonatomic) int64_t lastReadMessageIndex;
+@property (nonatomic) int64_t messagesCount;
+@property (nonatomic) BOOL muted;
+@property (nonatomic) int64_t participantsCount;
+@property (nonatomic) int32_t pricingModel;
+@property (nonatomic, copy) NSString * _Nullable role;
+@property (nonatomic, copy) NSString * _Nullable sid;
+@property (nonatomic) int32_t status;
+@property (nonatomic, copy) NSString * _Nullable uniqueName;
+@property (nonatomic) int64_t unreadMessagesCount;
+@end
+
+
+SWIFT_CLASS_NAMED("PersistentMediaDataItem")
+@interface PersistentMediaDataItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@class PersistentMessageDataItem;
+
+@interface PersistentMediaDataItem (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic) int16_t category;
+@property (nonatomic, copy) NSString * _Nullable contentType;
+@property (nonatomic, copy) NSString * _Nullable conversationSid;
+@property (nonatomic, copy) NSString * _Nullable filename;
+@property (nonatomic, copy) NSString * _Nullable sid;
+@property (nonatomic) int64_t size;
+@property (nonatomic, strong) PersistentMessageDataItem * _Nullable messageSid;
+@end
+
+
+SWIFT_CLASS_NAMED("PersistentMessageDataItem")
+@interface PersistentMessageDataItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class NSSet;
+
+@interface PersistentMessageDataItem (SWIFT_EXTENSION(WishiSDK))
+- (void)addAttachedMediaObject:(PersistentMediaDataItem * _Nonnull)value;
+- (void)removeAttachedMediaObject:(PersistentMediaDataItem * _Nonnull)value;
+- (void)addAttachedMedia:(NSSet * _Nonnull)values;
+- (void)removeAttachedMedia:(NSSet * _Nonnull)values;
+@end
+
+
+@class NSUUID;
+
+@interface PersistentMessageDataItem (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic, copy) NSString * _Nullable attributes;
+@property (nonatomic, copy) NSString * _Nullable author;
+@property (nonatomic, copy) NSString * _Nullable body;
+@property (nonatomic, copy) NSString * _Nullable content;
+@property (nonatomic, copy) NSString * _Nullable conversationSid;
+@property (nonatomic, copy) NSDate * _Nullable dateCreated;
+@property (nonatomic, copy) NSDate * _Nullable dateUpdated;
+@property (nonatomic) int16_t direction;
+@property (nonatomic) BOOL feedbackTaken;
+@property (nonatomic) int64_t messageIndex;
+@property (nonatomic, copy) NSString * _Nullable participantSid;
+@property (nonatomic, copy) NSString * _Nullable sender;
+@property (nonatomic, copy) NSString * _Nullable sid;
+@property (nonatomic, copy) NSString * _Nullable type;
+@property (nonatomic, copy) NSUUID * _Nullable uuid;
+@property (nonatomic, strong) NSSet * _Nullable attachedMedia;
+@end
+
+
+SWIFT_CLASS_NAMED("PersistentParticipantDataItem")
+@interface PersistentParticipantDataItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface PersistentParticipantDataItem (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic, copy) NSString * _Nullable attributes;
+@property (nonatomic, copy) NSString * _Nullable conversationSid;
+@property (nonatomic, copy) NSString * _Nullable identity;
+@property (nonatomic) int64_t lastReadMessage;
+@property (nonatomic, copy) NSString * _Nullable sid;
+@property (nonatomic) int16_t type;
+@end
+
 @class NSBundle;
 
 SWIFT_CLASS("_TtC8WishiSDK27QuizContainerViewController")
@@ -236,6 +403,16 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -476,6 +653,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreData;
+@import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -496,8 +676,172 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC8WishiSDK17NetworkingRequest")
+@interface NetworkingRequest : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURLSession;
+@class NSURLSessionTask;
+
+@interface NetworkingRequest (SWIFT_EXTENSION(WishiSDK)) <NSURLSessionTaskDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend;
+@end
+
 @class NSCoder;
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC8WishiSDK13NibDesignable")
+@interface NibDesignable : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC8WishiSDK35NibDesignableCollectionReusableView")
+@interface NibDesignableCollectionReusableView : UICollectionReusableView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC8WishiSDK20NibDesignableControl")
+@interface NibDesignableControl : UIControl
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("PersistentConversationDataItem")
+@interface PersistentConversationDataItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 @class NSString;
+@class NSDate;
+
+@interface PersistentConversationDataItem (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic, copy) NSString * _Nullable attributes;
+@property (nonatomic, copy) NSString * _Nullable contactFirstName;
+@property (nonatomic, copy) NSString * _Nullable contactImageString;
+@property (nonatomic, copy) NSString * _Nullable contactLastName;
+@property (nonatomic, copy) NSString * _Nullable createdBy;
+@property (nonatomic, copy) NSDate * _Nullable dateCreated;
+@property (nonatomic, copy) NSDate * _Nullable dateUpdated;
+@property (nonatomic, copy) NSString * _Nullable friendlyName;
+@property (nonatomic) BOOL isVip;
+@property (nonatomic, copy) NSString * _Nullable lastMessageAuthor;
+@property (nonatomic, copy) NSString * _Nullable lastMessageContent;
+@property (nonatomic, copy) NSDate * _Nullable lastMessageDate;
+@property (nonatomic, copy) NSString * _Nullable lastMessageDuration;
+@property (nonatomic, copy) NSString * _Nullable lastMessagePreview;
+@property (nonatomic, copy) NSString * _Nullable lastMessageSender;
+@property (nonatomic, copy) NSString * _Nullable lastMessageSid;
+@property (nonatomic, copy) NSString * _Nullable lastMessageType;
+@property (nonatomic) int64_t lastReadMessageIndex;
+@property (nonatomic) int64_t messagesCount;
+@property (nonatomic) BOOL muted;
+@property (nonatomic) int64_t participantsCount;
+@property (nonatomic) int32_t pricingModel;
+@property (nonatomic, copy) NSString * _Nullable role;
+@property (nonatomic, copy) NSString * _Nullable sid;
+@property (nonatomic) int32_t status;
+@property (nonatomic, copy) NSString * _Nullable uniqueName;
+@property (nonatomic) int64_t unreadMessagesCount;
+@end
+
+
+SWIFT_CLASS_NAMED("PersistentMediaDataItem")
+@interface PersistentMediaDataItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@class PersistentMessageDataItem;
+
+@interface PersistentMediaDataItem (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic) int16_t category;
+@property (nonatomic, copy) NSString * _Nullable contentType;
+@property (nonatomic, copy) NSString * _Nullable conversationSid;
+@property (nonatomic, copy) NSString * _Nullable filename;
+@property (nonatomic, copy) NSString * _Nullable sid;
+@property (nonatomic) int64_t size;
+@property (nonatomic, strong) PersistentMessageDataItem * _Nullable messageSid;
+@end
+
+
+SWIFT_CLASS_NAMED("PersistentMessageDataItem")
+@interface PersistentMessageDataItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class NSSet;
+
+@interface PersistentMessageDataItem (SWIFT_EXTENSION(WishiSDK))
+- (void)addAttachedMediaObject:(PersistentMediaDataItem * _Nonnull)value;
+- (void)removeAttachedMediaObject:(PersistentMediaDataItem * _Nonnull)value;
+- (void)addAttachedMedia:(NSSet * _Nonnull)values;
+- (void)removeAttachedMedia:(NSSet * _Nonnull)values;
+@end
+
+
+@class NSUUID;
+
+@interface PersistentMessageDataItem (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic, copy) NSString * _Nullable attributes;
+@property (nonatomic, copy) NSString * _Nullable author;
+@property (nonatomic, copy) NSString * _Nullable body;
+@property (nonatomic, copy) NSString * _Nullable content;
+@property (nonatomic, copy) NSString * _Nullable conversationSid;
+@property (nonatomic, copy) NSDate * _Nullable dateCreated;
+@property (nonatomic, copy) NSDate * _Nullable dateUpdated;
+@property (nonatomic) int16_t direction;
+@property (nonatomic) BOOL feedbackTaken;
+@property (nonatomic) int64_t messageIndex;
+@property (nonatomic, copy) NSString * _Nullable participantSid;
+@property (nonatomic, copy) NSString * _Nullable sender;
+@property (nonatomic, copy) NSString * _Nullable sid;
+@property (nonatomic, copy) NSString * _Nullable type;
+@property (nonatomic, copy) NSUUID * _Nullable uuid;
+@property (nonatomic, strong) NSSet * _Nullable attachedMedia;
+@end
+
+
+SWIFT_CLASS_NAMED("PersistentParticipantDataItem")
+@interface PersistentParticipantDataItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface PersistentParticipantDataItem (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic, copy) NSString * _Nullable attributes;
+@property (nonatomic, copy) NSString * _Nullable conversationSid;
+@property (nonatomic, copy) NSString * _Nullable identity;
+@property (nonatomic) int64_t lastReadMessage;
+@property (nonatomic, copy) NSString * _Nullable sid;
+@property (nonatomic) int16_t type;
+@end
+
 @class NSBundle;
 
 SWIFT_CLASS("_TtC8WishiSDK27QuizContainerViewController")
@@ -515,6 +859,16 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
+
+
+
+
+
+
+
+
+
 
 
 
