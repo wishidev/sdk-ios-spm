@@ -110,6 +110,7 @@ public protocol NavHeaderViewDelegate : ObjectiveC.NSObjectProtocol {
   @_Concurrency.MainActor(unsafe) public var configuration: WishiSDK.Configurations!
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public static func show(from presentingController: UIKit.UIViewController, configuration: WishiSDK.Configurations, completion: ((Swift.String?) -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) public static func showMatch(from presentingController: UIKit.UIViewController, configuration: WishiSDK.Configurations, completion: ((Swift.String?) -> Swift.Void)?)
   @_Concurrency.MainActor(unsafe) public init(completion: ((Swift.String?) -> Swift.Void)?)
   @_Concurrency.MainActor(unsafe) public func didSelectAnswers(answers: [WishiSDK.WSQuizAnswer])
   @_Concurrency.MainActor(unsafe) public func screenLoaded()
@@ -272,6 +273,9 @@ extension Foundation.URLRequest {
 public typealias CompletionObject<T> = (_ response: T) -> Swift.Void
 public protocol HttpBodyConvertible {
   func buildHttpBodyPart(boundary: Swift.String) -> Foundation.Data
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
 public enum MapleBaconError : Swift.Error {
   case imageTransformingError
@@ -640,6 +644,9 @@ public class APIClient {
 }
 extension Foundation.URLRequest {
   public mutating func addQueryItems(_ items: [Foundation.URLQueryItem])
+}
+public protocol MatchViewControllerDelegate : ObjectiveC.NSObject {
+  func onStartChatTap()
 }
 extension WishiSDK.NetworkingClient {
   public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
@@ -1213,7 +1220,7 @@ public enum Gender : Swift.String {
     get
   }
 }
-public enum SessionStatus : Swift.String {
+public enum SessionStatus : Swift.String, Swift.Decodable {
   case quiz
   case match
   case styling
@@ -1240,7 +1247,7 @@ public protocol WishiClientSDKDelegate : AnyObject {
   func didSelectItems(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer], lastSelectedOption: WishiSDK.WSQuizAnswer)
   func screenSelectionDone(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer])
 }
-@_hasMissingDesignatedInitializers public class Wishi : Swift.Identifiable {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
   public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
   public typealias ClientSDKFailure = ((Swift.Error?, Any?) -> Swift.Void)?
   weak public var delegate: WishiSDK.WishiClientSDKDelegate?
@@ -1248,11 +1255,14 @@ public protocol WishiClientSDKDelegate : AnyObject {
   public static let shared: WishiSDK.Wishi
   public func isMockTesting() -> Swift.Bool
   public func launch(from presentingController: UIKit.UIViewController, completion: (((Swift.Bool) -> Swift.Void))?)
-  public func launchChat(from presentingController: UIKit.UINavigationController?, completion: ((Swift.String?) -> Swift.Void)?)
+  public func launchChat(from presentingNavController: UIKit.UINavigationController?, completion: ((Swift.String?) -> Swift.Void)?)
   public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, enviroment: WishiSDK.Enviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public typealias ID = Foundation.UUID
   @objc deinit
+}
+extension WishiSDK.Wishi : WishiSDK.MatchViewControllerDelegate {
+  public func onStartChatTap()
 }
 extension UIKit.UINavigationController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {

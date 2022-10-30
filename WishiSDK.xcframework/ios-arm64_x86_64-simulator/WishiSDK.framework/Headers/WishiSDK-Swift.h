@@ -427,6 +427,7 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 
 
 
+
 @interface UINavigationController (SWIFT_EXTENSION(WishiSDK))
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 @end
@@ -468,6 +469,14 @@ SWIFT_CLASS("_TtC8WishiSDK12WSQuizAnswer")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+SWIFT_CLASS("_TtC8WishiSDK5Wishi")
+@interface Wishi : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -903,6 +912,7 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 
 
 
+
 @interface UINavigationController (SWIFT_EXTENSION(WishiSDK))
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 @end
@@ -944,6 +954,14 @@ SWIFT_CLASS("_TtC8WishiSDK12WSQuizAnswer")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+SWIFT_CLASS("_TtC8WishiSDK5Wishi")
+@interface Wishi : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
