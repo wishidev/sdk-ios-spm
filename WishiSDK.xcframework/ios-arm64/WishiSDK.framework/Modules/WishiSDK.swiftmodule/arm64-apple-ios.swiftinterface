@@ -103,10 +103,14 @@ extension WishiSDK.NetworkingClient {
   #endif
 
 }
+public protocol NavHeaderViewDelegate : ObjectiveC.NSObjectProtocol {
+  func onNavBackTapped()
+}
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class QuizContainerViewController : UIKit.UIViewController, WishiSDK.QuizViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) public var configuration: WishiSDK.Configurations!
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public static func show(from presentingController: UIKit.UIViewController, configuration: WishiSDK.Configurations, completion: ((Swift.String?) -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) public static func showMatch(from presentingController: UIKit.UIViewController, configuration: WishiSDK.Configurations, completion: ((Swift.String?) -> Swift.Void)?)
   @_Concurrency.MainActor(unsafe) public init(completion: ((Swift.String?) -> Swift.Void)?)
   @_Concurrency.MainActor(unsafe) public func didSelectAnswers(answers: [WishiSDK.WSQuizAnswer])
   @_Concurrency.MainActor(unsafe) public func screenLoaded()
@@ -180,6 +184,10 @@ public typealias Path = Swift.String
 }
 extension WishiSDK.RequestBuilder : WishiSDK.URLRequestConvertible {
   public func asURLRequest(baseURL: Foundation.URL?) -> Foundation.URLRequest
+}
+extension UIKit.UIView {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func stack(_ views: [WishiSDK.TinyView], axis: WishiSDK.ConstraintAxis = .vertical, width: CoreGraphics.CGFloat? = nil, height: CoreGraphics.CGFloat? = nil, spacing: CoreGraphics.CGFloat = 0) -> WishiSDK.Constraints
 }
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func drawDashedLines()
@@ -266,6 +274,9 @@ public typealias CompletionObject<T> = (_ response: T) -> Swift.Void
 public protocol HttpBodyConvertible {
   func buildHttpBodyPart(boundary: Swift.String) -> Foundation.Data
 }
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
 public enum MapleBaconError : Swift.Error {
   case imageTransformingError
   public static func == (a: WishiSDK.MapleBaconError, b: WishiSDK.MapleBaconError) -> Swift.Bool
@@ -293,6 +304,9 @@ public typealias CancelToken = Swift.Int
 @available(iOS 13.0, *)
 extension WishiSDK.MapleBacon {
   final public func image(with url: Foundation.URL, imageTransformer: WishiSDK.ImageTransforming? = nil) -> Combine.AnyPublisher<UIKit.UIImage, Swift.Error>
+}
+public protocol ChatHeaderViewDelegate : ObjectiveC.NSObjectProtocol {
+  func onHeaderActionTapped()
 }
 final public class Endpoint<Response> : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
   final public var debugDescription: Swift.String {
@@ -323,6 +337,69 @@ extension WishiSDK.Endpoint where Response == [Swift.String : Any] {
 }
 extension WishiSDK.Endpoint where Response : Swift.Decodable {
   convenience public init(method: WishiSDK.RequestBuilder.Method, path: WishiSDK.Path, decoder: Foundation.JSONDecoder? = nil, _ builder: ((WishiSDK.RequestBuilder) -> WishiSDK.RequestBuilder)? = nil)
+}
+extension UIKit.UIEdgeInsets {
+  public static func uniform(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
+  public static func top(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
+  public static func left(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
+  public static func bottom(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
+  public static func right(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
+  public static func horizontal(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
+  public static func vertical(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
+}
+public func + (lhs: WishiSDK.TinyEdgeInsets, rhs: WishiSDK.TinyEdgeInsets) -> WishiSDK.TinyEdgeInsets
+extension UIKit.UIView {
+  @available(tvOS 10.0, iOS 10.0, *)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func edgesToSuperview(excluding excludedEdge: WishiSDK.LayoutEdge = .none, insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
+  @available(tvOS 10.0, iOS 10.0, *)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func leadingToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @available(tvOS 10.0, iOS 10.0, *)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func trailingToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @available(tvOS 10.0, iOS 10.0, *)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func horizontalToSuperview(insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
+  @available(tvOS 10.0, iOS 10.0, *)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func verticalToSuperview(insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
+}
+public struct LayoutEdge : Swift.OptionSet {
+  public let rawValue: Swift.UInt8
+  public init(rawValue: Swift.UInt8)
+  public static let top: WishiSDK.LayoutEdge
+  public static let bottom: WishiSDK.LayoutEdge
+  public static let trailing: WishiSDK.LayoutEdge
+  public static let leading: WishiSDK.LayoutEdge
+  public static let left: WishiSDK.LayoutEdge
+  public static let right: WishiSDK.LayoutEdge
+  public static let none: WishiSDK.LayoutEdge
+  public typealias ArrayLiteralElement = WishiSDK.LayoutEdge
+  public typealias Element = WishiSDK.LayoutEdge
+  public typealias RawValue = Swift.UInt8
+}
+extension UIKit.UIView {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func centerInSuperview(offset: CoreGraphics.CGPoint = .zero, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func originToSuperview(insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func widthToSuperview(_ dimension: UIKit.NSLayoutDimension? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func heightToSuperview(_ dimension: UIKit.NSLayoutDimension? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func leftToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func rightToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func topToSuperview(_ anchor: UIKit.NSLayoutYAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func bottomToSuperview(_ anchor: UIKit.NSLayoutYAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func centerXToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func centerYToSuperview(_ anchor: UIKit.NSLayoutYAxisAnchor? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
 }
 @objc public class WSAnswersGroup : ObjectiveC.NSObject {
   public init(dictionary: [Swift.AnyHashable : Any])
@@ -568,6 +645,9 @@ public class APIClient {
 extension Foundation.URLRequest {
   public mutating func addQueryItems(_ items: [Foundation.URLQueryItem])
 }
+public protocol MatchViewControllerDelegate : ObjectiveC.NSObject {
+  func onStartChatTap()
+}
 extension WishiSDK.NetworkingClient {
   public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
   public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
@@ -648,6 +728,11 @@ public class MockDataClientHijacker : WishiSDK.ClientHijacker {
   public func hijack<T>(endpoint: WishiSDK.Endpoint<T>) -> Swift.Result<T, Swift.Error>?
   @objc deinit
 }
+public typealias TinyView = UIKit.UIView
+public typealias LayoutGuide = UIKit.UILayoutGuide
+public typealias ConstraintAxis = UIKit.NSLayoutConstraint.Axis
+public typealias LayoutPriority = UIKit.UILayoutPriority
+public typealias TinyEdgeInsets = UIKit.UIEdgeInsets
 public typealias Params = [Swift.String : Swift.CustomStringConvertible]
 extension Swift.Dictionary where Key == Swift.String, Value == Swift.CustomStringConvertible {
   public func asPercentEncodedString(parentKey: Swift.String? = nil) -> Swift.String
@@ -834,12 +919,116 @@ extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
+public typealias Constraint = UIKit.NSLayoutConstraint
+public typealias Constraints = [WishiSDK.Constraint]
+public enum ConstraintRelation : Swift.Int {
+  case equal
+  case equalOrLess
+  case equalOrGreater
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Swift.Collection where Self.Element == WishiSDK.Constraint {
+  public func activate()
+  public func deActivate()
+}
+extension UIKit.NSLayoutConstraint {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func with(_ p: WishiSDK.LayoutPriority) -> Self
+  @_Concurrency.MainActor(unsafe) public func set(_ active: Swift.Bool) -> Self
+}
 public struct DownloadTask<T> where T : WishiSDK.DataConvertible {
   public let cancelToken: WishiSDK.CancelToken
   public func cancel()
 }
+extension WishiSDK.Constrainable {
+  @discardableResult
+  public func center(in view: WishiSDK.Constrainable, offset: CoreGraphics.CGPoint = .zero, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
+  @discardableResult
+  public func edges(to view: WishiSDK.Constrainable, excluding excludedEdge: WishiSDK.LayoutEdge = .none, insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
+  @discardableResult
+  public func size(_ size: CoreGraphics.CGSize, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
+  @discardableResult
+  public func size(to view: WishiSDK.Constrainable, multiplier: CoreGraphics.CGFloat = 1, insets: CoreGraphics.CGSize = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
+  @discardableResult
+  public func origin(to view: WishiSDK.Constrainable, insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
+  @discardableResult
+  public func width(_ width: CoreGraphics.CGFloat, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func width(to view: WishiSDK.Constrainable, _ dimension: UIKit.NSLayoutDimension? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func widthToHeight(of view: WishiSDK.Constrainable, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func width(min: CoreGraphics.CGFloat? = nil, max: CoreGraphics.CGFloat? = nil, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
+  @discardableResult
+  public func height(_ height: CoreGraphics.CGFloat, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func height(to view: WishiSDK.Constrainable, _ dimension: UIKit.NSLayoutDimension? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func heightToWidth(of view: WishiSDK.Constrainable, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func height(min: CoreGraphics.CGFloat? = nil, max: CoreGraphics.CGFloat? = nil, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
+  @discardableResult
+  public func aspectRatio(_ ratio: CoreGraphics.CGFloat, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func leadingToTrailing(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func leading(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func leftToRight(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func left(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func trailingToLeading(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func trailing(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func rightToLeft(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func right(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func topToBottom(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func top(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutYAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func bottomToTop(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func bottom(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutYAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func centerX(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+  @discardableResult
+  public func centerY(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutYAxisAnchor? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func setHugging(_ priority: WishiSDK.LayoutPriority, for axis: WishiSDK.ConstraintAxis)
+  @_Concurrency.MainActor(unsafe) public func setCompressionResistance(_ priority: WishiSDK.LayoutPriority, for axis: WishiSDK.ConstraintAxis)
+}
 extension Foundation.Bundle {
   public static let framework: Foundation.Bundle?
+}
+extension UIKit.UIView : WishiSDK.Constrainable {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func prepareForLayout() -> Self
+}
+extension UIKit.UILayoutGuide : WishiSDK.Constrainable {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func prepareForLayout() -> Self
+}
+public protocol Constrainable {
+  var topAnchor: UIKit.NSLayoutYAxisAnchor { get }
+  var bottomAnchor: UIKit.NSLayoutYAxisAnchor { get }
+  var leftAnchor: UIKit.NSLayoutXAxisAnchor { get }
+  var rightAnchor: UIKit.NSLayoutXAxisAnchor { get }
+  var leadingAnchor: UIKit.NSLayoutXAxisAnchor { get }
+  var trailingAnchor: UIKit.NSLayoutXAxisAnchor { get }
+  var centerXAnchor: UIKit.NSLayoutXAxisAnchor { get }
+  var centerYAnchor: UIKit.NSLayoutYAxisAnchor { get }
+  var widthAnchor: UIKit.NSLayoutDimension { get }
+  var heightAnchor: UIKit.NSLayoutDimension { get }
+  @discardableResult
+  func prepareForLayout() -> Self
 }
 public class NetworkingClient {
   public var defaultCollectionParsingKeyPath: Swift.String?
@@ -1031,7 +1220,7 @@ public enum Gender : Swift.String {
     get
   }
 }
-public enum SessionStatus : Swift.String {
+public enum SessionStatus : Swift.String, Swift.Decodable {
   case quiz
   case match
   case styling
@@ -1058,7 +1247,7 @@ public protocol WishiClientSDKDelegate : AnyObject {
   func didSelectItems(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer], lastSelectedOption: WishiSDK.WSQuizAnswer)
   func screenSelectionDone(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer])
 }
-@_hasMissingDesignatedInitializers public class Wishi : Swift.Identifiable {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
   public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
   public typealias ClientSDKFailure = ((Swift.Error?, Any?) -> Swift.Void)?
   weak public var delegate: WishiSDK.WishiClientSDKDelegate?
@@ -1066,11 +1255,19 @@ public protocol WishiClientSDKDelegate : AnyObject {
   public static let shared: WishiSDK.Wishi
   public func isMockTesting() -> Swift.Bool
   public func launch(from presentingController: UIKit.UIViewController, completion: (((Swift.Bool) -> Swift.Void))?)
-  public func launchChat(from presentingController: UIKit.UIViewController, completion: ((Swift.String?) -> Swift.Void)?)
+  public func launchChat(from presentingNavController: UIKit.UINavigationController?, completion: ((Swift.String?) -> Swift.Void)?)
   public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, enviroment: WishiSDK.Enviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public typealias ID = Foundation.UUID
   @objc deinit
+}
+extension WishiSDK.Wishi : WishiSDK.MatchViewControllerDelegate {
+  public func onStartChatTap()
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
 }
 extension WishiSDK.NetworkingClient {
   public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
@@ -1307,6 +1504,10 @@ extension WishiSDK.PersistentMessageDataItem {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var itemId: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var messageIndex: Swift.Int64 {
     @objc get
     @objc set
@@ -1324,6 +1525,10 @@ extension WishiSDK.PersistentMessageDataItem {
     @objc set
   }
   @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var url: Swift.String? {
     @objc get
     @objc set
   }
@@ -1399,6 +1604,9 @@ extension WishiSDK.Enviroment : Swift.Hashable {}
 extension WishiSDK.NetworkingError.Status : Swift.Equatable {}
 extension WishiSDK.NetworkingError.Status : Swift.Hashable {}
 extension WishiSDK.NetworkingError.Status : Swift.RawRepresentable {}
+extension WishiSDK.ConstraintRelation : Swift.Equatable {}
+extension WishiSDK.ConstraintRelation : Swift.Hashable {}
+extension WishiSDK.ConstraintRelation : Swift.RawRepresentable {}
 extension WishiSDK.NetworkingLogLevel : Swift.Equatable {}
 extension WishiSDK.NetworkingLogLevel : Swift.Hashable {}
 extension WishiSDK.ConfigurationStyle : Swift.Equatable {}

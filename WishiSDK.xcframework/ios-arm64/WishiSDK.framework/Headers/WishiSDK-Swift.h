@@ -224,6 +224,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+@interface NSLayoutConstraint (SWIFT_EXTENSION(WishiSDK))
+- (nonnull instancetype)with:(UILayoutPriority)p SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
 
 SWIFT_CLASS("_TtC8WishiSDK17NetworkingRequest")
 @interface NetworkingRequest : NSObject
@@ -357,11 +363,13 @@ SWIFT_CLASS_NAMED("PersistentMessageDataItem")
 @property (nonatomic, copy) NSDate * _Nullable dateUpdated;
 @property (nonatomic) int16_t direction;
 @property (nonatomic) BOOL feedbackTaken;
+@property (nonatomic, copy) NSString * _Nullable itemId;
 @property (nonatomic) int64_t messageIndex;
 @property (nonatomic, copy) NSString * _Nullable participantSid;
 @property (nonatomic, copy) NSString * _Nullable sender;
 @property (nonatomic, copy) NSString * _Nullable sid;
 @property (nonatomic, copy) NSString * _Nullable type;
+@property (nonatomic, copy) NSString * _Nullable url;
 @property (nonatomic, copy) NSUUID * _Nullable uuid;
 @property (nonatomic, strong) NSSet * _Nullable attachedMedia;
 @end
@@ -418,6 +426,19 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 
 
 
+@interface UINavigationController (SWIFT_EXTENSION(WishiSDK))
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+@end
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -446,6 +467,14 @@ SWIFT_CLASS("_TtC8WishiSDK12WSQuizAnswer")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+SWIFT_CLASS("_TtC8WishiSDK5Wishi")
+@interface Wishi : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
