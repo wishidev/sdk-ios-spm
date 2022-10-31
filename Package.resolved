@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "conversations-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twilio/conversations-ios.git",
+      "state" : {
+        "revision" : "d7a0ad23933493c1a6a66efe8d3fbe90cb5a2492",
+        "version" : "2.2.4"
+      }
+    }
+  ],
+  "version" : 2
+}
