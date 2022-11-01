@@ -10,7 +10,7 @@
 		</data>
 		<key>BoardHistoryViewController.nib</key>
 		<data>
-		OlClOVHTZjN9DkfYHRWOnkC3zek=
+		1LkBr05Kdv5bLadfS9m3HYW+nSU=
 		</data>
 		<key>BoardItemHistoryCollectionViewCell.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>ButtonView.nib</key>
 		<data>
-		IfKwbPjrARBjJMwYaw/hHXLsaNc=
+		Sr11MA9TkWcXCcoXq4Qs2NU1udg=
 		</data>
 		<key>ChatHeaderView.nib</key>
 		<data>
@@ -48,9 +48,13 @@
 		<data>
 		K1IOwFWudSHNhFjCir9a1MpN9LA=
 		</data>
+		<key>FeedbackActionView.nib</key>
+		<data>
+		jo32nmIw7nLz1upYmh6uF+MZlG0=
+		</data>
 		<key>Headers/WishiSDK-Swift.h</key>
 		<data>
-		YQVVzV/K5XH665CgZ7ZntrsmPXw=
+		0fK3uNpyp7mHEGUxZELvJ07+5FM=
 		</data>
 		<key>Headers/WishiSDK.h</key>
 		<data>
@@ -58,7 +62,11 @@
 		</data>
 		<key>HistoryHeaderCollectionViewCell.nib</key>
 		<data>
-		gWFwYH88JjweKoRcZlNMK5bShe0=
+		KNRjGW0rjM7ZzyvCPcwGRBDjGUo=
+		</data>
+		<key>HistoryHeaderView.nib</key>
+		<data>
+		U+t/O2Tt1RN5BMFKedg4gLqeQAI=
 		</data>
 		<key>HistoryTabHeaderCollectionViewCell.nib</key>
 		<data>
@@ -70,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bGdek06HJ/TOdNuKqBjq1VbExWI=
+		jUenm4hEOeCida8K1wx1SfK+Kp0=
 		</data>
 		<key>ItemCollectionTableViewCell.nib</key>
 		<data>
@@ -90,7 +98,7 @@
 		</data>
 		<key>LookViewController.nib</key>
 		<data>
-		TB012xZ8hTKFA5lV1XtNXLy4Z5c=
+		6ZQkVFMk6r54hCBBTEhx7vr58O0=
 		</data>
 		<key>MessagesViewController.nib</key>
 		<data>
@@ -98,27 +106,27 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		98Dmyw8sNltBFoUnSz27l/d6Rf8=
+		6tV8TkYHaCE3opL4wzvDFHghs/Y=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xaOx4F5y9o+yAPG+yKb7HCsfa7c=
+		xDXjn0a+FzVxPbCyWaBw+UgPLg4=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K+k7tVNurZuIpUG7rCaip+pNCH8=
+		nORnRQEOGa4G5D+vfxFbirYIQUk=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0hoX4sgGsN2frQFJl65bVdlf+Cc=
+		057nreiMZXYTMNQAyEofXguGUhc=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fIhwPOlOZr2PF8OENYTnc5xlQAY=
+		J8YFnEV9po1L58kiqaWtkNCEujs=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		l9NC0rLm/ZHXlGbS5mjVTfjf9tw=
+		PR8VbvKy36kY+FL8649dq86gQ+0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,7 +134,7 @@
 		</data>
 		<key>MoodboardTableViewCell.nib</key>
 		<data>
-		3pHhArOSlTQIyxl8W7C028cWeBg=
+		VEnLtSyaZDnCZHVDdiqyrWWxJGY=
 		</data>
 		<key>NavHeaderView.nib</key>
 		<data>
@@ -134,7 +142,15 @@
 		</data>
 		<key>ProductHistoryViewController.nib</key>
 		<data>
-		p1bd+3WChOppxxEpFxkhqMNLODc=
+		+AEtj4cVt6U7Q7Ks4SrMwua/YCE=
+		</data>
+		<key>ProductItemCollectionViewCell.nib</key>
+		<data>
+		CKTe+VnIv2d98LsEsCi3E0sfFcg=
+		</data>
+		<key>ProductSetTableViewCell.nib</key>
+		<data>
+		bkPqmKplDZmYSNTG28mTVEJx4m8=
 		</data>
 		<key>SessionFlowHeadlineTableViewCell.nib</key>
 		<data>
@@ -170,7 +186,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lrdTpNt9K5s6kBvKqdO7TINyIiFuJ4nYfaxKsmnKgzI=
+			+a48pfol9YectVeDJTou2jbbBWXzFR/IBxTDQP6/mgw=
 			</data>
 		</dict>
 		<key>BoardItemHistoryCollectionViewCell.nib</key>
@@ -191,7 +207,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A2R1f69iQWKK3HWh043bCERK3j37geG68/arMdHjkq0=
+			kB8+GOh6S0E0hSKiFvVUTKHGZM7ok3hTmgAUzQspXGU=
 			</data>
 		</dict>
 		<key>ChatHeaderView.nib</key>
@@ -236,11 +252,18 @@
 			vHmg/8umv3FatxdiRi0wjm8ujgDuu61xVMfM0wdy+GE=
 			</data>
 		</dict>
+		<key>FeedbackActionView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DV2RNuR0KPdamJWZqXznZQQMPaWOPS80phcSrJIZAcY=
+			</data>
+		</dict>
 		<key>Headers/WishiSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WJkDU3nCEPkVQNbdBDVkfqa3GKGWwXRK1H1jnir2aj0=
+			ErIq/rkdj76L0OXIEHszMdEKykBer4yUggNhWZrM8IY=
 			</data>
 		</dict>
 		<key>Headers/WishiSDK.h</key>
@@ -254,7 +277,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xaVx57UyJQi6lCx3jTluBvs5iAkb8vp8dV34mlm13ww=
+			5NLTMuzKzWohw3YZClm4cZerUrKD+aZwjRdS1xsi45w=
+			</data>
+		</dict>
+		<key>HistoryHeaderView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MybMkEQJNFp2rupx1vhbM62byXTZIW1n45nKPiwesEo=
 			</data>
 		</dict>
 		<key>HistoryTabHeaderCollectionViewCell.nib</key>
@@ -303,7 +333,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hvDSFx65uJx81TJu0q1yhJfikv0vaO7Bf9QLE/E9Ukk=
+			9KIAgc1JbZIFsMhksJUthGwVpO92+JEUcdFLq8weK6U=
 			</data>
 		</dict>
 		<key>MessagesViewController.nib</key>
@@ -317,42 +347,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N/3LcMw9pdgaOjTsf+TNhLnJ5groVN7aCk8zBHisHNQ=
+			nqHLOIgp0Ck2Wx9PCT+N9iRIZl3wbv6ZBAA/MquTJI4=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			10mqYOUi607QT1jPzRjYXSGws9V/HbFG1anAgAyMVFA=
+			zbpPVu6o4gxN7WnlQLsD+1N5WnQpbFWqG+ZlQVMLvMk=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4ZghPSACKm/aI+EMafvt65jV4LLCH2yMjt3FISvu9HA=
+			kuZa1mUiatKgvmYd41XMZVVe38XyEr0LNoepipl5DiU=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sv9hP7zQqLbDZ21NazcCXXuJQnAirqNnBc3EsMowK6o=
+			gHR6J/CTyoWZJAHjd2AV9gBa1aBlmEkHP1psTPIaDyw=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m29Res+7YMnb/zzbcN1+fY6876pWresw+qx0WYhC1SQ=
+			CuEomM0HtAH2wFZpKh8tPdo6QPKxnmO8LDtX27iSJqE=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uF34zHkvQyUckJ7OBsqDhx1+8UwusL3XlI2mnDU1HaI=
+			AtlvOkJrjopYUgqpeEIhcMPjFpfYuDlCRFhcRfbX+1c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -366,7 +396,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p/r02ZS/iLgF8TWH81/snIatWpK8TOv+ljcyRYjzTb0=
+			OiVet6R4iHPpIH5xnTUqnXNbzwJ/qpmbZUOzO1yF/FY=
 			</data>
 		</dict>
 		<key>NavHeaderView.nib</key>
@@ -380,7 +410,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			148995k+EgFdT3YkU92z+5+cD8CBllMWED2XT0zYbU8=
+			hrWsVipauPBAwBzObbBtaS982SGmJX/ZQlrTTErIxzQ=
+			</data>
+		</dict>
+		<key>ProductItemCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iQBH57fOsm/F2Ml5wr26SUWfrzI/23nOBgvD6yucHb8=
+			</data>
+		</dict>
+		<key>ProductSetTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aibbuRaRyZL+nHur+QMxweBy5sOsyFYWSiyqcYG/dBQ=
 			</data>
 		</dict>
 		<key>SessionFlowHeadlineTableViewCell.nib</key>

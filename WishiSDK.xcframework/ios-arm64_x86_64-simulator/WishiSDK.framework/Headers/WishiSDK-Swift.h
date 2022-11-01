@@ -224,8 +224,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-
 @interface NSLayoutConstraint (SWIFT_EXTENSION(WishiSDK))
 - (nonnull instancetype)with:(UILayoutPriority)p SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -411,8 +409,6 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 
@@ -709,8 +705,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-
 @interface NSLayoutConstraint (SWIFT_EXTENSION(WishiSDK))
 - (nonnull instancetype)with:(UILayoutPriority)p SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -896,8 +890,6 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 

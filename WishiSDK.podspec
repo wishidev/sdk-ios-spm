@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name                    = 'WishiSDK'
-  s.version                 = '0.0.22'
+  s.version                 = '0.0.23'
   s.summary                 = 'Wishi SDK for iOS'
   s.homepage                = 'https://docs.wishi.me'
   s.author                  = { 'Dev' => 'dev@wishi.me' }

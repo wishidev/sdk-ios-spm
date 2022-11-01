@@ -3,7 +3,6 @@
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name WishiSDK
 import Combine
 import CoreData
-import CryptoKit
 import Foundation
 import Network
 import Swift
@@ -38,6 +37,10 @@ public enum ParameterEncoding {
   public var hashValue: Swift.Int {
     get
   }
+}
+public protocol FeedbackActionViewDelegate : ObjectiveC.NSObjectProtocol {
+  func onFeedbackLoveItTapped()
+  func onFeedbackRestyleItTapped()
 }
 extension WishiSDK.NetworkingClient {
   public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
@@ -185,6 +188,10 @@ public typealias Path = Swift.String
 extension WishiSDK.RequestBuilder : WishiSDK.URLRequestConvertible {
   public func asURLRequest(baseURL: Foundation.URL?) -> Foundation.URLRequest
 }
+public struct WSItem : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 extension UIKit.UIView {
   @discardableResult
   @_Concurrency.MainActor(unsafe) public func stack(_ views: [WishiSDK.TinyView], axis: WishiSDK.ConstraintAxis = .vertical, width: CoreGraphics.CGFloat? = nil, height: CoreGraphics.CGFloat? = nil, spacing: CoreGraphics.CGFloat = 0) -> WishiSDK.Constraints
@@ -229,14 +236,6 @@ extension WishiSDK.NetworkingClient {
   #endif
 
 }
-public struct DisplayOptions : Swift.OptionSet {
-  public let rawValue: Swift.Int
-  public init(rawValue: Swift.Int)
-  public static let downsampled: WishiSDK.DisplayOptions
-  public typealias ArrayLiteralElement = WishiSDK.DisplayOptions
-  public typealias Element = WishiSDK.DisplayOptions
-  public typealias RawValue = Swift.Int
-}
 public enum MessageContentType : ObjectiveC.NSInteger {
   case text
   case image
@@ -277,33 +276,18 @@ public protocol HttpBodyConvertible {
 extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
-public enum MapleBaconError : Swift.Error {
-  case imageTransformingError
-  public static func == (a: WishiSDK.MapleBaconError, b: WishiSDK.MapleBaconError) -> Swift.Bool
+public enum LookViewControllerMode {
+  case look
+  case feedback
+  public static func == (a: WishiSDK.LookViewControllerMode, b: WishiSDK.LookViewControllerMode) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-public typealias CancelToken = Swift.Int
-@_hasMissingDesignatedInitializers final public class MapleBacon {
-  public typealias ImageCompletion = (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void
-  public static let shared: WishiSDK.MapleBacon
-  final public var maxCacheAgeSeconds: Foundation.TimeInterval {
-    get
-    set
-  }
-  convenience public init(name: Swift.String = "", sessionConfiguration: Foundation.URLSessionConfiguration = .default)
-  @discardableResult
-  final public func image(with url: Foundation.URL, imageTransformer: WishiSDK.ImageTransforming? = nil, completion: @escaping WishiSDK.MapleBacon.ImageCompletion) -> WishiSDK.DownloadTask<UIKit.UIImage>?
-  final public func hydrateCache(url: Foundation.URL)
-  final public func hydrateCache(urls: [Foundation.URL])
-  final public func clearCache(_ options: WishiSDK.CacheClearOptions, completion: ((Swift.Error?) -> Swift.Void)? = nil)
-  @objc deinit
-}
-@available(iOS 13.0, *)
-extension WishiSDK.MapleBacon {
-  final public func image(with url: Foundation.URL, imageTransformer: WishiSDK.ImageTransforming? = nil) -> Combine.AnyPublisher<UIKit.UIImage, Swift.Error>
+public protocol LookViewControllerDelegate : ObjectiveC.NSObjectProtocol {
+  func onLookViewControllerLoveItTapped(message: WishiSDK.PersistentMessageDataItem)
+  func onLookViewControllerRestyleItTapped(message: WishiSDK.PersistentMessageDataItem, selectedItems: [WishiSDK.WSItem])
 }
 public protocol ChatHeaderViewDelegate : ObjectiveC.NSObjectProtocol {
   func onHeaderActionTapped()
@@ -682,15 +666,6 @@ extension WishiSDK.NetworkingClient {
   #endif
 
 }
-public protocol ImageTransforming {
-  var identifier: Swift.String { get }
-  func transform(image: UIKit.UIImage) -> UIKit.UIImage?
-}
-infix operator >>> : AdditionPrecedence
-public func >>> (transformer1: WishiSDK.ImageTransforming, transformer2: WishiSDK.ImageTransforming) -> WishiSDK.ImageTransforming
-extension WishiSDK.ImageTransforming {
-  public func appending(transformer: WishiSDK.ImageTransforming) -> WishiSDK.ImageTransforming
-}
 public enum Enviroment {
   case production
   case development
@@ -939,10 +914,6 @@ extension UIKit.NSLayoutConstraint {
   @objc @_Concurrency.MainActor(unsafe) dynamic public func with(_ p: WishiSDK.LayoutPriority) -> Self
   @_Concurrency.MainActor(unsafe) public func set(_ active: Swift.Bool) -> Self
 }
-public struct DownloadTask<T> where T : WishiSDK.DataConvertible {
-  public let cancelToken: WishiSDK.CancelToken
-  public func cancel()
-}
 extension WishiSDK.Constrainable {
   @discardableResult
   public func center(in view: WishiSDK.Constrainable, offset: CoreGraphics.CGPoint = .zero, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
@@ -1007,6 +978,10 @@ extension UIKit.UIView {
 }
 extension Foundation.Bundle {
   public static let framework: Foundation.Bundle?
+}
+public protocol MoodboardTableViewCellDelegate : ObjectiveC.NSObjectProtocol {
+  func onMoodboardCellLoveItTapped(message: WishiSDK.PersistentMessageDataItem)
+  func onMoodboardCellRestyleItTapped(message: WishiSDK.PersistentMessageDataItem)
 }
 extension UIKit.UIView : WishiSDK.Constrainable {
   @discardableResult
@@ -1075,31 +1050,6 @@ public enum NetworkingLogLevel {
     get
   }
 }
-public struct CacheClearOptions : Swift.OptionSet {
-  public let rawValue: Swift.Int
-  public init(rawValue: Swift.Int)
-  public static let memory: WishiSDK.CacheClearOptions
-  public static let disk: WishiSDK.CacheClearOptions
-  public static let all: WishiSDK.CacheClearOptions
-  public typealias ArrayLiteralElement = WishiSDK.CacheClearOptions
-  public typealias Element = WishiSDK.CacheClearOptions
-  public typealias RawValue = Swift.Int
-}
-public protocol DataConvertible {
-  associatedtype Result
-  static func convert(from data: Foundation.Data) -> Self.Result?
-  func toData() -> Foundation.Data?
-}
-extension Foundation.Data : WishiSDK.DataConvertible {
-  public static func convert(from data: Foundation.Data) -> Foundation.Data?
-  public func toData() -> Foundation.Data?
-  public typealias Result = Foundation.Data
-}
-extension UIKit.UIImage : WishiSDK.DataConvertible {
-  public static func convert(from data: Foundation.Data) -> UIKit.UIImage?
-  public func toData() -> Foundation.Data?
-  public typealias Result = UIKit.UIImage
-}
 public enum ConfigurationStyle {
   case headerFont
   case subheaderFont
@@ -1149,18 +1099,6 @@ extension WishiSDK.NetworkingClient {
   public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
   public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
   public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-}
-@_hasMissingDesignatedInitializers final public class DownsamplingImageTransformer : WishiSDK.ImageTransforming {
-  final public var identifier: Swift.String {
-    get
-  }
-  final public func transform(image: UIKit.UIImage) -> UIKit.UIImage?
-  @objc deinit
-}
-extension UIKit.UIImageView {
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func setImage(with url: Foundation.URL?, placeholder: UIKit.UIImage? = nil, displayOptions: [WishiSDK.DisplayOptions] = [], imageTransformer: WishiSDK.ImageTransforming? = nil, completion: ((UIKit.UIImage?) -> Swift.Void)? = nil) -> WishiSDK.DownloadTask<UIKit.UIImage>?
-  @_Concurrency.MainActor(unsafe) public func cancelDownload()
 }
 @objc public class WSQuiz : ObjectiveC.NSObject {
   public init(dictionary: [Swift.AnyHashable : Any])
@@ -1594,8 +1532,8 @@ extension WishiSDK.RequestBuilder.Encoding : Swift.Hashable {}
 extension WishiSDK.MessageContentType : Swift.Equatable {}
 extension WishiSDK.MessageContentType : Swift.Hashable {}
 extension WishiSDK.MessageContentType : Swift.RawRepresentable {}
-extension WishiSDK.MapleBaconError : Swift.Equatable {}
-extension WishiSDK.MapleBaconError : Swift.Hashable {}
+extension WishiSDK.LookViewControllerMode : Swift.Equatable {}
+extension WishiSDK.LookViewControllerMode : Swift.Hashable {}
 extension WishiSDK.HTTPMethod : Swift.Equatable {}
 extension WishiSDK.HTTPMethod : Swift.Hashable {}
 extension WishiSDK.HTTPMethod : Swift.RawRepresentable {}
