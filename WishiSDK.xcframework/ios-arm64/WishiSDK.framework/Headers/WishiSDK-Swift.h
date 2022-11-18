@@ -196,7 +196,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreData;
-@import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -222,49 +221,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-@interface NSLayoutConstraint (SWIFT_EXTENSION(WishiSDK))
-- (nonnull instancetype)with:(UILayoutPriority)p SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
 
-SWIFT_CLASS("_TtC8WishiSDK17NetworkingRequest")
-@interface NetworkingRequest : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSURLSession;
-@class NSURLSessionTask;
-
-@interface NetworkingRequest (SWIFT_EXTENSION(WishiSDK)) <NSURLSessionTaskDelegate>
-- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend;
-@end
-
-@class NSCoder;
-
-IB_DESIGNABLE
-SWIFT_CLASS("_TtC8WishiSDK13NibDesignable")
-@interface NibDesignable : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
-IB_DESIGNABLE
-SWIFT_CLASS("_TtC8WishiSDK35NibDesignableCollectionReusableView")
-@interface NibDesignableCollectionReusableView : UICollectionReusableView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-IB_DESIGNABLE
-SWIFT_CLASS("_TtC8WishiSDK20NibDesignableControl")
-@interface NibDesignableControl : UIControl
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 @class NSEntityDescription;
 @class NSManagedObjectContext;
@@ -328,6 +290,7 @@ SWIFT_CLASS_NAMED("PersistentMediaDataItem")
 @property (nonatomic, copy) NSString * _Nullable filename;
 @property (nonatomic, copy) NSString * _Nullable sid;
 @property (nonatomic) int64_t size;
+@property (nonatomic, copy) NSString * _Nullable url;
 @property (nonatomic, strong) PersistentMessageDataItem * _Nullable messageSid;
 @end
 
@@ -390,15 +353,8 @@ SWIFT_CLASS_NAMED("PersistentParticipantDataItem")
 @property (nonatomic) int16_t type;
 @end
 
+@class NSCoder;
 @class NSBundle;
-
-SWIFT_CLASS("_TtC8WishiSDK27QuizContainerViewController")
-@interface QuizContainerViewController : UIViewController
-- (void)viewDidLoad;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-@end
-
 
 SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 @interface QuizViewController : UIViewController
@@ -406,6 +362,78 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 - (void)viewDidAppear:(BOOL)animated;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+/// Represents a socket.io-client.
+/// Clients are created through a <code>SocketManager</code>, which owns the <code>SocketEngineSpec</code> that controls the connection to the server.
+/// For example:
+/// \code
+/// // Create a socket for the /swift namespace
+/// let socket = manager.socket(forNamespace: "/swift")
+///
+/// // Add some handlers and connect
+///
+/// \endcode<em>NOTE</em>: The client is not thread/queue safe, all interaction with the socket should be done on the <code>manager.handleQueue</code>
+SWIFT_CLASS("_TtC8WishiSDK14SocketIOClient")
+@interface SocketIOClient : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSData;
+
+/// A manager for a socket.io connection.
+/// A <code>SocketManager</code> is responsible for multiplexing multiple namespaces through a single <code>SocketEngineSpec</code>.
+/// Example:
+/// \code
+/// let manager = SocketManager(socketURL: URL(string:"http://localhost:8080/")!)
+/// let defaultNamespaceSocket = manager.defaultSocket
+/// let swiftSocket = manager.socket(forNamespace: "/swift")
+///
+/// // defaultNamespaceSocket and swiftSocket both share a single connection to the server
+///
+/// \endcodeSockets created through the manager are retained by the manager. So at the very least, a single strong reference
+/// to the manager must be maintained to keep sockets alive.
+/// To disconnect a socket and remove it from the manager, either call <code>SocketIOClient.disconnect()</code> on the socket,
+/// or call one of the <code>disconnectSocket</code> methods on this class.
+/// <em>NOTE</em>: The manager is not thread/queue safe, all interaction with the manager should be done on the <code>handleQueue</code>
+SWIFT_CLASS("_TtC8WishiSDK13SocketManager")
+@interface SocketManager : NSObject
+/// Called when the engine closes.
+/// \param reason The reason that the engine closed.
+///
+- (void)engineDidCloseWithReason:(NSString * _Nonnull)reason;
+/// Called when the engine errors.
+/// \param reason The reason the engine errored.
+///
+- (void)engineDidErrorWithReason:(NSString * _Nonnull)reason;
+/// Called when the engine opens.
+/// \param reason The reason the engine opened.
+///
+- (void)engineDidOpenWithReason:(NSString * _Nonnull)reason;
+/// Called when the engine receives a ping message.
+- (void)engineDidReceivePing;
+/// Called when the sends a ping to the server.
+- (void)engineDidSendPing;
+/// Called when the engine receives a pong message.
+- (void)engineDidReceivePong;
+/// Called when the sends a pong to the server.
+- (void)engineDidSendPong;
+/// Called when when upgrading the http connection to a websocket connection.
+/// \param headers The http headers.
+///
+- (void)engineDidWebsocketUpgradeWithHeaders:(NSDictionary<NSString *, NSString *> * _Nonnull)headers;
+/// Called when the engine has a message that must be parsed.
+/// \param msg The message that needs parsing.
+///
+- (void)parseEngineMessage:(NSString * _Nonnull)msg;
+/// Called when the engine receives binary data.
+/// \param data The data the engine received.
+///
+- (void)parseEngineBinaryData:(NSData * _Nonnull)data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -442,13 +470,6 @@ SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 
 
 
-
-
-SWIFT_CLASS("_TtC8WishiSDK14WSAnswersGroup")
-@interface WSAnswersGroup : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 SWIFT_CLASS("_TtC8WishiSDK6WSQuiz")

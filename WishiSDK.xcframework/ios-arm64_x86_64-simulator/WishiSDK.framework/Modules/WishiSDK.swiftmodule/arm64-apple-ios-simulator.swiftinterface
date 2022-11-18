@@ -2,1053 +2,78 @@
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name WishiSDK
 import Combine
+import CommonCrypto
 import CoreData
+import Dispatch
 import Foundation
 import Network
 import Swift
-import TwilioConversationsClient
 import UIKit
 @_exported import WishiSDK
 import _Concurrency
-extension WishiSDK.NetworkingClient {
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params(), multipartData: WishiSDK.MultipartData) -> Combine.AnyPublisher<(Foundation.Data?, Foundation.Progress), Swift.Error>
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params(), multipartData: WishiSDK.MultipartData) -> Combine.AnyPublisher<(Foundation.Data?, Foundation.Progress), Swift.Error>
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params(), multipartData: WishiSDK.MultipartData) -> Combine.AnyPublisher<(Foundation.Data?, Foundation.Progress), Swift.Error>
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params(), multipartData: [WishiSDK.MultipartData]) -> Combine.AnyPublisher<(Foundation.Data?, Foundation.Progress), Swift.Error>
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params(), multipartData: [WishiSDK.MultipartData]) -> Combine.AnyPublisher<(Foundation.Data?, Foundation.Progress), Swift.Error>
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params(), multipartData: [WishiSDK.MultipartData]) -> Combine.AnyPublisher<(Foundation.Data?, Foundation.Progress), Swift.Error>
-}
-public typealias NetworkRequestRetrier = (_ request: Foundation.URLRequest, _ error: Swift.Error) -> Combine.AnyPublisher<Swift.Void, Swift.Error>?
-@objc @_inheritsConvenienceInitializers public class NetworkingRequest : ObjectiveC.NSObject {
-  public var params: WishiSDK.Params
-  public func uploadPublisher() -> Combine.AnyPublisher<(Foundation.Data?, Foundation.Progress), Swift.Error>
-  public func publisher() -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  @objc override dynamic public init()
+import zlib
+@_hasMissingDesignatedInitializers open class WebSocket {
   @objc deinit
 }
-extension WishiSDK.NetworkingRequest : Foundation.URLSessionTaskDelegate {
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didSendBodyData bytesSent: Swift.Int64, totalBytesSent: Swift.Int64, totalBytesExpectedToSend: Swift.Int64)
-}
-public enum ParameterEncoding {
-  case urlEncoded
-  case json
-  public static func == (a: WishiSDK.ParameterEncoding, b: WishiSDK.ParameterEncoding) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public protocol FeedbackActionViewDelegate : ObjectiveC.NSObjectProtocol {
-  func onFeedbackLoveItTapped()
-  func onFeedbackRestyleItTapped()
-}
-extension WishiSDK.NetworkingClient {
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-}
-extension WishiSDK.NetworkingClient {
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-}
-public protocol NavHeaderViewDelegate : ObjectiveC.NSObjectProtocol {
-  func onNavBackTapped()
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class QuizContainerViewController : UIKit.UIViewController, WishiSDK.QuizViewControllerDelegate {
-  @_Concurrency.MainActor(unsafe) public var configuration: WishiSDK.Configurations!
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) public static func show(from presentingController: UIKit.UIViewController, configuration: WishiSDK.Configurations, completion: ((Swift.String?) -> Swift.Void)?)
-  @_Concurrency.MainActor(unsafe) public static func showMatch(from presentingController: UIKit.UIViewController, configuration: WishiSDK.Configurations, completion: ((Swift.String?) -> Swift.Void)?)
-  @_Concurrency.MainActor(unsafe) public init(completion: ((Swift.String?) -> Swift.Void)?)
-  @_Concurrency.MainActor(unsafe) public func didSelectAnswers(answers: [WishiSDK.WSQuizAnswer])
-  @_Concurrency.MainActor(unsafe) public func screenLoaded()
-  @_Concurrency.MainActor(unsafe) public func imageSelected(image: UIKit.UIImage)
-  @_Concurrency.MainActor(unsafe) public func freeTextHasChanged(text: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func checkFinishGroupSelection(quizObject: WishiSDK.WSQuiz)
-  @_Concurrency.MainActor(unsafe) public func groupSelected(group: WishiSDK.WSAnswersGroup)
-  @_Concurrency.MainActor(unsafe) public func prepareStyleAdvisor()
-  @_Concurrency.MainActor(unsafe) public func answerSelected(forGroup group: WishiSDK.WSAnswersGroup, controller: WishiSDK.QuizViewController)
+@objc @_hasMissingDesignatedInitializers open class SocketIOClient : ObjectiveC.NSObject {
   @objc deinit
-}
-extension Swift.Dictionary : WishiSDK.HttpBodyConvertible where Key == Swift.String, Value == Swift.CustomStringConvertible {
-  public func buildHttpBodyPart(boundary: Swift.String) -> Foundation.Data
-}
-extension CoreData.NSManagedObjectContext {
-  public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
-}
-public typealias Path = Swift.String
-@_hasMissingDesignatedInitializers public class RequestBuilder : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
-    get
-  }
-  public var description: Swift.String {
-    get
-  }
-  public var baseURL: Swift.String? {
-    get
-  }
-  public enum Method : Swift.String {
-    case get
-    case post
-    case put
-    case patch
-    case delete
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public enum Encoding {
-    case formUrlEncoded, jsonEncoded
-    public static func == (a: WishiSDK.RequestBuilder.Encoding, b: WishiSDK.RequestBuilder.Encoding) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public typealias Headers = [Swift.String : Swift.String]
-  public typealias QueryParams = [Swift.String : Any]
-  public var headers: WishiSDK.RequestBuilder.Headers? {
-    get
-  }
-  public var queryParameters: WishiSDK.RequestBuilder.QueryParams? {
-    get
-  }
-  public static func post(_ path: WishiSDK.Path) -> WishiSDK.RequestBuilder
-  public static func get(_ path: WishiSDK.Path) -> WishiSDK.RequestBuilder
-  public static func put(_ path: WishiSDK.Path) -> WishiSDK.RequestBuilder
-  public static func patch(_ path: WishiSDK.Path) -> WishiSDK.RequestBuilder
-  public func baseURL(_ string: Swift.String) -> WishiSDK.RequestBuilder
-  public func body(_ body: Foundation.Data) -> WishiSDK.RequestBuilder
-  public func jsonBody<T>(_ payload: T) -> WishiSDK.RequestBuilder where T : Swift.Encodable
-  public func jsonBody(dict: [Swift.String : Any]) -> WishiSDK.RequestBuilder
-  public func formUrlBody(_ params: [Swift.String : Swift.String], encoding: WishiSDK.RequestBuilder.Encoding) -> WishiSDK.RequestBuilder
-  public func addHeader(_ header: Swift.String, value: Swift.String) -> WishiSDK.RequestBuilder
-  public func query(_ query: WishiSDK.RequestBuilder.QueryParams) -> WishiSDK.RequestBuilder
-  public func query(_ queryItems: [Foundation.URLQueryItem]?) -> WishiSDK.RequestBuilder
-  public func addQuery(_ query: Swift.String, value: Swift.String) -> WishiSDK.RequestBuilder
-  @objc deinit
-}
-extension WishiSDK.RequestBuilder : WishiSDK.URLRequestConvertible {
-  public func asURLRequest(baseURL: Foundation.URL?) -> Foundation.URLRequest
-}
-public struct WSItem : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-extension UIKit.UIView {
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func stack(_ views: [WishiSDK.TinyView], axis: WishiSDK.ConstraintAxis = .vertical, width: CoreGraphics.CGFloat? = nil, height: CoreGraphics.CGFloat? = nil, spacing: CoreGraphics.CGFloat = 0) -> WishiSDK.Constraints
-}
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func drawDashedLines()
-}
-public struct MultipartData {
-  public init(name: Swift.String, fileData: Foundation.Data, fileName: Swift.String, mimeType: Swift.String)
-}
-extension WishiSDK.NetworkingClient {
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-}
-extension WishiSDK.NetworkingClient {
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-}
-public enum MessageContentType : ObjectiveC.NSInteger {
-  case text
-  case image
-  case audio
-  case like
-  case love
-  public init?(rawValue: ObjectiveC.NSInteger)
-  public typealias RawValue = ObjectiveC.NSInteger
-  public var rawValue: ObjectiveC.NSInteger {
-    get
-  }
-}
-extension WishiSDK.PersistentConversationDataItem {
-  public var deliveryStatus: Swift.String {
-    get
-  }
-  public var lastMessageContentIcon: Swift.String {
-    get
-  }
-  public var lastMessageDateFormatted: Swift.String {
-    get
-  }
-  public func getStylistName() -> Swift.String
-  public func getStylistFullName() -> Swift.String
-  public func getStylistImageString() -> Swift.String
-  public func getLastMessageType() -> WishiSDK.MessageContentType
-  public func getLastMessageDate() -> Swift.String
-  public func getLastMessageContent() -> Swift.String
-  public func getStylistInitials() -> Swift.String
-}
-extension Foundation.URLRequest {
-  public func toCurlCommand() -> Swift.String
-}
-public typealias CompletionObject<T> = (_ response: T) -> Swift.Void
-public protocol HttpBodyConvertible {
-  func buildHttpBodyPart(boundary: Swift.String) -> Foundation.Data
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
-}
-public enum LookViewControllerMode {
-  case look
-  case feedback
-  public static func == (a: WishiSDK.LookViewControllerMode, b: WishiSDK.LookViewControllerMode) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public protocol LookViewControllerDelegate : ObjectiveC.NSObjectProtocol {
-  func onLookViewControllerLoveItTapped(message: WishiSDK.PersistentMessageDataItem)
-  func onLookViewControllerRestyleItTapped(message: WishiSDK.PersistentMessageDataItem, selectedItems: [WishiSDK.WSItem])
-}
-public protocol ChatHeaderViewDelegate : ObjectiveC.NSObjectProtocol {
-  func onHeaderActionTapped()
-}
-final public class Endpoint<Response> : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  final public var debugDescription: Swift.String {
-    get
-  }
-  final public let decode: (Foundation.Data) throws -> Response
-  final public var builder: WishiSDK.RequestBuilder
-  final public var description: Swift.String {
-    get
-  }
-  public init(builder: WishiSDK.RequestBuilder, decode: @escaping (Foundation.Data) throws -> Response)
-  final public func map<N>(_ f: @escaping ((Response) throws -> N)) -> WishiSDK.Endpoint<N>
-  final public func modifyRequest(_ f: (WishiSDK.RequestBuilder) -> WishiSDK.RequestBuilder)
-  @objc deinit
-}
-extension WishiSDK.Endpoint : WishiSDK.URLResponseCapable {
-  public typealias ResponseType = Response
-  final public func handle(data: Foundation.Data) throws -> Response
-}
-extension WishiSDK.Endpoint : WishiSDK.URLRequestConvertible {
-  final public func asURLRequest(baseURL: Foundation.URL?) -> Foundation.URLRequest
-}
-extension WishiSDK.Endpoint where Response == Swift.Void {
-  convenience public init(method: WishiSDK.RequestBuilder.Method, path: WishiSDK.Path, _ builder: ((WishiSDK.RequestBuilder) -> WishiSDK.RequestBuilder)? = nil)
-}
-extension WishiSDK.Endpoint where Response == [Swift.String : Any] {
-  convenience public init(method: WishiSDK.RequestBuilder.Method, path: WishiSDK.Path, _ builder: ((WishiSDK.RequestBuilder) -> WishiSDK.RequestBuilder)? = nil)
-}
-extension WishiSDK.Endpoint where Response : Swift.Decodable {
-  convenience public init(method: WishiSDK.RequestBuilder.Method, path: WishiSDK.Path, decoder: Foundation.JSONDecoder? = nil, _ builder: ((WishiSDK.RequestBuilder) -> WishiSDK.RequestBuilder)? = nil)
-}
-extension UIKit.UIEdgeInsets {
-  public static func uniform(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
-  public static func top(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
-  public static func left(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
-  public static func bottom(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
-  public static func right(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
-  public static func horizontal(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
-  public static func vertical(_ value: CoreGraphics.CGFloat) -> WishiSDK.TinyEdgeInsets
-}
-public func + (lhs: WishiSDK.TinyEdgeInsets, rhs: WishiSDK.TinyEdgeInsets) -> WishiSDK.TinyEdgeInsets
-extension UIKit.UIView {
-  @available(tvOS 10.0, iOS 10.0, *)
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func edgesToSuperview(excluding excludedEdge: WishiSDK.LayoutEdge = .none, insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
-  @available(tvOS 10.0, iOS 10.0, *)
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func leadingToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @available(tvOS 10.0, iOS 10.0, *)
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func trailingToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @available(tvOS 10.0, iOS 10.0, *)
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func horizontalToSuperview(insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
-  @available(tvOS 10.0, iOS 10.0, *)
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func verticalToSuperview(insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
-}
-public struct LayoutEdge : Swift.OptionSet {
-  public let rawValue: Swift.UInt8
-  public init(rawValue: Swift.UInt8)
-  public static let top: WishiSDK.LayoutEdge
-  public static let bottom: WishiSDK.LayoutEdge
-  public static let trailing: WishiSDK.LayoutEdge
-  public static let leading: WishiSDK.LayoutEdge
-  public static let left: WishiSDK.LayoutEdge
-  public static let right: WishiSDK.LayoutEdge
-  public static let none: WishiSDK.LayoutEdge
-  public typealias ArrayLiteralElement = WishiSDK.LayoutEdge
-  public typealias Element = WishiSDK.LayoutEdge
-  public typealias RawValue = Swift.UInt8
-}
-extension UIKit.UIView {
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func centerInSuperview(offset: CoreGraphics.CGPoint = .zero, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func originToSuperview(insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraints
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func widthToSuperview(_ dimension: UIKit.NSLayoutDimension? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func heightToSuperview(_ dimension: UIKit.NSLayoutDimension? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func leftToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func rightToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func topToSuperview(_ anchor: UIKit.NSLayoutYAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func bottomToSuperview(_ anchor: UIKit.NSLayoutYAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func centerXToSuperview(_ anchor: UIKit.NSLayoutXAxisAnchor? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func centerYToSuperview(_ anchor: UIKit.NSLayoutYAxisAnchor? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true, usingSafeArea: Swift.Bool = false) -> WishiSDK.Constraint
-}
-@objc public class WSAnswersGroup : ObjectiveC.NSObject {
-  public init(dictionary: [Swift.AnyHashable : Any])
-  @objc deinit
-}
-public protocol QuizViewControllerDelegate : AnyObject {
-  func didSelectAnswers(answers: [WishiSDK.WSQuizAnswer])
-  func freeTextHasChanged(text: Swift.String)
-  func imageSelected(image: UIKit.UIImage)
-  func groupSelected(group: WishiSDK.WSAnswersGroup)
-  func answerSelected(forGroup group: WishiSDK.WSAnswersGroup, controller: WishiSDK.QuizViewController)
-  func checkFinishGroupSelection(quizObject: WishiSDK.WSQuiz)
-  func screenLoaded()
-  func prepareStyleAdvisor()
-}
-public struct CollectionViewParameters {
+  open func connect(withPayload payload: [Swift.String : Any]? = nil)
+  open func connect(withPayload payload: [Swift.String : Any]? = nil, timeoutAfter: Swift.Double, withHandler handler: (() -> Swift.Void)?)
+  open func didConnect(toNamespace namespace: Swift.String, payload: [Swift.String : Any]?)
+  open func didDisconnect(reason: Swift.String)
+  open func disconnect()
+  open func emitAck(_ ack: Swift.Int, with items: [Any])
+  open func handleAck(_ ack: Swift.Int, data: [Any])
+  open func leaveNamespace()
+  open func joinNamespace(withPayload payload: [Swift.String : Any]? = nil)
+  open func off(_ event: Swift.String)
+  open func off(id: Foundation.UUID)
+  @available(*, unavailable, message: "Call the manager's reconnect method")
+  open func reconnect()
+  open func removeAllHandlers()
+  open func setReconnecting(reason: Swift.String)
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class QuizViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: WishiSDK.QuizViewControllerDelegate?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func initializeView()
-  @_Concurrency.MainActor(unsafe) public init(configuration: WishiSDK.Configurations, quizObject: WishiSDK.WSQuiz)
-  @_Concurrency.MainActor(unsafe) public func initiateUI()
-  @_Concurrency.MainActor(unsafe) public func scrollToBottom()
-  @_Concurrency.MainActor(unsafe) public func isOptionSelected(answer: WishiSDK.WSQuizAnswer) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func isGroupOptionSelected(answerGroup: WishiSDK.WSAnswersGroup) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func addOrRemoveAnswer(answer: WishiSDK.WSQuizAnswer)
-  @_Concurrency.MainActor(unsafe) public func addOrRemoveGroup(group: WishiSDK.WSAnswersGroup)
-  @_Concurrency.MainActor(unsafe) public func showFreeTextSection() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func createCollection(collectionParameters: WishiSDK.CollectionViewParameters, useLeftAlignedLayout: Swift.Bool, collectionView: inout UIKit.UICollectionView?, controller: WishiSDK.QuizViewController, customInit: (((UIKit.UICollectionView) -> Swift.Void))?)
-  @_Concurrency.MainActor(unsafe) public func didSelectOptions(lastSelectedOption: WishiSDK.WSQuizAnswer)
   @objc deinit
 }
-public enum HTTPMethod : Swift.String {
-  case get
-  case put
-  case patch
-  case post
-  case delete
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public protocol NetworkingService {
-  var network: WishiSDK.NetworkingClient { get }
-}
-extension WishiSDK.NetworkingService {
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Foundation.Data, Swift.Error>
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Decodable
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : Swift.Collection, T : Swift.Decodable
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-}
-extension WishiSDK.NetworkingService {
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Foundation.Data
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) async throws -> T where T : Swift.Collection, T : Swift.Decodable
-  #endif
-
-}
-extension WishiSDK.MultipartData : WishiSDK.HttpBodyConvertible {
-  public func buildHttpBodyPart(boundary: Swift.String) -> Foundation.Data
-}
-public struct NetworkError : Swift.Error {
-}
-public protocol URLRequestConvertible {
-  func asURLRequest(baseURL: Foundation.URL?) -> Foundation.URLRequest
-}
-public protocol URLResponseCapable {
-  associatedtype ResponseType
-  func handle(data: Foundation.Data) throws -> Self.ResponseType
-}
-public class APIClient {
-  public var hijacker: WishiSDK.ClientHijacker?
-  public init(baseURL: Foundation.URL, configuration: Foundation.URLSessionConfiguration? = nil)
-  convenience public init?(baseURLString: Swift.String, configuration: Foundation.URLSessionConfiguration? = nil)
-  public init(baseURL: Foundation.URL, urlSession: Foundation.URLSession)
-  public func additionalHeaders(_ headers: [Swift.String : Swift.String])
-  @discardableResult
-  public func request<T>(_ requestConvertible: WishiSDK.Endpoint<T>, baseUrl: Foundation.URL? = nil, success: @escaping (T) -> Swift.Void, fail: @escaping (Swift.Error) -> Swift.Void) -> Foundation.URLSessionDataTask
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 15.0.0, *)
-  public func request<T>(_ requestConvertible: WishiSDK.Endpoint<T>, baseUrl: Foundation.URL? = nil) async throws -> T
-  #endif
-
-  public func request<T>(_ requestConvertible: WishiSDK.Endpoint<T>, baseUrl: Foundation.URL? = nil, handler: @escaping (Swift.Result<T, Swift.Error>) -> Swift.Void) -> Foundation.URLSessionDataTask
-  @objc deinit
-}
-extension Foundation.URLRequest {
-  public mutating func addQueryItems(_ items: [Foundation.URLQueryItem])
-}
-public protocol MatchViewControllerDelegate : ObjectiveC.NSObject {
-  func onStartChatTap()
-}
-extension WishiSDK.NetworkingClient {
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
-}
-extension WishiSDK.NetworkingClient {
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws
-  #endif
-
-}
-public enum Enviroment {
+public enum WishiEnviroment {
   case production
   case development
   case mock
   case local
-  public static func == (a: WishiSDK.Enviroment, b: WishiSDK.Enviroment) -> Swift.Bool
+  public static func == (a: WishiSDK.WishiEnviroment, b: WishiSDK.WishiEnviroment) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-public enum RequestMatchingCriteria : Swift.Hashable {
-  case any
-  case method(WishiSDK.RequestBuilder.Method)
-  case path(Swift.String)
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: WishiSDK.RequestMatchingCriteria, b: WishiSDK.RequestMatchingCriteria) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public protocol ClientHijacker {
-  func hijack<T>(endpoint: WishiSDK.Endpoint<T>) -> Swift.Result<T, Swift.Error>?
-}
-public struct MockedError : Swift.Error {
-}
-public class MockDataClientHijacker : WishiSDK.ClientHijacker {
-  public static let sharedInstance: WishiSDK.MockDataClientHijacker
-  public init()
-  public func clear()
-  public func registerSubstitute<T>(_ substitute: T, requestThatMatches criteria: WishiSDK.RequestMatchingCriteria)
-  @discardableResult
-  public func registerJsonFileContentSubstitute<T>(for type: T.Type, requestThatMatches criteria: WishiSDK.RequestMatchingCriteria, bundle: Foundation.Bundle, fileName: Swift.String) -> Swift.Bool where T : Swift.Decodable
-  public func registerError<T>(_ error: Swift.String, for type: T.Type, requestThatMatches criteria: WishiSDK.RequestMatchingCriteria)
-  public func hijack<T>(endpoint: WishiSDK.Endpoint<T>) -> Swift.Result<T, Swift.Error>?
+@objc @_hasMissingDesignatedInitializers open class SocketManager : ObjectiveC.NSObject {
   @objc deinit
+  open func connect()
+  open func connectSocket(_ socket: WishiSDK.SocketIOClient, withPayload payload: [Swift.String : Any]? = nil)
+  open func didDisconnect(reason: Swift.String)
+  open func disconnect()
+  open func disconnectSocket(_ socket: WishiSDK.SocketIOClient)
+  open func disconnectSocket(forNamespace nsp: Swift.String)
+  @objc open func engineDidClose(reason: Swift.String)
+  @objc open func engineDidError(reason: Swift.String)
+  @objc open func engineDidOpen(reason: Swift.String)
+  @objc open func engineDidReceivePing()
+  @objc open func engineDidSendPing()
+  @objc open func engineDidReceivePong()
+  @objc open func engineDidSendPong()
+  @objc open func engineDidWebsocketUpgrade(headers: [Swift.String : Swift.String])
+  @objc open func parseEngineMessage(_ msg: Swift.String)
+  @objc open func parseEngineBinaryData(_ data: Foundation.Data)
+  open func reconnect()
+  @discardableResult
+  open func removeSocket(_ socket: WishiSDK.SocketIOClient) -> WishiSDK.SocketIOClient?
+  open func socket(forNamespace nsp: Swift.String) -> WishiSDK.SocketIOClient
 }
-public typealias TinyView = UIKit.UIView
-public typealias LayoutGuide = UIKit.UILayoutGuide
-public typealias ConstraintAxis = UIKit.NSLayoutConstraint.Axis
-public typealias LayoutPriority = UIKit.UILayoutPriority
-public typealias TinyEdgeInsets = UIKit.UIEdgeInsets
-public typealias Params = [Swift.String : Swift.CustomStringConvertible]
-extension Swift.Dictionary where Key == Swift.String, Value == Swift.CustomStringConvertible {
-  public func asPercentEncodedString(parentKey: Swift.String? = nil) -> Swift.String
-}
-public struct NetworkingError : Swift.Error, Foundation.LocalizedError {
-  public enum Status : Swift.Int {
-    case unknown
-    case networkUnreachable
-    case unableToParseResponse
-    case unableToParseRequest
-    case continueError
-    case switchingProtocols
-    case processing
-    case ok
-    case created
-    case accepted
-    case nonAuthoritativeInformation
-    case noContent
-    case resetContent
-    case partialContent
-    case multiStatus
-    case alreadyReported
-    case IMUsed
-    case multipleChoices
-    case movedPermanently
-    case found
-    case seeOther
-    case notModified
-    case useProxy
-    case switchProxy
-    case temporaryRedirect
-    case permenantRedirect
-    case badRequest
-    case unauthorized
-    case paymentRequired
-    case forbidden
-    case notFound
-    case methodNotAllowed
-    case notAcceptable
-    case proxyAuthenticationRequired
-    case requestTimeout
-    case conflict
-    case gone
-    case lengthRequired
-    case preconditionFailed
-    case payloadTooLarge
-    case uriTooLong
-    case unsupportedMediaType
-    case rangeNotSatisfiable
-    case expectationFailed
-    case teapot
-    case misdirectedRequest
-    case unprocessableEntity
-    case locked
-    case failedDependency
-    case upgradeRequired
-    case preconditionRequired
-    case tooManyRequests
-    case requestHeaderFieldsTooLarge
-    case unavailableForLegalReasons
-    case noResponse
-    case sslCertificateError
-    case sslCertificateRequired
-    case httpRequestSentToHTTPSPort
-    case clientClosedRequest
-    case internalServerError
-    case notImplemented
-    case badGateway
-    case serviceUnavailable
-    case gatewayTimeout
-    case httpVersionNotSupported
-    case variantAlsoNegotiates
-    case insufficientStorage
-    case loopDetected
-    case notExtended
-    case networkAuthenticationRequired
-    case cancelled
-    case badURL
-    case timedOut
-    case unsupportedURL
-    case cannotFindHost
-    case cannotConnectToHost
-    case networkConnectionLost
-    case dnsLookupFailed
-    case httpTooManyRedirects
-    case resourceUnavailable
-    case notConnectedToInternet
-    case redirectToNonExistentLocation
-    case badServerResponse
-    case userCancelledAuthentication
-    case userAuthenticationRequired
-    case zeroByteResource
-    case cannotDecodeRawData
-    case cannotDecodeContentData
-    case cannotParseResponse
-    case appTransportSecurityRequiresSecureConnection
-    case fileDoesNotExist
-    case fileIsDirectory
-    case noPermissionsToReadFile
-    case dataLengthExceedsMaximum
-    case secureConnectionFailed
-    case serverCertificateHasBadDate
-    case serverCertificateUntrusted
-    case serverCertificateHasUnknownRoot
-    case serverCertificateNotYetValid
-    case clientCertificateRejected
-    case CclientCertificateRequired
-    case cannotLoadFromNetwork
-    case cannotCreateFile
-    case cannotOpenFile
-    case cannotCloseFile
-    case cannotWriteToFile
-    case CcannotRemoveFile
-    case cannotMoveFile
-    case downloadDecodingFailedMidStream
-    case downloadDecodingFailedToComplete
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-  public var status: WishiSDK.NetworkingError.Status
-  public var code: Swift.Int {
-    get
-  }
-  public var jsonPayload: Any?
-  public init(errorCode: Swift.Int)
-  public init(status: WishiSDK.NetworkingError.Status)
-  public init(error: Swift.Error)
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-extension WishiSDK.NetworkingError : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension WishiSDK.NetworkingError {
-  public static var unableToParseResponse: WishiSDK.NetworkingError {
-    get
-  }
-  public static var unableToParseRequest: WishiSDK.NetworkingError {
-    get
-  }
-  public static var unknownError: WishiSDK.NetworkingError {
-    get
-  }
-}
-extension Swift.DecodingError {
-  public var description: Swift.String? {
-    get
-  }
-}
-public protocol NibDesignableProtocol : ObjectiveC.NSObjectProtocol {
-  var nibContainerView: UIKit.UIView { get }
-  func loadNib() -> UIKit.UIView
-  func nibName() -> Swift.String
-}
-extension WishiSDK.NibDesignableProtocol {
-  public func loadNib() -> UIKit.UIView
-  public func setupNib()
-}
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var nibContainerView: UIKit.UIView {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) open func nibName() -> Swift.String
-}
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class NibDesignable : UIKit.UIView, WishiSDK.NibDesignableProtocol {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) public func viewDidLoad()
+@objc @_hasMissingDesignatedInitializers public class WSQuizAnswer : ObjectiveC.NSObject {
   @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class NibDesignableControl : UIKit.UIControl, WishiSDK.NibDesignableProtocol {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class NibDesignableCollectionReusableView : UIKit.UICollectionReusableView, WishiSDK.NibDesignableProtocol {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc deinit
-}
-public typealias Constraint = UIKit.NSLayoutConstraint
-public typealias Constraints = [WishiSDK.Constraint]
-public enum ConstraintRelation : Swift.Int {
-  case equal
-  case equalOrLess
-  case equalOrGreater
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-extension Swift.Collection where Self.Element == WishiSDK.Constraint {
-  public func activate()
-  public func deActivate()
-}
-extension UIKit.NSLayoutConstraint {
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func with(_ p: WishiSDK.LayoutPriority) -> Self
-  @_Concurrency.MainActor(unsafe) public func set(_ active: Swift.Bool) -> Self
-}
-extension WishiSDK.Constrainable {
-  @discardableResult
-  public func center(in view: WishiSDK.Constrainable, offset: CoreGraphics.CGPoint = .zero, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
-  @discardableResult
-  public func edges(to view: WishiSDK.Constrainable, excluding excludedEdge: WishiSDK.LayoutEdge = .none, insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
-  @discardableResult
-  public func size(_ size: CoreGraphics.CGSize, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
-  @discardableResult
-  public func size(to view: WishiSDK.Constrainable, multiplier: CoreGraphics.CGFloat = 1, insets: CoreGraphics.CGSize = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
-  @discardableResult
-  public func origin(to view: WishiSDK.Constrainable, insets: WishiSDK.TinyEdgeInsets = .zero, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
-  @discardableResult
-  public func width(_ width: CoreGraphics.CGFloat, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func width(to view: WishiSDK.Constrainable, _ dimension: UIKit.NSLayoutDimension? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func widthToHeight(of view: WishiSDK.Constrainable, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func width(min: CoreGraphics.CGFloat? = nil, max: CoreGraphics.CGFloat? = nil, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
-  @discardableResult
-  public func height(_ height: CoreGraphics.CGFloat, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func height(to view: WishiSDK.Constrainable, _ dimension: UIKit.NSLayoutDimension? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func heightToWidth(of view: WishiSDK.Constrainable, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func height(min: CoreGraphics.CGFloat? = nil, max: CoreGraphics.CGFloat? = nil, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraints
-  @discardableResult
-  public func aspectRatio(_ ratio: CoreGraphics.CGFloat, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func leadingToTrailing(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func leading(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func leftToRight(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func left(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func trailingToLeading(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func trailing(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func rightToLeft(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func right(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func topToBottom(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func top(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutYAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func bottomToTop(of view: WishiSDK.Constrainable, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func bottom(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutYAxisAnchor? = nil, offset: CoreGraphics.CGFloat = 0, relation: WishiSDK.ConstraintRelation = .equal, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func centerX(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutXAxisAnchor? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-  @discardableResult
-  public func centerY(to view: WishiSDK.Constrainable, _ anchor: UIKit.NSLayoutYAxisAnchor? = nil, multiplier: CoreGraphics.CGFloat = 1, offset: CoreGraphics.CGFloat = 0, priority: WishiSDK.LayoutPriority = .required, isActive: Swift.Bool = true) -> WishiSDK.Constraint
-}
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func setHugging(_ priority: WishiSDK.LayoutPriority, for axis: WishiSDK.ConstraintAxis)
-  @_Concurrency.MainActor(unsafe) public func setCompressionResistance(_ priority: WishiSDK.LayoutPriority, for axis: WishiSDK.ConstraintAxis)
-}
-extension Foundation.Bundle {
-  public static let framework: Foundation.Bundle?
-}
-public protocol MoodboardTableViewCellDelegate : ObjectiveC.NSObjectProtocol {
-  func onMoodboardCellLoveItTapped(message: WishiSDK.PersistentMessageDataItem)
-  func onMoodboardCellRestyleItTapped(message: WishiSDK.PersistentMessageDataItem)
-}
-extension UIKit.UIView : WishiSDK.Constrainable {
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func prepareForLayout() -> Self
-}
-extension UIKit.UILayoutGuide : WishiSDK.Constrainable {
-  @discardableResult
-  @_Concurrency.MainActor(unsafe) public func prepareForLayout() -> Self
-}
-public protocol Constrainable {
-  var topAnchor: UIKit.NSLayoutYAxisAnchor { get }
-  var bottomAnchor: UIKit.NSLayoutYAxisAnchor { get }
-  var leftAnchor: UIKit.NSLayoutXAxisAnchor { get }
-  var rightAnchor: UIKit.NSLayoutXAxisAnchor { get }
-  var leadingAnchor: UIKit.NSLayoutXAxisAnchor { get }
-  var trailingAnchor: UIKit.NSLayoutXAxisAnchor { get }
-  var centerXAnchor: UIKit.NSLayoutXAxisAnchor { get }
-  var centerYAnchor: UIKit.NSLayoutYAxisAnchor { get }
-  var widthAnchor: UIKit.NSLayoutDimension { get }
-  var heightAnchor: UIKit.NSLayoutDimension { get }
-  @discardableResult
-  func prepareForLayout() -> Self
-}
-public class NetworkingClient {
-  public var defaultCollectionParsingKeyPath: Swift.String?
-  public var headers: [Swift.String : Swift.String]
-  public var parameterEncoding: WishiSDK.ParameterEncoding
-  public var timeout: Foundation.TimeInterval?
-  public var sessionConfiguration: Foundation.URLSessionConfiguration
-  public var requestRetrier: WishiSDK.NetworkRequestRetrier?
-  public var jsonDecoderFactory: (() -> Foundation.JSONDecoder)?
-  public var logLevel: WishiSDK.NetworkingLogLevel {
-    get
-    set
-  }
-  public init(baseURL: Swift.String, timeout: Foundation.TimeInterval? = nil)
-  public func toModel<T>(_ json: Any, keypath: Swift.String? = nil) throws -> T where T : WishiSDK.NetworkingJSONDecodable
-  public func toModel<T>(_ json: Any, keypath: Swift.String? = nil) throws -> T where T : Swift.Decodable
-  public func toModels<T>(_ json: Any, keypath: Swift.String? = nil) throws -> [T] where T : WishiSDK.NetworkingJSONDecodable
-  public func toModels<T>(_ json: Any, keypath: Swift.String? = nil) throws -> [T] where T : Swift.Decodable
-  @objc deinit
-}
-@available(macOS 10.15, iOS 13.0, *)
-extension WishiSDK.APIClient {
-  public func request<T>(_ requestConvertible: WishiSDK.Endpoint<T>, additionalHeaders headers: [Swift.String : Swift.String]? = nil, additionalQuery queryParameters: [Swift.String : Swift.String]? = nil, baseUrl: Foundation.URL? = nil) -> Combine.AnyPublisher<T, Swift.Error>
-}
-@available(macOS 10.15, iOS 13.0, *)
-public struct APIClientPublisher<Response> : Combine.Publisher {
-  public typealias Output = Response
-  public typealias Failure = Swift.Error
-  public init(client: WishiSDK.APIClient, endpoint: WishiSDK.Endpoint<Response>)
-  public func receive<S>(subscriber: S) where Response == S.Input, S : Combine.Subscriber, S.Failure == WishiSDK.APIClientPublisher<Response>.Failure
-  public func chain<T>(_ pipe: @escaping (Response) -> WishiSDK.Endpoint<T>) -> WishiSDK.APIClientPublisher<T>
-}
-@objc public class WSQuizAnswer : ObjectiveC.NSObject {
-  public init(dictionary: [Swift.AnyHashable : Any])
-  @objc deinit
-}
-public enum NetworkingLogLevel {
-  case off
-  case info
-  case debug
-  public static func == (a: WishiSDK.NetworkingLogLevel, b: WishiSDK.NetworkingLogLevel) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public enum ConfigurationStyle {
   case headerFont
@@ -1085,69 +110,8 @@ public struct Configurations {
   public static func getDefaultConfigurations() -> WishiSDK.Configurations
   @objc deinit
 }
-public protocol NetworkingJSONDecodable {
-  static func decode(_ json: Any) throws -> Self
-}
-extension WishiSDK.NetworkingClient {
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func get<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func post<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func put<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func patch<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<T, Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-  public func delete<T>(_ route: Swift.String, params: WishiSDK.Params = Params(), keypath: Swift.String? = nil) -> Combine.AnyPublisher<[T], Swift.Error> where T : WishiSDK.NetworkingJSONDecodable
-}
-@objc public class WSQuiz : ObjectiveC.NSObject {
-  public init(dictionary: [Swift.AnyHashable : Any])
-  public init(group: WishiSDK.WSAnswersGroup)
-  public func showImageScreen() -> Swift.Bool
-  public func groupsSelectionHasFinished() -> Swift.Bool
+@objc @_hasMissingDesignatedInitializers public class WSQuiz : ObjectiveC.NSObject {
   @objc deinit
-}
-extension WishiSDK.NetworkingClient {
-  public func getRequest(_ route: Swift.String, params: WishiSDK.Params = Params()) -> WishiSDK.NetworkingRequest
-  public func postRequest(_ route: Swift.String, params: WishiSDK.Params = Params()) -> WishiSDK.NetworkingRequest
-  public func putRequest(_ route: Swift.String, params: WishiSDK.Params = Params()) -> WishiSDK.NetworkingRequest
-  public func patchRequest(_ route: Swift.String, params: WishiSDK.Params = Params()) -> WishiSDK.NetworkingRequest
-  public func deleteRequest(_ route: Swift.String, params: WishiSDK.Params = Params()) -> WishiSDK.NetworkingRequest
-}
-public enum LoginError : Swift.Error {
-  case allFieldsMustBeFilled
-  case unavailable
-  case accessDenied
-  case couldNotEncodeLoginInput
-  case tokenServiceIsNotSupplied
-  case tokenServiceUrlIsInvalid
-  case unableToStoreCredentials
-  case unableToUpdateTokenError
-  public static func == (a: WishiSDK.LoginError, b: WishiSDK.LoginError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension WishiSDK.LoginError : Foundation.LocalizedError {
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-public enum DataFetchError : Swift.Error {
-  case requiredDataCallsFailed
-  case conversationsClientIsNotAvailable
-  case dataIsInconsistent
-  public static func == (a: WishiSDK.DataFetchError, b: WishiSDK.DataFetchError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension WishiSDK.DataFetchError : Foundation.LocalizedError {
-  public var errorDescription: Swift.String? {
-    get
-  }
 }
 public enum Gender : Swift.String {
   case male
@@ -1158,28 +122,10 @@ public enum Gender : Swift.String {
     get
   }
 }
-public enum SessionStatus : Swift.String, Swift.Decodable {
-  case quiz
-  case match
-  case styling
-  case feedback
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
 public struct UserStatus {
-  public var lastMessage: Swift.String?
-  public var messageCount: Swift.Int?
-  public var quizStep: Swift.String?
-  public var sessionStatus: WishiSDK.SessionStatus?
-  public var unreadMessageCount: Swift.Int?
-  public init(dictionary: [Swift.AnyHashable : Any])
 }
 public struct ClientInfo {
   public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil)
-  public func dictionary() -> [Swift.String : Any]
 }
 public protocol WishiClientSDKDelegate : AnyObject {
   func didSelectItems(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer], lastSelectedOption: WishiSDK.WSQuizAnswer)
@@ -1188,61 +134,21 @@ public protocol WishiClientSDKDelegate : AnyObject {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
   public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
   public typealias ClientSDKFailure = ((Swift.Error?, Any?) -> Swift.Void)?
-  weak public var delegate: WishiSDK.WishiClientSDKDelegate?
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
-  public func isMockTesting() -> Swift.Bool
   public func launch(from presentingController: UIKit.UIViewController, completion: (((Swift.Bool) -> Swift.Void))?)
-  public func launchChat(from presentingNavController: UIKit.UINavigationController?, completion: ((Swift.String?) -> Swift.Void)?)
-  public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, enviroment: WishiSDK.Enviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
+  public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public typealias ID = Foundation.UUID
   @objc deinit
 }
-extension WishiSDK.Wishi : WishiSDK.MatchViewControllerDelegate {
+extension WishiSDK.Wishi {
   public func onStartChatTap()
 }
 extension UIKit.UINavigationController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
     @_Concurrency.MainActor(unsafe) @objc get
   }
-}
-extension WishiSDK.NetworkingClient {
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) -> Combine.AnyPublisher<Any, Swift.Error>
-}
-extension WishiSDK.NetworkingClient {
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func get(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func post(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func put(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func patch(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-  
-  #if compiler(>=5.3) && $AsyncAwait
-  public func delete(_ route: Swift.String, params: WishiSDK.Params = Params()) async throws -> Any
-  #endif
-
-}
-extension Combine.Publisher where Self.Output == Foundation.Data {
-  public func toJSON() -> Combine.AnyPublisher<Any, Swift.Error>
 }
 @_inheritsConvenienceInitializers @objc(PersistentConversationDataItem) public class PersistentConversationDataItem : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -1392,6 +298,10 @@ extension WishiSDK.PersistentMediaDataItem {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var url: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var messageSid: WishiSDK.PersistentMessageDataItem? {
     @objc get
     @objc set
@@ -1522,40 +432,10 @@ extension WishiSDK.PersistentParticipantDataItem {
 extension WishiSDK.PersistentParticipantDataItem : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-extension WishiSDK.ParameterEncoding : Swift.Equatable {}
-extension WishiSDK.ParameterEncoding : Swift.Hashable {}
-extension WishiSDK.RequestBuilder.Method : Swift.Equatable {}
-extension WishiSDK.RequestBuilder.Method : Swift.Hashable {}
-extension WishiSDK.RequestBuilder.Method : Swift.RawRepresentable {}
-extension WishiSDK.RequestBuilder.Encoding : Swift.Equatable {}
-extension WishiSDK.RequestBuilder.Encoding : Swift.Hashable {}
-extension WishiSDK.MessageContentType : Swift.Equatable {}
-extension WishiSDK.MessageContentType : Swift.Hashable {}
-extension WishiSDK.MessageContentType : Swift.RawRepresentable {}
-extension WishiSDK.LookViewControllerMode : Swift.Equatable {}
-extension WishiSDK.LookViewControllerMode : Swift.Hashable {}
-extension WishiSDK.HTTPMethod : Swift.Equatable {}
-extension WishiSDK.HTTPMethod : Swift.Hashable {}
-extension WishiSDK.HTTPMethod : Swift.RawRepresentable {}
-extension WishiSDK.Enviroment : Swift.Equatable {}
-extension WishiSDK.Enviroment : Swift.Hashable {}
-extension WishiSDK.NetworkingError.Status : Swift.Equatable {}
-extension WishiSDK.NetworkingError.Status : Swift.Hashable {}
-extension WishiSDK.NetworkingError.Status : Swift.RawRepresentable {}
-extension WishiSDK.ConstraintRelation : Swift.Equatable {}
-extension WishiSDK.ConstraintRelation : Swift.Hashable {}
-extension WishiSDK.ConstraintRelation : Swift.RawRepresentable {}
-extension WishiSDK.NetworkingLogLevel : Swift.Equatable {}
-extension WishiSDK.NetworkingLogLevel : Swift.Hashable {}
+extension WishiSDK.WishiEnviroment : Swift.Equatable {}
+extension WishiSDK.WishiEnviroment : Swift.Hashable {}
 extension WishiSDK.ConfigurationStyle : Swift.Equatable {}
 extension WishiSDK.ConfigurationStyle : Swift.Hashable {}
-extension WishiSDK.LoginError : Swift.Equatable {}
-extension WishiSDK.LoginError : Swift.Hashable {}
-extension WishiSDK.DataFetchError : Swift.Equatable {}
-extension WishiSDK.DataFetchError : Swift.Hashable {}
 extension WishiSDK.Gender : Swift.Equatable {}
 extension WishiSDK.Gender : Swift.Hashable {}
 extension WishiSDK.Gender : Swift.RawRepresentable {}
-extension WishiSDK.SessionStatus : Swift.Equatable {}
-extension WishiSDK.SessionStatus : Swift.Hashable {}
-extension WishiSDK.SessionStatus : Swift.RawRepresentable {}
