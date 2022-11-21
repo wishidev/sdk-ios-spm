@@ -12,6 +12,30 @@ import UIKit
 @_exported import WishiSDK
 import _Concurrency
 import zlib
+public func decode(jwt: Swift.String) throws -> WishiSDK.JWT
+public struct Claim {
+  public var rawValue: Any? {
+    get
+  }
+  public var string: Swift.String? {
+    get
+  }
+  public var boolean: Swift.Bool? {
+    get
+  }
+  public var double: Swift.Double? {
+    get
+  }
+  public var integer: Swift.Int? {
+    get
+  }
+  public var date: Foundation.Date? {
+    get
+  }
+  public var array: [Swift.String]? {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers open class WebSocket {
   @objc deinit
 }
@@ -46,6 +70,20 @@ public enum WishiEnviroment {
   public static func == (a: WishiSDK.WishiEnviroment, b: WishiSDK.WishiEnviroment) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringConvertible {
+  case invalidBase64URL(Swift.String)
+  case invalidJSON(Swift.String)
+  case invalidPartCount(Swift.String, Swift.Int)
+  public var localizedDescription: Swift.String {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var debugDescription: Swift.String {
     get
   }
 }
@@ -113,6 +151,26 @@ public struct Configurations {
 @objc @_hasMissingDesignatedInitializers public class WSQuiz : ObjectiveC.NSObject {
   @objc deinit
 }
+public protocol JWT {
+  var header: [Swift.String : Any] { get }
+  var body: [Swift.String : Any] { get }
+  var signature: Swift.String? { get }
+  var string: Swift.String { get }
+  var expiresAt: Foundation.Date? { get }
+  var issuer: Swift.String? { get }
+  var subject: Swift.String? { get }
+  var audience: [Swift.String]? { get }
+  var issuedAt: Foundation.Date? { get }
+  var notBefore: Foundation.Date? { get }
+  var identifier: Swift.String? { get }
+  var expired: Swift.Bool { get }
+}
+extension WishiSDK.JWT {
+  public func claim(name: Swift.String) -> WishiSDK.Claim
+  public subscript(claim: Swift.String) -> WishiSDK.Claim {
+    get
+  }
+}
 public enum Gender : Swift.String {
   case male
   case female
@@ -122,8 +180,6 @@ public enum Gender : Swift.String {
     get
   }
 }
-public struct UserStatus {
-}
 public struct ClientInfo {
   public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil)
 }
@@ -132,13 +188,10 @@ public protocol WishiClientSDKDelegate : AnyObject {
   func screenSelectionDone(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
-  public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
-  public typealias ClientSDKFailure = ((Swift.Error?, Any?) -> Swift.Void)?
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
-  public func launch(from presentingController: UIKit.UIViewController, completion: (((Swift.Bool) -> Swift.Void))?)
-  public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
-  public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
+  public func launch(from presentingController: UIKit.UINavigationController, completion: (((Swift.Bool) -> Swift.Void))? = nil)
+  public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, accessToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
   public typealias ID = Foundation.UUID
   @objc deinit
 }

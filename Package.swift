@@ -9,21 +9,17 @@ let package = Package(
     name: frameworkName,
     platforms: [.iOS(.v13)],
     products: [
-        .library(
-            name: frameworkName,
-            targets: [frameworkName]),
+      .library(
+        name: frameworkName,
+        targets: [frameworkName]
+      ),
     ],
-    dependencies: [
-      .package(url: "https://github.com/twilio/conversations-ios.git", exact: Version.init(2, 2, 4))
-    ],
+    dependencies: [],
     targets: [
-      .target(name: frameworkName, dependencies: [
-        .target(name: binaryName),
-        .product(name: "TwilioConversationsClient", package: "conversations-ios")
-      ]),
-        .binaryTarget(
-          name: binaryName,
-          path: binaryName + ".xcframework"
-        )
+      .target(name: frameworkName, dependencies: []),
+      .binaryTarget(
+        name: binaryName,
+        path: binaryName + ".xcframework"
+      )
     ]
 )
