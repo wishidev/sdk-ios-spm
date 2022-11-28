@@ -180,6 +180,8 @@ public enum Gender : Swift.String {
     get
   }
 }
+public struct UserStatus {
+}
 public struct ClientInfo {
   public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil)
 }
@@ -188,10 +190,13 @@ public protocol WishiClientSDKDelegate : AnyObject {
   func screenSelectionDone(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
+  public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
+  public typealias ClientSDKFailure = ((Swift.Error?, Any?) -> Swift.Void)?
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
   public func launch(from presentingController: UIKit.UINavigationController, completion: (((Swift.Bool) -> Swift.Void))? = nil)
   public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, accessToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
+  public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public typealias ID = Foundation.UUID
   @objc deinit
 }
