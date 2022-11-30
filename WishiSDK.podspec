@@ -9,5 +9,4 @@ Pod::Spec.new do |s|
   s.source                  = { :git => 'https://github.com/wishidev/sdk-ios-spm.git', :tag => s.version.to_s }
   s.ios.deployment_target   = '13.0'
   s.ios.vendored_frameworks = 'WishiSDK.xcframework'
-  s.dependency 'TwilioConversationsClient', '2.2.4'
 end
