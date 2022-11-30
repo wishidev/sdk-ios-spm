@@ -110,11 +110,11 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MjPEQHWqNbWjAJWUvP8AA7iaY2A=
+		DPauki4uafJBo/krfeG1AztOOIg=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Db+vdnYp5RFvuk1x0oWYMMpJij4=
+		dWdCC3ADHMbujmpsvbPhM/eSL78=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XR3hJztuzkhHSLNQ5lecJ8ERk64=
+		Pv+RpHfMd+ysVk8ZJBlvyXLnV/4=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PNZFLJ0Yo2UBZC9d7nMaBXculz8=
+		vQORp1iTTos3RMzCT08DngT1AeI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -354,14 +354,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RfWfmXs13KsQbYF9c1O/TjmoGG6zK3ogyNiDE1D795E=
+			dZitqYIrBC+IuV0ghSBsvi34Qr42dxnk8qIGHWaoU7o=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gPhLIkxEpE1VqdGcfODF/t5w3lONVh26XYX9Y0r9kWc=
+			/x+ezwIMfNchHVcnSz+Lzj3mvLe46/AaVHHiSR/3BTU=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -375,14 +375,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHseYGWmYQ5UAo7DaRqL82n2xNkwGqa1eW6qppgFR2c=
+			wFjL21FLL28KsboHQNsyd36whane1YF8roxAIoSggNw=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BVMvhtQw5e87P2gxWIg46S4xgSIGnI8mPN+im9WLFRg=
+			uWWiIVtH5UDid1pNnsqrbktWQVSWUUuLAupKoQPu6ds=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
