@@ -180,9 +180,31 @@ public enum Gender : Swift.String {
     get
   }
 }
+public enum SessionStatus : Swift.String, Swift.Decodable {
+  case quiz
+  case match
+  case styling
+  case feedback
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct UserStatus {
+  public var lastMessage: Swift.String?
+  public var messageCount: Swift.Int?
+  public var quizStep: Swift.String?
+  public var sessionStatus: WishiSDK.SessionStatus?
+  public var unreadMessageCount: Swift.Int?
 }
 public struct ClientInfo {
+  public var firstName: Swift.String!
+  public var lastName: Swift.String!
+  public var email: Swift.String!
+  public var birthday: Swift.String?
+  public var phone: Swift.String?
+  public var gender: WishiSDK.Gender?
   public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil)
 }
 public protocol WishiClientSDKDelegate : AnyObject {
@@ -497,3 +519,6 @@ extension WishiSDK.ConfigurationStyle : Swift.Hashable {}
 extension WishiSDK.Gender : Swift.Equatable {}
 extension WishiSDK.Gender : Swift.Hashable {}
 extension WishiSDK.Gender : Swift.RawRepresentable {}
+extension WishiSDK.SessionStatus : Swift.Equatable {}
+extension WishiSDK.SessionStatus : Swift.Hashable {}
+extension WishiSDK.SessionStatus : Swift.RawRepresentable {}
