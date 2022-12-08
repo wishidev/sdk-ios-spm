@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		8aOEjXlL+uYo5Z4EeWsM4GSo2VA=
+		b3Uj+u+ZrlpN/Em5aVYKQkTz7iY=
 		</data>
 		<key>BoardHistoryViewController.nib</key>
 		<data>
-		1LkBr05Kdv5bLadfS9m3HYW+nSU=
+		5tkJ4O3AQ3U0CaBpyi9H1kXBIgc=
 		</data>
 		<key>BoardItemHistoryCollectionViewCell.nib</key>
 		<data>
-		dOPHZ2qzAntuFyTPJ3Lx1xZU9cQ=
+		PShUvwHXVSRCkaZGAQGtnoYGsVo=
 		</data>
 		<key>BookingPaidTableViewCell.nib</key>
 		<data>
-		UDlahiQWEl3iG8XO87fhaHwzoPU=
+		8LVAEsjlggHtKlzA2Z6eSheFlNc=
 		</data>
 		<key>ButtonView.nib</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>ChatHeaderView.nib</key>
 		<data>
-		ZD6F7diDHSR+IRUUJFFl/+aPbjw=
+		5tDYDlSPHazjxf0F5/7QsA20utY=
 		</data>
 		<key>ChatSessionTableViewCell.nib</key>
 		<data>
-		i0tfDxvyAtPiZYUcFsCDTyHjNl8=
+		na1MT0YLh729KFe3FUIZpakCRGQ=
 		</data>
 		<key>ChatTextTableViewCell.nib</key>
 		<data>
-		fOI6fuGvtStHb3Jy6OtxT8fUc2I=
+		LC4b0PH/wVpQwH0/HJRj045EIAg=
 		</data>
 		<key>ConversationsApp.momd/ConversationsApp.mom</key>
 		<data>
-		ZOKMsXUzTxg5BxjgEI4Sps4JVCU=
+		M3S1XO74a4GU7CHHHMPmTPX0wro=
 		</data>
 		<key>ConversationsApp.momd/VersionInfo.plist</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ConversationsViewController.nib</key>
 		<data>
-		K1IOwFWudSHNhFjCir9a1MpN9LA=
+		esi+LfkQXxZgovNefV8TzNYNaOw=
 		</data>
 		<key>FeedbackActionView.nib</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/WishiSDK-Swift.h</key>
 		<data>
-		br2dYuo3yTwMekPle4ruyvLzYB0=
+		MBn/1ntUotsgz2XE/axxc2oaBzs=
 		</data>
 		<key>Headers/WishiSDK.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>HistoryHeaderCollectionViewCell.nib</key>
 		<data>
-		KNRjGW0rjM7ZzyvCPcwGRBDjGUo=
+		OS3KN1DTG6BZnsUVefNy5n9rXE0=
 		</data>
 		<key>HistoryHeaderView.nib</key>
 		<data>
@@ -70,71 +70,87 @@
 		</data>
 		<key>HistoryTabHeaderCollectionViewCell.nib</key>
 		<data>
-		4L9E9itvrVRws9QS+8NOah/ap88=
+		ekxsE2PyytYK1bGOGZY0PrwRASU=
 		</data>
 		<key>ImageTableViewCell.nib</key>
 		<data>
-		jVRUAA4EVcRkF1XGErDXSGIzkQQ=
+		ZMpvunU4J7Vd35Cvcov2jAqOdTw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bGdek06HJ/TOdNuKqBjq1VbExWI=
+		CQZF5Z8DmL4UA/Tc8k+F2EQzCLM=
 		</data>
 		<key>ItemCollectionTableViewCell.nib</key>
 		<data>
-		npSklSAynFcuelhkNXUz/v/+ahU=
+		B0Ft9cTGpdhY1V+CsB1tyLXpnp4=
 		</data>
 		<key>ItemCollectionViewCell.nib</key>
 		<data>
-		lXNFIx6lbadye/PowvLMtROcfHo=
+		NmrLNBvs/KiHarHO6oJ0CipbTM8=
 		</data>
 		<key>ItemTableViewCell.nib</key>
 		<data>
-		ssCs5iBKXPb8oRWPHpzULpNEUQc=
+		5Pw9bO9NJtJEqmlH7eSts2z/Ctw=
 		</data>
 		<key>ItemView.nib</key>
 		<data>
-		uDoAOIPIr6iwfovGSYbWyvFdUR8=
+		i5/xWD5A91rVnuGmRpDt/y8gYrY=
 		</data>
 		<key>LookViewController.nib</key>
 		<data>
-		6ZQkVFMk6r54hCBBTEhx7vr58O0=
+		j8W9v+rbxOVerPDY2LbIQyHNUZ4=
 		</data>
 		<key>MessagesViewController.nib</key>
 		<data>
-		FeBiQqveWwMRcmG5+g7ucEGSzh0=
+		kLccWTmYNm1IrXNZGGy7b13NBuI=
+		</data>
+		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		jpkxgSu6uyDEQyCl6rcVoFOWK/Q=
+		</data>
+		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		MGmajqn7/8Hf+oy7nkbmIJQREU0=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6WCFiAERMzzJvjzeEH3W33CLAzA=
+		j4/fq6I4/ojBY3DpcoAPhqrf378=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DPauki4uafJBo/krfeG1AztOOIg=
+		MGmajqn7/8Hf+oy7nkbmIJQREU0=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dWdCC3ADHMbujmpsvbPhM/eSL78=
+		tcNXYo1N33szASqTz6TGpMuPrV8=
+		</data>
+		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		jpkxgSu6uyDEQyCl6rcVoFOWK/Q=
+		</data>
+		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		Ems8hCFqOt7i9qKj+GWRIi49piM=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fjUYkmgGprBcW564TcpUPu6JyHo=
+		mtggDsLL5SZx8XV51WBO78dWU+o=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Pv+RpHfMd+ysVk8ZJBlvyXLnV/4=
+		Ems8hCFqOt7i9qKj+GWRIi49piM=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vQORp1iTTos3RMzCT08DngT1AeI=
+		SfgBoXHPFrRagmn4hkJ7/qIipcY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ANBOjWyBkAdzHNEMJA4mXh+BDUQ=
+		nbbj52aOkhuacpJYF4qt+dMOAmQ=
 		</data>
 		<key>MoodboardTableViewCell.nib</key>
 		<data>
-		VEnLtSyaZDnCZHVDdiqyrWWxJGY=
+		7sptBLZWSfNUJZ+ixTywQxqgu80=
 		</data>
 		<key>NavHeaderView.nib</key>
 		<data>
@@ -142,31 +158,31 @@
 		</data>
 		<key>ProductHistoryViewController.nib</key>
 		<data>
-		+AEtj4cVt6U7Q7Ks4SrMwua/YCE=
+		IF5hsRB/TnKD2WhoQgzWiJS9ZAk=
 		</data>
 		<key>ProductItemCollectionViewCell.nib</key>
 		<data>
-		CKTe+VnIv2d98LsEsCi3E0sfFcg=
+		bXiVvLA/chWEXVmKaCJ5Zh1vtj0=
 		</data>
 		<key>ProductSetTableViewCell.nib</key>
 		<data>
-		bkPqmKplDZmYSNTG28mTVEJx4m8=
+		6egViVBh4zYCG39wsxSCad9hYro=
 		</data>
 		<key>SessionFlowHeadlineTableViewCell.nib</key>
 		<data>
-		VCJPRpQI0wW/jJgQcYZkdW5tQA8=
+		8hJxWvO9NnUoWs6B19KDafKHgFs=
 		</data>
 		<key>SessionFlowSublineTableViewCell.nib</key>
 		<data>
-		+YIUmEFyY30qBJDFlnd2JTOvqM0=
+		rd0oV6Yp1o+5yp+NtOpu+Xes1Oc=
 		</data>
 		<key>SessionFlowView.nib</key>
 		<data>
-		9tHm6nc50z18ymqhZYNy23r5DuU=
+		S2p1IDgIwPs0mtchc1Y9d3rK0SI=
 		</data>
 		<key>SlidingTabController.nib</key>
 		<data>
-		8q8o5Gz8KqG/hfhXXZLoYUAKqoA=
+		AkoGEqXp9lbB46MrhGfB4N9w8lY=
 		</data>
 		<key>match.json</key>
 		<data>
@@ -179,28 +195,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xsHAL1FAtdb7dFGtoOXNy8+a+5UKDrlK8EOWSGxWDd0=
+			3uLAchDnNpLg/u0NFJaHUIlsxi044jJY7TFE361pdno=
 			</data>
 		</dict>
 		<key>BoardHistoryViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+a48pfol9YectVeDJTou2jbbBWXzFR/IBxTDQP6/mgw=
+			sAcpGJ/YgSnMSNIddh9jww6xX8JUcqWON71a0Uhi7Tw=
 			</data>
 		</dict>
 		<key>BoardItemHistoryCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tfrZM4K1NsZDKNG4mmSfVqZz87G4MemBz+zxeXUlWtc=
+			aSem554on39eGgSprKsE54slL/nINXU0MAXEWm0rKLk=
 			</data>
 		</dict>
 		<key>BookingPaidTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5lla44acs12YfuviDIdEf8eke2hhch/YGqfsuyhmCpE=
+			lX4Ncb38KEFNwc2MmAvrhMQ/BuQs0D7P6/whE4a2GIQ=
 			</data>
 		</dict>
 		<key>ButtonView.nib</key>
@@ -214,28 +230,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RYq5pGiYTjJeCovq8b0CkJqwYNyBAfJbdR47DgUik9g=
+			TIERgtpS+nutUnPWVubig1C5ZxiQlACjDnqhhXMmXGM=
 			</data>
 		</dict>
 		<key>ChatSessionTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VtlOrQ8TuspiTFV2XTzxYRbOjEC1snESX86LdScMtv4=
+			OeahSKNu6fvNJOgaAkIpNxuzJKz6gbGmpGO/uzBr4zk=
 			</data>
 		</dict>
 		<key>ChatTextTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bEkcFCwJHB32ipP1Ou73u44P7Nnw9wl+QlWBH18QtLs=
+			leQ2ixerPZp7QK+nO7H/8/sqBe/Q119+JOXoq+7YgQg=
 			</data>
 		</dict>
 		<key>ConversationsApp.momd/ConversationsApp.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bbzJiqTkGm2RI9cU+Q/IsdhwftUyu5XnJtvzt3p+6Mk=
+			QbEmClVmgUSlHz8HZI+d61ppwwNl+TnibAKCswczRYE=
 			</data>
 		</dict>
 		<key>ConversationsApp.momd/VersionInfo.plist</key>
@@ -249,7 +265,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vHmg/8umv3FatxdiRi0wjm8ujgDuu61xVMfM0wdy+GE=
+			Xws1FwbReJwa0bhknIGHgtvtn/ori0qlzvaX8yjTfJI=
 			</data>
 		</dict>
 		<key>FeedbackActionView.nib</key>
@@ -263,7 +279,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PJiuutneYOBYGz9MV+elsr3Fl65gJof46iVsE64H3pk=
+			7zdG+zB1K9MmmVqmyHNWRH/dPaD2wyo2jKlcEUCXkVM=
 			</data>
 		</dict>
 		<key>Headers/WishiSDK.h</key>
@@ -277,7 +293,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5NLTMuzKzWohw3YZClm4cZerUrKD+aZwjRdS1xsi45w=
+			QmE2zpV0JDtYN12wHJQV+BxqfmW2QQ9ArSmKJV3ipiE=
 			</data>
 		</dict>
 		<key>HistoryHeaderView.nib</key>
@@ -291,112 +307,140 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RTooRLSWZMAFBBOTSBtcw3LaOCa1gxtB6zk6eE19dkQ=
+			YUqw8pIMpknrJX5oXcLMFgGNZWqiChXKBZ6Y6xLKGjo=
 			</data>
 		</dict>
 		<key>ImageTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zqh2xQdJhYGScPptKbOF+hcBo9LUSgP/gzxiunTf/y8=
+			XHzW99bsKask9tpbCTXvfe90XhzJDOdcizd16Ex7uWA=
 			</data>
 		</dict>
 		<key>ItemCollectionTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v8T4FoaUn4G2G2yavX7n40yC/v7jHQF9GiMZj4MZ6jk=
+			JQ6op+V44IjSXD9XoNjqJJr3ENjy6XufjLuwKiWECo8=
 			</data>
 		</dict>
 		<key>ItemCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iu2EqXLCO9Ze3QgfSCP4teteO3KX27Z37DepxEkLck8=
+			Lv7NqXfSZW5lEBsuhOdTwHOx759pDJG5AQ1Brv1W40g=
 			</data>
 		</dict>
 		<key>ItemTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pa8S0GYNMZ37rHhDGcBR7soZKqCx6Wby0F5miY0pTDU=
+			C2vzJuMJsDaybNM6mNPTiCuSAmz5fkCDoxPt7AKEuq4=
 			</data>
 		</dict>
 		<key>ItemView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lya2EfecM8nz6pqPVzmfcr3paVwlcT5+CcUQM8exWi8=
+			E8SEc0W9aBJrWrqj3KoFtZjur9F1SCcGZr0GdtLsFiI=
 			</data>
 		</dict>
 		<key>LookViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9KIAgc1JbZIFsMhksJUthGwVpO92+JEUcdFLq8weK6U=
+			201aWBwsEAyJlPkolU2bWr8stopdMzg+Gbsaiu4jjO8=
 			</data>
 		</dict>
 		<key>MessagesViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dkIYkFfvdsC0/VQpv9Cb+z1N2UrAHFaABBYaoAWichM=
+			yFgMI+JEVtRZ5JUG70xC1DrfCgQ2MIWlsUG4Y6pzwj4=
+			</data>
+		</dict>
+		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			D3/NIAVtllx+CULkiJhbfuWDduBSflKpg3q9e8/o6TA=
+			</data>
+		</dict>
+		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9yElB3b8QNy4ZJVhzGbZuCchEK0Op35vK/NXJ39vmsI=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7B6aOuRqNkJ8B+kwJsED4PpIV8CHU1N697M952lpvkg=
+			na8xlf9aDx43dSapedcTMYrSFsEP07wC/qizYDhktJw=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZitqYIrBC+IuV0ghSBsvi34Qr42dxnk8qIGHWaoU7o=
+			9yElB3b8QNy4ZJVhzGbZuCchEK0Op35vK/NXJ39vmsI=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/x+ezwIMfNchHVcnSz+Lzj3mvLe46/AaVHHiSR/3BTU=
+			MKpzAGcxRXyjKvKUECVrh8IWlabdJovCg/nB1wTD72E=
+			</data>
+		</dict>
+		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			D3/NIAVtllx+CULkiJhbfuWDduBSflKpg3q9e8/o6TA=
+			</data>
+		</dict>
+		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eLgZifMN0JX0mHE5uKFbYGGbr5SnqBuDNC+s6bYMAXY=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i+qoU/gT+vd7/mkcsHQ9/G8dE0OvsSkBiMub7jXKXA8=
+			ueY/iyfufV4tMUpfag8zHveibxjH18J7ofJLR6zjCrM=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wFjL21FLL28KsboHQNsyd36whane1YF8roxAIoSggNw=
+			eLgZifMN0JX0mHE5uKFbYGGbr5SnqBuDNC+s6bYMAXY=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uWWiIVtH5UDid1pNnsqrbktWQVSWUUuLAupKoQPu6ds=
+			9fgkufbFDFnp1MlElCzxCD45v5drcAmKOTMD7e53ELU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VXuUqwtJI/oN0H3mdmr33083CiUWWkx06JRrSu22Pho=
+			OGdDF+wydgyxsqunwQXpu13hSVEj8Xyf8lItWbX3RrE=
 			</data>
 		</dict>
 		<key>MoodboardTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OiVet6R4iHPpIH5xnTUqnXNbzwJ/qpmbZUOzO1yF/FY=
+			6jPPq7Ulsg04wefL1tyfB8bm/HcAj3E1hK2WX0NvGWw=
 			</data>
 		</dict>
 		<key>NavHeaderView.nib</key>
@@ -410,49 +454,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hrWsVipauPBAwBzObbBtaS982SGmJX/ZQlrTTErIxzQ=
+			baQPlRHxzTwRRYRjATg3GizzlCVCvxfcZa83pAURJM4=
 			</data>
 		</dict>
 		<key>ProductItemCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQBH57fOsm/F2Ml5wr26SUWfrzI/23nOBgvD6yucHb8=
+			O0pbxwUvDEtgjyWvNdXhk4wSfnwQWEXPRhm2GHjR/pY=
 			</data>
 		</dict>
 		<key>ProductSetTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aibbuRaRyZL+nHur+QMxweBy5sOsyFYWSiyqcYG/dBQ=
+			RqtPk6DK05xsqs6X7suhrKp3sUzv/8cDbq95CrkQUK4=
 			</data>
 		</dict>
 		<key>SessionFlowHeadlineTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9QR970ldreOD9afd7cpfD2dl9F6DZwFJiz+DJyblqQQ=
+			kKkv4j7ZkiG8Rv7V+xrTGBFwjNtxPz+oJJgFDUqFAXA=
 			</data>
 		</dict>
 		<key>SessionFlowSublineTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zA54FshURlNz8MRirxr8Vbs6IQytsO+1d3SJkj2R0J8=
+			IDKhmf55Im2wr2FopappKzlspKyaRO1fGRmKjZFznqo=
 			</data>
 		</dict>
 		<key>SessionFlowView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gTgTKQVoJPfxskEFFmn5YVv0emSw7VdEHIZUABlKGSc=
+			wPO0HWMpdvm0DbvuaQhufcNHMObIuZ42SyYD/fN/MlI=
 			</data>
 		</dict>
 		<key>SlidingTabController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yvWPv+yqVULsdPLtf8jAhvTltAh2gknKKSyUMQ3od04=
+			K+n1gZt9lII0foHmBR5jFAQFdLIqEugfYVuga0ASl8I=
 			</data>
 		</dict>
 		<key>match.json</key>

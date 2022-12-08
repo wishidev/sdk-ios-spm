@@ -1,0 +1,527 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name WishiSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import CommonCrypto
+import CoreData
+import Dispatch
+import Foundation
+import Network
+import Swift
+import UIKit
+@_exported import WishiSDK
+import _Concurrency
+import _StringProcessing
+import zlib
+public func decode(jwt: Swift.String) throws -> WishiSDK.JWT
+public struct Claim {
+  public var rawValue: Any? {
+    get
+  }
+  public var string: Swift.String? {
+    get
+  }
+  public var boolean: Swift.Bool? {
+    get
+  }
+  public var double: Swift.Double? {
+    get
+  }
+  public var integer: Swift.Int? {
+    get
+  }
+  public var date: Foundation.Date? {
+    get
+  }
+  public var array: [Swift.String]? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers open class WebSocket {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers open class SocketIOClient : ObjectiveC.NSObject {
+  @objc deinit
+  open func connect(withPayload payload: [Swift.String : Any]? = nil)
+  open func connect(withPayload payload: [Swift.String : Any]? = nil, timeoutAfter: Swift.Double, withHandler handler: (() -> Swift.Void)?)
+  open func didConnect(toNamespace namespace: Swift.String, payload: [Swift.String : Any]?)
+  open func didDisconnect(reason: Swift.String)
+  open func disconnect()
+  open func emitAck(_ ack: Swift.Int, with items: [Any])
+  open func handleAck(_ ack: Swift.Int, data: [Any])
+  open func leaveNamespace()
+  open func joinNamespace(withPayload payload: [Swift.String : Any]? = nil)
+  open func off(_ event: Swift.String)
+  open func off(id: Foundation.UUID)
+  @available(*, unavailable, message: "Call the manager's reconnect method")
+  open func reconnect()
+  open func removeAllHandlers()
+  open func setReconnecting(reason: Swift.String)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class QuizViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc deinit
+}
+public enum WishiEnviroment {
+  case production
+  case development
+  case mock
+  case local
+  public static func == (a: WishiSDK.WishiEnviroment, b: WishiSDK.WishiEnviroment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringConvertible {
+  case invalidBase64URL(Swift.String)
+  case invalidJSON(Swift.String)
+  case invalidPartCount(Swift.String, Swift.Int)
+  public var localizedDescription: Swift.String {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers open class SocketManager : ObjectiveC.NSObject {
+  @objc deinit
+  open func connect()
+  open func connectSocket(_ socket: WishiSDK.SocketIOClient, withPayload payload: [Swift.String : Any]? = nil)
+  open func didDisconnect(reason: Swift.String)
+  open func disconnect()
+  open func disconnectSocket(_ socket: WishiSDK.SocketIOClient)
+  open func disconnectSocket(forNamespace nsp: Swift.String)
+  @objc open func engineDidClose(reason: Swift.String)
+  @objc open func engineDidError(reason: Swift.String)
+  @objc open func engineDidOpen(reason: Swift.String)
+  @objc open func engineDidReceivePing()
+  @objc open func engineDidSendPing()
+  @objc open func engineDidReceivePong()
+  @objc open func engineDidSendPong()
+  @objc open func engineDidWebsocketUpgrade(headers: [Swift.String : Swift.String])
+  @objc open func parseEngineMessage(_ msg: Swift.String)
+  @objc open func parseEngineBinaryData(_ data: Foundation.Data)
+  open func reconnect()
+  @discardableResult
+  open func removeSocket(_ socket: WishiSDK.SocketIOClient) -> WishiSDK.SocketIOClient?
+  open func socket(forNamespace nsp: Swift.String) -> WishiSDK.SocketIOClient
+}
+@objc @_hasMissingDesignatedInitializers public class WSQuizAnswer : ObjectiveC.NSObject {
+  @objc deinit
+}
+public enum ConfigurationStyle {
+  case headerFont
+  case subheaderFont
+  case freeTextHeaderFont
+  case quizProgressHeaderFont
+  case quizProgressSubheaderFont
+  case themeFont
+  case themeBoldFont
+  case quizProgressHeaderColor
+  case quizProgressSubheaderColor
+  case headerColor
+  case subheaderColor
+  case themeColor
+  case unselectedBorderColor
+  case nextButtonBackgroundColor
+  case nextButtonTextColor
+  case freeTextCheckedImage
+  case uploadPhotoImage
+  case checkImage
+  case deleteImage
+  case closeImage
+  case backImage
+  public static func == (a: WishiSDK.ConfigurationStyle, b: WishiSDK.ConfigurationStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Configurations {
+  public init(configuration: [WishiSDK.ConfigurationStyle : Any])
+}
+@_hasMissingDesignatedInitializers public class DefaultConfigurations {
+  public static func getDefaultConfigurations() -> WishiSDK.Configurations
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class WSQuiz : ObjectiveC.NSObject {
+  @objc deinit
+}
+public protocol JWT {
+  var header: [Swift.String : Any] { get }
+  var body: [Swift.String : Any] { get }
+  var signature: Swift.String? { get }
+  var string: Swift.String { get }
+  var expiresAt: Foundation.Date? { get }
+  var issuer: Swift.String? { get }
+  var subject: Swift.String? { get }
+  var audience: [Swift.String]? { get }
+  var issuedAt: Foundation.Date? { get }
+  var notBefore: Foundation.Date? { get }
+  var identifier: Swift.String? { get }
+  var expired: Swift.Bool { get }
+}
+extension WishiSDK.JWT {
+  public func claim(name: Swift.String) -> WishiSDK.Claim
+  public subscript(claim: Swift.String) -> WishiSDK.Claim {
+    get
+  }
+}
+public enum Gender : Swift.String {
+  case male
+  case female
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SessionStatus : Swift.String, Swift.Decodable {
+  case quiz
+  case match
+  case styling
+  case feedback
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct UserStatus {
+  public var lastMessage: Swift.String?
+  public var messageCount: Swift.Int?
+  public var quizStep: Swift.String?
+  public var sessionStatus: WishiSDK.SessionStatus?
+  public var unreadMessageCount: Swift.Int?
+}
+public struct ClientInfo {
+  public var firstName: Swift.String!
+  public var lastName: Swift.String!
+  public var email: Swift.String!
+  public var birthday: Swift.String?
+  public var phone: Swift.String?
+  public var gender: WishiSDK.Gender?
+  public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil)
+}
+public protocol WishiClientSDKDelegate : AnyObject {
+  func didSelectItems(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer], lastSelectedOption: WishiSDK.WSQuizAnswer)
+  func screenSelectionDone(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer])
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
+  public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
+  public typealias ClientSDKFailure = ((Swift.Error?, Any?) -> Swift.Void)?
+  final public let id: Foundation.UUID
+  public static let shared: WishiSDK.Wishi
+  public func launch(from presentingController: UIKit.UINavigationController, completion: (((Swift.Bool) -> Swift.Void))? = nil)
+  public func initSDK(clientId: Swift.String, clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, accessToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations = DefaultConfigurations.getDefaultConfigurations(), delegate: WishiSDK.WishiClientSDKDelegate)
+  public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
+  public func generateAccessToken(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
+  public typealias ID = Foundation.UUID
+  @objc deinit
+}
+extension WishiSDK.Wishi {
+  public func onStartChatTap()
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @objc(PersistentConversationDataItem) public class PersistentConversationDataItem : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WishiSDK.PersistentConversationDataItem {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WishiSDK.PersistentConversationDataItem>
+  @objc @NSManaged dynamic public var attributes: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var contactFirstName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var contactImageString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var contactLastName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var createdBy: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dateCreated: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dateUpdated: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var friendlyName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isVip: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastMessageAuthor: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastMessageContent: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastMessageDate: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastMessageDuration: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastMessagePreview: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastMessageSender: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastMessageSid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastMessageType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastReadMessageIndex: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messagesCount: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var muted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var participantsCount: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var pricingModel: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var role: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var status: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var uniqueName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var unreadMessagesCount: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+}
+extension WishiSDK.PersistentConversationDataItem : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(PersistentMediaDataItem) public class PersistentMediaDataItem : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WishiSDK.PersistentMediaDataItem {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WishiSDK.PersistentMediaDataItem>
+  @objc @NSManaged dynamic public var category: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var contentType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversationSid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var filename: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var size: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var url: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messageSid: WishiSDK.PersistentMessageDataItem? {
+    @objc get
+    @objc set
+  }
+}
+extension WishiSDK.PersistentMediaDataItem : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(PersistentMessageDataItem) public class PersistentMessageDataItem : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WishiSDK.PersistentMessageDataItem {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WishiSDK.PersistentMessageDataItem>
+  @objc @NSManaged dynamic public var attributes: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var author: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var body: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var content: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversationSid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dateCreated: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dateUpdated: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var direction: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var feedbackTaken: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var itemId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messageIndex: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var participantSid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sender: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var url: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var uuid: Foundation.UUID? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var attachedMedia: Foundation.NSSet? {
+    @objc get
+    @objc set
+  }
+}
+extension WishiSDK.PersistentMessageDataItem {
+  @objc(addAttachedMediaObject:) @NSManaged dynamic public func addToAttachedMedia(_ value: WishiSDK.PersistentMediaDataItem)
+  @objc(removeAttachedMediaObject:) @NSManaged dynamic public func removeFromAttachedMedia(_ value: WishiSDK.PersistentMediaDataItem)
+  @objc(addAttachedMedia:) @NSManaged dynamic public func addToAttachedMedia(_ values: Foundation.NSSet)
+  @objc(removeAttachedMedia:) @NSManaged dynamic public func removeFromAttachedMedia(_ values: Foundation.NSSet)
+}
+extension WishiSDK.PersistentMessageDataItem : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @objc(PersistentParticipantDataItem) public class PersistentParticipantDataItem : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension WishiSDK.PersistentParticipantDataItem {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WishiSDK.PersistentParticipantDataItem>
+  @objc @NSManaged dynamic public var attributes: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversationSid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identity: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastReadMessage: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+}
+extension WishiSDK.PersistentParticipantDataItem : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+extension WishiSDK.WishiEnviroment : Swift.Equatable {}
+extension WishiSDK.WishiEnviroment : Swift.Hashable {}
+extension WishiSDK.ConfigurationStyle : Swift.Equatable {}
+extension WishiSDK.ConfigurationStyle : Swift.Hashable {}
+extension WishiSDK.Gender : Swift.Equatable {}
+extension WishiSDK.Gender : Swift.Hashable {}
+extension WishiSDK.Gender : Swift.RawRepresentable {}
+extension WishiSDK.SessionStatus : Swift.Equatable {}
+extension WishiSDK.SessionStatus : Swift.Hashable {}
+extension WishiSDK.SessionStatus : Swift.RawRepresentable {}

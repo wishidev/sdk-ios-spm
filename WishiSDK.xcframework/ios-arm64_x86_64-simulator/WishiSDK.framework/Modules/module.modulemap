@@ -6,6 +6,6 @@ framework module WishiSDK {
 }
 
 module WishiSDK.Swift {
-    header "WishiSDK-Swift.h"
-    requires objc
+  header "WishiSDK-Swift.h"
+  requires objc
 }
