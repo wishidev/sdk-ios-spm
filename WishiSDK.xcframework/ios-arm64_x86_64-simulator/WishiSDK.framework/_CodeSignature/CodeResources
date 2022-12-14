@@ -106,43 +106,43 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jpkxgSu6uyDEQyCl6rcVoFOWK/Q=
+		vBpHHC2V6eP132jPwAdQHDvRTJU=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MGmajqn7/8Hf+oy7nkbmIJQREU0=
+		BbcJn1hRZ+kia2XmTUfjGRMxEII=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		j4/fq6I4/ojBY3DpcoAPhqrf378=
+		ouwr189KK9nFO1+DWnFq3tyj10g=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MGmajqn7/8Hf+oy7nkbmIJQREU0=
+		BbcJn1hRZ+kia2XmTUfjGRMxEII=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tcNXYo1N33szASqTz6TGpMuPrV8=
+		rHKmn4eHXVBEzcYwKxACs64FG2Y=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jpkxgSu6uyDEQyCl6rcVoFOWK/Q=
+		vBpHHC2V6eP132jPwAdQHDvRTJU=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Ems8hCFqOt7i9qKj+GWRIi49piM=
+		UMHpc8BxY5wIhr9bNf/N/WBthjA=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mtggDsLL5SZx8XV51WBO78dWU+o=
+		MpYygMc13UKjHngyxo7iyfhT5xM=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Ems8hCFqOt7i9qKj+GWRIi49piM=
+		UMHpc8BxY5wIhr9bNf/N/WBthjA=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SfgBoXHPFrRagmn4hkJ7/qIipcY=
+		qmh2BqxVhijbZUG5zPP9R1M4bCs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -363,70 +363,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D3/NIAVtllx+CULkiJhbfuWDduBSflKpg3q9e8/o6TA=
+			dpinn2txY4fS/GaTWZa71teo+amvcJzUML2yohagwW8=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9yElB3b8QNy4ZJVhzGbZuCchEK0Op35vK/NXJ39vmsI=
+			FGGg8ChqIQex+7inLw/RC/E0uTTUGtbXRZrOg10YRQM=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			na8xlf9aDx43dSapedcTMYrSFsEP07wC/qizYDhktJw=
+			97upauS0JJqNeb8iXPcXmd8r4KI7UYGaz5q27Fsww9o=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9yElB3b8QNy4ZJVhzGbZuCchEK0Op35vK/NXJ39vmsI=
+			FGGg8ChqIQex+7inLw/RC/E0uTTUGtbXRZrOg10YRQM=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MKpzAGcxRXyjKvKUECVrh8IWlabdJovCg/nB1wTD72E=
+			9p6ywX1PxQqrm2kP+xr9uR2R3/Z3BIBRI+brS7zcaEc=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D3/NIAVtllx+CULkiJhbfuWDduBSflKpg3q9e8/o6TA=
+			dpinn2txY4fS/GaTWZa71teo+amvcJzUML2yohagwW8=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eLgZifMN0JX0mHE5uKFbYGGbr5SnqBuDNC+s6bYMAXY=
+			qDQdkMOv1kBkIeVVJiOhUFgfI/z++LB0oKlyACQdm8Q=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ueY/iyfufV4tMUpfag8zHveibxjH18J7ofJLR6zjCrM=
+			vZYD+LymjqkSeqZuIpXkRl4GJBxPWYhmdUKCgHCeBnM=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eLgZifMN0JX0mHE5uKFbYGGbr5SnqBuDNC+s6bYMAXY=
+			qDQdkMOv1kBkIeVVJiOhUFgfI/z++LB0oKlyACQdm8Q=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9fgkufbFDFnp1MlElCzxCD45v5drcAmKOTMD7e53ELU=
+			rwH6F4C7+GE1y9rhVh1J4MuW4avi1zOQeoO2KfD7ppw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
