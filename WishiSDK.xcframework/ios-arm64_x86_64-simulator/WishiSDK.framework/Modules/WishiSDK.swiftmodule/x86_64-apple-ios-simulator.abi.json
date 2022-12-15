@@ -10887,13 +10887,8 @@
           {
             "kind": "Function",
             "name": "initSDK",
-            "printedName": "initSDK(clientId:clientInfo:apiKey:idToken:enviroment:configuration:delegate:)",
+            "printedName": "initSDK(clientInfo:apiKey:partnerToken:enviroment:configuration:delegate:)",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
               {
                 "kind": "TypeNominal",
                 "name": "String",
@@ -10940,8 +10935,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8WishiSDK0A0C04initB08clientId0D4Info6apiKey7idToken10enviroment13configuration8delegateySS_AA06ClientF0VS2SAA0A10EnviromentOAA14ConfigurationsVAA0aN11SDKDelegate_ptF",
-            "mangledName": "$s8WishiSDK0A0C04initB08clientId0D4Info6apiKey7idToken10enviroment13configuration8delegateySS_AA06ClientF0VS2SAA0A10EnviromentOAA14ConfigurationsVAA0aN11SDKDelegate_ptF",
+            "usr": "s:8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVAA0aM11SDKDelegate_ptF",
+            "mangledName": "$s8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVAA0aM11SDKDelegate_ptF",
             "moduleName": "WishiSDK",
             "declAttributes": [
               "AccessControl"
@@ -31083,49 +31078,49 @@
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 228,
+      "offset": 233,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 282,
+      "offset": 287,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 341,
+      "offset": 346,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 397,
+      "offset": 402,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 451,
+      "offset": 456,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 504,
+      "offset": 509,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 617,
+      "offset": 622,
       "length": 5,
       "value": "false"
     },
