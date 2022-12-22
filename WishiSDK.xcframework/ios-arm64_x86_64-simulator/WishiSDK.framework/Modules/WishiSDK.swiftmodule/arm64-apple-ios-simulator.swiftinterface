@@ -201,6 +201,7 @@ public enum ConfigurationStyle {
   case subheaderColor
   case themeColor
   case unselectedBorderColor
+  case nextButtonFont
   case nextButtonBackgroundColor
   case nextButtonTextColor
   case freeTextCheckedImage

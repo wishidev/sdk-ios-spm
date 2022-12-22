@@ -1158,6 +1158,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WishiSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7099,6 +7109,43 @@
             "declKind": "EnumElement",
             "usr": "s:8WishiSDK18ConfigurationStyleO21unselectedBorderColoryA2CmF",
             "mangledName": "$s8WishiSDK18ConfigurationStyleO21unselectedBorderColoryA2CmF",
+            "moduleName": "WishiSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "nextButtonFont",
+            "printedName": "nextButtonFont",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WishiSDK.ConfigurationStyle.Type) -> WishiSDK.ConfigurationStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConfigurationStyle",
+                    "printedName": "WishiSDK.ConfigurationStyle",
+                    "usr": "s:8WishiSDK18ConfigurationStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WishiSDK.ConfigurationStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConfigurationStyle",
+                        "printedName": "WishiSDK.ConfigurationStyle",
+                        "usr": "s:8WishiSDK18ConfigurationStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8WishiSDK18ConfigurationStyleO14nextButtonFontyA2CmF",
+            "mangledName": "$s8WishiSDK18ConfigurationStyleO14nextButtonFontyA2CmF",
             "moduleName": "WishiSDK"
           },
           {
@@ -23154,42 +23201,70 @@
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 352,
+      "offset": 475,
+      "length": 8,
+      "value": "\"unique\""
+    },
+    {
+      "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
+      "kind": "StringLiteral",
+      "offset": 508,
+      "length": 10,
+      "value": "\"currency\""
+    },
+    {
+      "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
+      "kind": "StringLiteral",
+      "offset": 543,
       "length": 11,
       "value": "\"item_type\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 389,
+      "offset": 580,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 429,
+      "offset": 620,
       "length": 14,
       "value": "\"retail_price\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 352,
+      "offset": 475,
+      "length": 8,
+      "value": "\"unique\""
+    },
+    {
+      "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
+      "kind": "StringLiteral",
+      "offset": 508,
+      "length": 10,
+      "value": "\"currency\""
+    },
+    {
+      "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
+      "kind": "StringLiteral",
+      "offset": 543,
       "length": 11,
       "value": "\"item_type\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 389,
+      "offset": 580,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 429,
+      "offset": 620,
       "length": 14,
       "value": "\"retail_price\""
     },
@@ -30959,51 +31034,58 @@
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Configurations\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 778,
+      "offset": 802,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Configurations\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 869,
+      "offset": 893,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Configurations\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 948,
+      "offset": 972,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Configurations\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 1027,
+      "offset": 1051,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Configurations\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 1106,
+      "offset": 1130,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Configurations\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 1170,
+      "offset": 1194,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Configurations\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1258,
+      "offset": 1282,
       "length": 2,
       "value": "14"
+    },
+    {
+      "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Configurations\/Configuration.swift",
+      "kind": "FloatLiteral",
+      "offset": 1623,
+      "length": 4,
+      "value": "16.0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/Cells\/Quiz\/QuizCollectionViewCell.swift",
