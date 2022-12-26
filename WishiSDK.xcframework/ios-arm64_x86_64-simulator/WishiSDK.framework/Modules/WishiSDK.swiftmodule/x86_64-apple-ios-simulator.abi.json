@@ -26015,49 +26015,49 @@
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 886,
+      "offset": 942,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 886,
+      "offset": 942,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 886,
+      "offset": 942,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1332,
+      "offset": 1388,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1370,
+      "offset": 1426,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1400,
+      "offset": 1456,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 964,
       "length": 18,
       "value": "\"WishiSDK.QuizViewController\""
     },
@@ -26275,27 +26275,27 @@
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/ImageSelection\/ImageSelectionViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 558,
-      "length": 2,
-      "value": "10"
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/ImageSelection\/ImageSelectionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 569,
+      "offset": 568,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/ImageSelection\/ImageSelectionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 673,
+      "offset": 672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/MatchViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1098,
+      "offset": 1139,
       "length": 1,
       "value": "0"
     },
