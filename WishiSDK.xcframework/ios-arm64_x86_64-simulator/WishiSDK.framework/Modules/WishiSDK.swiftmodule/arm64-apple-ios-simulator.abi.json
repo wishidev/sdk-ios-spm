@@ -23873,28 +23873,28 @@
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "Array",
-      "offset": 747,
+      "offset": 799,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 786,
+      "offset": 838,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 832,
+      "offset": 884,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "Array",
-      "offset": 5680,
+      "offset": 5118,
       "length": 2,
       "value": "[]"
     },
@@ -26293,13 +26293,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/MatchViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1139,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Helpers\/SocketIO\/Client\/SocketIOStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 1518,
@@ -26372,42 +26365,42 @@
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/SlidingTabController.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 471,
       "length": 28,
       "value": "\"COLLECTION_PAGE_IDENTIFIER\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/SlidingTabController.swift",
       "kind": "IntegerLiteral",
-      "offset": 668,
+      "offset": 615,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Network\/BoardsModel.swift",
       "kind": "StringLiteral",
-      "offset": 235,
+      "offset": 238,
       "length": 11,
       "value": "\"quota_max\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Network\/BoardsModel.swift",
       "kind": "StringLiteral",
-      "offset": 235,
+      "offset": 238,
       "length": 11,
       "value": "\"quota_max\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Network\/BoardsModel.swift",
       "kind": "StringLiteral",
-      "offset": 518,
+      "offset": 521,
       "length": 14,
       "value": "\"stylist_name\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Network\/BoardsModel.swift",
       "kind": "StringLiteral",
-      "offset": 518,
+      "offset": 521,
       "length": 14,
       "value": "\"stylist_name\""
     },
