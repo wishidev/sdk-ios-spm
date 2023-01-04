@@ -25035,14 +25035,14 @@
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Messages\/MessagesManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 835,
+      "offset": 923,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Messages\/MessagesManager.swift",
       "kind": "Array",
-      "offset": 1199,
+      "offset": 1226,
       "length": 2,
       "value": "[]"
     },
@@ -26568,28 +26568,28 @@
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3106,
+      "offset": 3105,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3626,
+      "offset": 3625,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3666,
+      "offset": 3665,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/orenbachar\/Documents\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3687,
+      "offset": 3686,
       "length": 1,
       "value": "\".jpeg\""
     },
