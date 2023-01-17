@@ -292,7 +292,7 @@ public protocol WishiClientSDKDelegate : AnyObject {
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
   public func launch(from presentingController: UIKit.UINavigationController, completion: (((Swift.Bool) -> Swift.Void))? = nil)
-  public func initSDK(clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, partnerToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations, delegate: WishiSDK.WishiClientSDKDelegate) -> Swift.String
+  public func initSDK(clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, partnerToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiClientSDKDelegate) -> Swift.String
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public func generateAccessToken(parameters: [Swift.String : Swift.String], success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public typealias ID = Foundation.UUID

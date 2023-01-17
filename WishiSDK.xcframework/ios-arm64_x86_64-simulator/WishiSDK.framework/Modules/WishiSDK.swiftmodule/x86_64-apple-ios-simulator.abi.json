@@ -10969,9 +10969,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Configurations",
-                "printedName": "WishiSDK.Configurations",
-                "usr": "s:8WishiSDK14ConfigurationsV"
+                "name": "Optional",
+                "printedName": "WishiSDK.Configurations?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configurations",
+                    "printedName": "WishiSDK.Configurations",
+                    "usr": "s:8WishiSDK14ConfigurationsV"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -10981,8 +10989,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVAA0aM11SDKDelegate_ptF",
-            "mangledName": "$s8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVAA0aM11SDKDelegate_ptF",
+            "usr": "s:8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVSgAA0aM11SDKDelegate_ptF",
+            "mangledName": "$s8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVSgAA0aM11SDKDelegate_ptF",
             "moduleName": "WishiSDK",
             "declAttributes": [
               "AccessControl"
@@ -23030,13 +23038,6 @@
       "value": "44"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/ViewControllers\/QuizContainerViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 128,
-      "length": 27,
-      "value": "\"WishiSDK.QuizContainerViewController\""
-    },
-    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Helpers\/ThreadSafeDictionary.swift",
       "kind": "StringLiteral",
       "offset": 289,
@@ -23200,84 +23201,84 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 509,
+      "offset": 1027,
       "length": 12,
       "value": "\"pictureUrl\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 542,
+      "offset": 1060,
       "length": 8,
       "value": "\"unique\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 575,
+      "offset": 1093,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 610,
+      "offset": 1128,
       "length": 11,
       "value": "\"item_type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 647,
+      "offset": 1165,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 687,
+      "offset": 1205,
       "length": 14,
       "value": "\"retail_price\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 509,
+      "offset": 1027,
       "length": 12,
       "value": "\"pictureUrl\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 542,
+      "offset": 1060,
       "length": 8,
       "value": "\"unique\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 575,
+      "offset": 1093,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 610,
+      "offset": 1128,
       "length": 11,
       "value": "\"item_type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 647,
+      "offset": 1165,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 687,
+      "offset": 1205,
       "length": 14,
       "value": "\"retail_price\""
     },
@@ -23927,15 +23928,8 @@
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 884,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "Array",
-      "offset": 5118,
+      "offset": 5038,
       "length": 2,
       "value": "[]"
     },
@@ -24134,13 +24128,6 @@
       "offset": 549,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Radio\/Cells\/Custom Text\/CustomTextCollectionViewCell.swift",
-      "kind": "Dictionary",
-      "offset": 354,
-      "length": 3,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Helpers\/Starscream\/Framer\/FrameCollector.swift",
@@ -25979,21 +25966,21 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ButtonView\/ButtonView.swift",
       "kind": "BooleanLiteral",
-      "offset": 354,
+      "offset": 434,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ButtonView\/ButtonView.swift",
       "kind": "BooleanLiteral",
-      "offset": 452,
+      "offset": 532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ButtonView\/ButtonView.swift",
       "kind": "StringLiteral",
-      "offset": 2497,
+      "offset": 2577,
       "length": 25,
       "value": "\"WishiSDK.BindableGestureRecognizer\""
     },
@@ -26077,21 +26064,21 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1388,
+      "offset": 1348,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1426,
+      "offset": 1386,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1456,
+      "offset": 1416,
       "length": 4,
       "value": "true"
     },
@@ -26623,28 +26610,28 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3106,
+      "offset": 3105,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3626,
+      "offset": 3625,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3666,
+      "offset": 3665,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3687,
+      "offset": 3686,
       "length": 1,
       "value": "\".jpeg\""
     },
@@ -26824,13 +26811,6 @@
       "value": "\"application\/json; charset=UTF-8\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/SingleLine\/Cells\/SingleLine\/SingleLineMultiSelectTableViewCell.swift",
-      "kind": "Dictionary",
-      "offset": 436,
-      "length": 3,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Helpers\/APIClient\/MockDataClientHijacker.swift",
       "kind": "Dictionary",
       "offset": 1723,
@@ -26938,7 +26918,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ItemView\/ItemView.swift",
       "kind": "BooleanLiteral",
-      "offset": 420,
+      "offset": 467,
       "length": 5,
       "value": "false"
     },
@@ -31136,13 +31116,6 @@
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/Cells\/Quiz\/QuizCollectionViewCell.swift",
-      "kind": "Dictionary",
-      "offset": 363,
-      "length": 3,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Helpers\/Log.swift",
       "kind": "StringLiteral",
       "offset": 209,
@@ -31180,14 +31153,14 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/AppModel.swift",
       "kind": "Array",
-      "offset": 1626,
+      "offset": 1665,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/AppModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1656,
+      "offset": 1695,
       "length": 5,
       "value": "false"
     },
@@ -31754,7 +31727,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Wishi.swift",
       "kind": "Array",
-      "offset": 3253,
+      "offset": 3206,
       "length": 2,
       "value": "[]"
     },
