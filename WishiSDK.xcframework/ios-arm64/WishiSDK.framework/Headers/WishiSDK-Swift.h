@@ -526,9 +526,9 @@ SWIFT_CLASS("_TtC8WishiSDK12WSQuizAnswer")
 
 SWIFT_CLASS("_TtC8WishiSDK5Wishi")
 @interface Wishi : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 #endif

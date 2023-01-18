@@ -4927,6 +4927,405 @@
         "moduleName": "WishiSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "SDKError",
+        "printedName": "SDKError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkNotInitialized",
+            "printedName": "sdkNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WishiSDK.SDKError.Type) -> WishiSDK.SDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKError",
+                    "printedName": "WishiSDK.SDKError",
+                    "usr": "s:8WishiSDK8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WishiSDK.SDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKError",
+                        "printedName": "WishiSDK.SDKError",
+                        "usr": "s:8WishiSDK8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8WishiSDK8SDKErrorO17sdkNotInitializedyA2CmF",
+            "mangledName": "$s8WishiSDK8SDKErrorO17sdkNotInitializedyA2CmF",
+            "moduleName": "WishiSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "missingClientInfoAndUserData",
+            "printedName": "missingClientInfoAndUserData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WishiSDK.SDKError.Type) -> WishiSDK.SDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKError",
+                    "printedName": "WishiSDK.SDKError",
+                    "usr": "s:8WishiSDK8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WishiSDK.SDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKError",
+                        "printedName": "WishiSDK.SDKError",
+                        "usr": "s:8WishiSDK8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8WishiSDK8SDKErrorO28missingClientInfoAndUserDatayA2CmF",
+            "mangledName": "$s8WishiSDK8SDKErrorO28missingClientInfoAndUserDatayA2CmF",
+            "moduleName": "WishiSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "missingClientId",
+            "printedName": "missingClientId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WishiSDK.SDKError.Type) -> WishiSDK.SDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKError",
+                    "printedName": "WishiSDK.SDKError",
+                    "usr": "s:8WishiSDK8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WishiSDK.SDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKError",
+                        "printedName": "WishiSDK.SDKError",
+                        "usr": "s:8WishiSDK8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8WishiSDK8SDKErrorO15missingClientIdyA2CmF",
+            "mangledName": "$s8WishiSDK8SDKErrorO15missingClientIdyA2CmF",
+            "moduleName": "WishiSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failToInitSDK",
+            "printedName": "failToInitSDK",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WishiSDK.SDKError.Type) -> WishiSDK.SDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKError",
+                    "printedName": "WishiSDK.SDKError",
+                    "usr": "s:8WishiSDK8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WishiSDK.SDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKError",
+                        "printedName": "WishiSDK.SDKError",
+                        "usr": "s:8WishiSDK8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8WishiSDK8SDKErrorO010failToInitB0yA2CmF",
+            "mangledName": "$s8WishiSDK8SDKErrorO010failToInitB0yA2CmF",
+            "moduleName": "WishiSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failToAuthenticate",
+            "printedName": "failToAuthenticate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WishiSDK.SDKError.Type) -> WishiSDK.SDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKError",
+                    "printedName": "WishiSDK.SDKError",
+                    "usr": "s:8WishiSDK8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WishiSDK.SDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKError",
+                        "printedName": "WishiSDK.SDKError",
+                        "usr": "s:8WishiSDK8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8WishiSDK8SDKErrorO18failToAuthenticateyA2CmF",
+            "mangledName": "$s8WishiSDK8SDKErrorO18failToAuthenticateyA2CmF",
+            "moduleName": "WishiSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failToGenerateToken",
+            "printedName": "failToGenerateToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WishiSDK.SDKError.Type) -> WishiSDK.SDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKError",
+                    "printedName": "WishiSDK.SDKError",
+                    "usr": "s:8WishiSDK8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WishiSDK.SDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKError",
+                        "printedName": "WishiSDK.SDKError",
+                        "usr": "s:8WishiSDK8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8WishiSDK8SDKErrorO19failToGenerateTokenyA2CmF",
+            "mangledName": "$s8WishiSDK8SDKErrorO19failToGenerateTokenyA2CmF",
+            "moduleName": "WishiSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failToGetUserStatus",
+            "printedName": "failToGetUserStatus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WishiSDK.SDKError.Type) -> WishiSDK.SDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKError",
+                    "printedName": "WishiSDK.SDKError",
+                    "usr": "s:8WishiSDK8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WishiSDK.SDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKError",
+                        "printedName": "WishiSDK.SDKError",
+                        "usr": "s:8WishiSDK8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8WishiSDK8SDKErrorO19failToGetUserStatusyA2CmF",
+            "mangledName": "$s8WishiSDK8SDKErrorO19failToGetUserStatusyA2CmF",
+            "moduleName": "WishiSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDKError",
+                "printedName": "WishiSDK.SDKError",
+                "usr": "s:8WishiSDK8SDKErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDKError",
+                "printedName": "WishiSDK.SDKError",
+                "usr": "s:8WishiSDK8SDKErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8WishiSDK8SDKErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8WishiSDK8SDKErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "WishiSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8WishiSDK8SDKErrorO9hashValueSivp",
+            "mangledName": "$s8WishiSDK8SDKErrorO9hashValueSivp",
+            "moduleName": "WishiSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8WishiSDK8SDKErrorO9hashValueSivg",
+                "mangledName": "$s8WishiSDK8SDKErrorO9hashValueSivg",
+                "moduleName": "WishiSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8WishiSDK8SDKErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8WishiSDK8SDKErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "WishiSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8WishiSDK8SDKErrorO",
+        "mangledName": "$s8WishiSDK8SDKErrorO",
+        "moduleName": "WishiSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -10659,13 +11058,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "WishiClientSDKDelegate",
-        "printedName": "WishiClientSDKDelegate",
+        "name": "WishiSDKDelegate",
+        "printedName": "WishiSDKDelegate",
         "children": [
           {
             "kind": "Function",
-            "name": "didSelectItems",
-            "printedName": "didSelectItems(fromController:quizObject:selectedOptions:lastSelectedOption:)",
+            "name": "itemsSelected",
+            "printedName": "itemsSelected(fromController:quizObject:selectedOptions:lastSelectedOption:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10706,11 +11105,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8WishiSDK0A17ClientSDKDelegateP14didSelectItems14fromController10quizObject15selectedOptions18lastSelectedOptionyAA08QuizViewI0C_AA6WSQuizCSayAA0S6AnswerCGANtF",
-            "mangledName": "$s8WishiSDK0A17ClientSDKDelegateP14didSelectItems14fromController10quizObject15selectedOptions18lastSelectedOptionyAA08QuizViewI0C_AA6WSQuizCSayAA0S6AnswerCGANtF",
+            "usr": "s:8WishiSDK0A11SDKDelegateP13itemsSelected14fromController10quizObject15selectedOptions04lastE6OptionyAA08QuizViewG0C_AA6WSQuizCSayAA0P6AnswerCGANtF",
+            "mangledName": "$s8WishiSDK0A11SDKDelegateP13itemsSelected14fromController10quizObject15selectedOptions04lastE6OptionyAA08QuizViewG0C_AA6WSQuizCSayAA0P6AnswerCGANtF",
             "moduleName": "WishiSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : WishiSDK.WishiClientSDKDelegate>",
-            "sugared_genericSig": "<Self where Self : WishiSDK.WishiClientSDKDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : WishiSDK.WishiSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : WishiSDK.WishiSDKDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -10753,19 +11152,73 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8WishiSDK0A17ClientSDKDelegateP19screenSelectionDone14fromController10quizObject15selectedOptionsyAA08QuizViewI0C_AA6WSQuizCSayAA0P6AnswerCGtF",
-            "mangledName": "$s8WishiSDK0A17ClientSDKDelegateP19screenSelectionDone14fromController10quizObject15selectedOptionsyAA08QuizViewI0C_AA6WSQuizCSayAA0P6AnswerCGtF",
+            "usr": "s:8WishiSDK0A11SDKDelegateP19screenSelectionDone14fromController10quizObject15selectedOptionsyAA08QuizViewH0C_AA6WSQuizCSayAA0O6AnswerCGtF",
+            "mangledName": "$s8WishiSDK0A11SDKDelegateP19screenSelectionDone14fromController10quizObject15selectedOptionsyAA08QuizViewH0C_AA6WSQuizCSayAA0O6AnswerCGtF",
             "moduleName": "WishiSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : WishiSDK.WishiClientSDKDelegate>",
-            "sugared_genericSig": "<Self where Self : WishiSDK.WishiClientSDKDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : WishiSDK.WishiSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : WishiSDK.WishiSDKDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presented",
+            "printedName": "presented(viewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8WishiSDK0A11SDKDelegateP9presented14viewControllerySo06UIViewF0C_tF",
+            "mangledName": "$s8WishiSDK0A11SDKDelegateP9presented14viewControllerySo06UIViewF0C_tF",
+            "moduleName": "WishiSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WishiSDK.WishiSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : WishiSDK.WishiSDKDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkFailure",
+            "printedName": "sdkFailure(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDKError",
+                "printedName": "WishiSDK.SDKError",
+                "usr": "s:8WishiSDK8SDKErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8WishiSDK0A11SDKDelegateP10sdkFailure5erroryAA8SDKErrorO_tF",
+            "mangledName": "$s8WishiSDK0A11SDKDelegateP10sdkFailure5erroryAA8SDKErrorO_tF",
+            "moduleName": "WishiSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WishiSDK.WishiSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : WishiSDK.WishiSDKDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:8WishiSDK0A17ClientSDKDelegateP",
-        "mangledName": "$s8WishiSDK0A17ClientSDKDelegateP",
+        "usr": "s:8WishiSDK0A11SDKDelegateP",
+        "mangledName": "$s8WishiSDK0A11SDKDelegateP",
         "moduleName": "WishiSDK",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -10880,59 +11333,6 @@
           },
           {
             "kind": "Function",
-            "name": "launch",
-            "printedName": "launch(from:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UINavigationController",
-                "printedName": "UIKit.UINavigationController",
-                "usr": "c:objc(cs)UINavigationController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8WishiSDK0A0C6launch4from10completionySo22UINavigationControllerC_ySbcSgtF",
-            "mangledName": "$s8WishiSDK0A0C6launch4from10completionySo22UINavigationControllerC_ySbcSgtF",
-            "moduleName": "WishiSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "initSDK",
             "printedName": "initSDK(clientInfo:apiKey:partnerToken:enviroment:configuration:delegate:)",
             "children": [
@@ -10983,14 +11383,40 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "WishiClientSDKDelegate",
-                "printedName": "WishiSDK.WishiClientSDKDelegate",
-                "usr": "s:8WishiSDK0A17ClientSDKDelegateP"
+                "name": "WishiSDKDelegate",
+                "printedName": "WishiSDK.WishiSDKDelegate",
+                "usr": "s:8WishiSDK0A11SDKDelegateP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVSgAA0aM11SDKDelegate_ptF",
-            "mangledName": "$s8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVSgAA0aM11SDKDelegate_ptF",
+            "usr": "s:8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVSgAA0A11SDKDelegate_ptF",
+            "mangledName": "$s8WishiSDK0A0C04initB010clientInfo6apiKey12partnerToken10enviroment13configuration8delegateSSAA06ClientE0V_S2SAA0A10EnviromentOAA14ConfigurationsVSgAA0A11SDKDelegate_ptF",
+            "moduleName": "WishiSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "launch",
+            "printedName": "launch(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UINavigationController",
+                "printedName": "UIKit.UINavigationController",
+                "usr": "c:objc(cs)UINavigationController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8WishiSDK0A0C6launch4fromySo22UINavigationControllerC_tF",
+            "mangledName": "$s8WishiSDK0A0C6launch4fromySo22UINavigationControllerC_tF",
             "moduleName": "WishiSDK",
             "declAttributes": [
               "AccessControl"
@@ -11043,12 +11469,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Error?, Any?) -> ())?",
+                "printedName": "((Swift.Error?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?, Any?) -> ()",
+                    "printedName": "(Swift.Error?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -11057,37 +11483,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Error?, Any?)",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.Error?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Any?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "ProtocolComposition",
-                                "printedName": "Any"
-                              }
-                            ],
-                            "usr": "s:Sq"
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
                           }
-                        ]
+                        ],
+                        "usr": "s:Sq"
                       }
                     ]
                   }
@@ -11096,8 +11502,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8WishiSDK0A0C13getUserStatus7success7failureyyypSgcSg_ys5Error_pSg_AGtcSgtF",
-            "mangledName": "$s8WishiSDK0A0C13getUserStatus7success7failureyyypSgcSg_ys5Error_pSg_AGtcSgtF",
+            "usr": "s:8WishiSDK0A0C13getUserStatus7success7failureyyypSgcSg_ys5Error_pSgcSgtF",
+            "mangledName": "$s8WishiSDK0A0C13getUserStatus7success7failureyyypSgcSg_ys5Error_pSgcSgtF",
             "moduleName": "WishiSDK",
             "declAttributes": [
               "AccessControl"
@@ -11170,12 +11576,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Error?, Any?) -> ())?",
+                "printedName": "((Swift.Error?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?, Any?) -> ()",
+                    "printedName": "(Swift.Error?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -11184,37 +11590,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Error?, Any?)",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.Error?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Any?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "ProtocolComposition",
-                                "printedName": "Any"
-                              }
-                            ],
-                            "usr": "s:Sq"
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
                           }
-                        ]
+                        ],
+                        "usr": "s:Sq"
                       }
                     ]
                   }
@@ -11223,13 +11609,39 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8WishiSDK0A0C19generateAccessToken10parameters7success7failureySDyS2SG_yypSgcSgys5Error_pSg_AItcSgtF",
-            "mangledName": "$s8WishiSDK0A0C19generateAccessToken10parameters7success7failureySDyS2SG_yypSgcSgys5Error_pSg_AItcSgtF",
+            "usr": "s:8WishiSDK0A0C19generateAccessToken10parameters7success7failureySDyS2SG_yypSgcSgys5Error_pSgcSgtF",
+            "mangledName": "$s8WishiSDK0A0C19generateAccessToken10parameters7success7failureySDyS2SG_yypSgcSgys5Error_pSgcSgtF",
             "moduleName": "WishiSDK",
             "declAttributes": [
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Wishi",
+                "printedName": "WishiSDK.Wishi",
+                "usr": "c:@M@WishiSDK@objc(cs)Wishi"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WishiSDK@objc(cs)Wishi(im)init",
+            "mangledName": "$s8WishiSDK0A0CACycfc",
+            "moduleName": "WishiSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -11262,7 +11674,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -26043,49 +26454,49 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 942,
+      "offset": 1099,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 942,
+      "offset": 1099,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 942,
+      "offset": 1099,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1348,
+      "offset": 1505,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1386,
+      "offset": 1543,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1416,
+      "offset": 1573,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "StringLiteral",
-      "offset": 964,
+      "offset": 1121,
       "length": 18,
       "value": "\"WishiSDK.QuizViewController\""
     },
@@ -26701,112 +27112,112 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1124,
+      "offset": 1356,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1194,
+      "offset": 1426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1228,
+      "offset": 1460,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1263,
+      "offset": 1495,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1844,
+      "offset": 2076,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2193,
+      "offset": 2425,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2209,
+      "offset": 2441,
       "length": 33,
       "value": "\"application\/json; charset=UTF-8\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2486,
+      "offset": 2718,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2502,
+      "offset": 2734,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2946,
+      "offset": 3178,
       "length": 12,
       "value": "\"background\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3200,
+      "offset": 3432,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3220,
+      "offset": 3452,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3237,
+      "offset": 3469,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3280,
+      "offset": 3512,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3326,
+      "offset": 3558,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Managers\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3342,
+      "offset": 3574,
       "length": 33,
       "value": "\"application\/json; charset=UTF-8\""
     },
@@ -31727,7 +32138,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Wishi.swift",
       "kind": "Array",
-      "offset": 3206,
+      "offset": 3286,
       "length": 2,
       "value": "[]"
     },

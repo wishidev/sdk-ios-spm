@@ -147,6 +147,20 @@ public enum WishiEnviroment {
     get
   }
 }
+public enum SDKError : Swift.Error {
+  case sdkNotInitialized
+  case missingClientInfoAndUserData
+  case missingClientId
+  case failToInitSDK
+  case failToAuthenticate
+  case failToGenerateToken
+  case failToGetUserStatus
+  public static func == (a: WishiSDK.SDKError, b: WishiSDK.SDKError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringConvertible {
   case invalidBase64URL(Swift.String)
   case invalidJSON(Swift.String)
@@ -282,19 +296,22 @@ public struct ClientInfo {
   public var gender: WishiSDK.Gender?
   public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil)
 }
-public protocol WishiClientSDKDelegate : AnyObject {
-  func didSelectItems(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer], lastSelectedOption: WishiSDK.WSQuizAnswer)
+public protocol WishiSDKDelegate : AnyObject {
+  func itemsSelected(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer], lastSelectedOption: WishiSDK.WSQuizAnswer)
   func screenSelectionDone(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer])
+  func presented(viewController: UIKit.UIViewController)
+  func sdkFailure(error: WishiSDK.SDKError)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
+@objc @_inheritsConvenienceInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
   public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
-  public typealias ClientSDKFailure = ((Swift.Error?, Any?) -> Swift.Void)?
+  public typealias ClientSDKFailure = ((Swift.Error?) -> Swift.Void)?
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
-  public func launch(from presentingController: UIKit.UINavigationController, completion: (((Swift.Bool) -> Swift.Void))? = nil)
-  public func initSDK(clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, partnerToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiClientSDKDelegate) -> Swift.String
+  public func initSDK(clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, partnerToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiSDKDelegate) -> Swift.String
+  public func launch(from presentingController: UIKit.UINavigationController)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public func generateAccessToken(parameters: [Swift.String : Swift.String], success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
+  @objc override dynamic public init()
   public typealias ID = Foundation.UUID
   @objc deinit
 }
@@ -592,6 +609,8 @@ extension WishiSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
 extension WishiSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
 extension WishiSDK.WishiEnviroment : Swift.Equatable {}
 extension WishiSDK.WishiEnviroment : Swift.Hashable {}
+extension WishiSDK.SDKError : Swift.Equatable {}
+extension WishiSDK.SDKError : Swift.Hashable {}
 extension WishiSDK.ConfigurationStyle : Swift.Equatable {}
 extension WishiSDK.ConfigurationStyle : Swift.Hashable {}
 extension WishiSDK.Gender : Swift.Equatable {}
