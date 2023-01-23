@@ -301,16 +301,18 @@ public protocol WishiSDKDelegate : AnyObject {
   func screenSelectionDone(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer])
   func presented(viewController: UIKit.UIViewController)
   func sdkFailure(error: WishiSDK.SDKError)
+  func onItemClick(url: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
   public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
   public typealias ClientSDKFailure = ((Swift.Error?) -> Swift.Void)?
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
-  public func initSDK(clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, partnerToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiSDKDelegate) -> Swift.String
+  public func initSDK(clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, partnerToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiSDKDelegate, isDebug: Swift.Bool = false) -> Swift.String
   public func launch(from presentingController: UIKit.UINavigationController)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public func generateAccessToken(parameters: [Swift.String : Swift.String], success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
+  public func wishiSDKVersion() -> Swift.String
   @objc override dynamic public init()
   public typealias ID = Foundation.UUID
   @objc deinit
