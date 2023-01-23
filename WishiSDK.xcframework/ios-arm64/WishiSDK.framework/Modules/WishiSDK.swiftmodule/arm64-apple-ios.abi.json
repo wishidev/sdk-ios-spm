@@ -27148,21 +27148,21 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Env.swift",
       "kind": "StringLiteral",
-      "offset": 363,
-      "length": 29,
-      "value": "\"https:\/\/api-gw.api.wishi.me\""
+      "offset": 125,
+      "length": 33,
+      "value": "\"https:\/\/dev-api-gw.api.wishi.me\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Env.swift",
       "kind": "StringLiteral",
-      "offset": 436,
-      "length": 26,
-      "value": "\"https:\/\/app.api.wishi.me\""
+      "offset": 202,
+      "length": 42,
+      "value": "\"https:\/\/legacy-api-dev.wishi.me\/api\/slim\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Env.swift",
       "kind": "StringLiteral",
-      "offset": 507,
+      "offset": 289,
       "length": 30,
       "value": "\"https:\/\/dev-styling.wishi.me\""
     },
