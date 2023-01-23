@@ -27155,16 +27155,16 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Env.swift",
       "kind": "StringLiteral",
-      "offset": 434,
+      "offset": 436,
       "length": 26,
       "value": "\"https:\/\/app.api.wishi.me\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Env.swift",
       "kind": "StringLiteral",
-      "offset": 505,
-      "length": 2,
-      "value": "\"\""
+      "offset": 507,
+      "length": 30,
+      "value": "\"https:\/\/dev-styling.wishi.me\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/CoreData\/ObservableResultPublisher.swift",
