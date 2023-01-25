@@ -10,11 +10,11 @@
 		</data>
 		<key>BoardHistoryViewController.nib</key>
 		<data>
-		5tkJ4O3AQ3U0CaBpyi9H1kXBIgc=
+		tn2LrLneFmhJZ7zqxkCeV/6CUzI=
 		</data>
 		<key>BoardItemHistoryCollectionViewCell.nib</key>
 		<data>
-		PShUvwHXVSRCkaZGAQGtnoYGsVo=
+		Ha9MY1dd1U5iPK3++NPXauLiANU=
 		</data>
 		<key>BookingPaidTableViewCell.nib</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>HistoryHeaderCollectionViewCell.nib</key>
 		<data>
-		OS3KN1DTG6BZnsUVefNy5n9rXE0=
+		p0jaUTCfyRRUuX0NyvCtSM+2w8Q=
 		</data>
 		<key>HistoryHeaderView.nib</key>
 		<data>
-		U+t/O2Tt1RN5BMFKedg4gLqeQAI=
+		tCTQxNJsnWOmCv8Yubz6d9qe7Cs=
 		</data>
 		<key>HistoryTabHeaderCollectionViewCell.nib</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Sw0Q0UEsRJ05lt3CZU0CI1qgl1I=
+		v0If1Ff/+8nVk54EVw12TXfQYvc=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OBNwEzG07+ejqoa08u32MrsobG4=
+		6e88zIBerr5L34JX6Ifvr2/2rYE=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Sw0Q0UEsRJ05lt3CZU0CI1qgl1I=
+		v0If1Ff/+8nVk54EVw12TXfQYvc=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xCCdDrz0MGc3maojoxRhzUFWiZ8=
+		zVQkgbfMdHHSsTO7WbeU+vxcMYg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Version.plist</key>
 		<data>
-		zT4hELsfCX1HNey+Y3TkpsPYJaE=
+		xbzrKZygF5BTYU0wS6gCqHuH9/E=
 		</data>
 		<key>match.json</key>
 		<data>
@@ -206,14 +206,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sAcpGJ/YgSnMSNIddh9jww6xX8JUcqWON71a0Uhi7Tw=
+			a2hNU0a0pdIo7sMf3U9BFoOGJe9iPuKMXDjMFnMdxPQ=
 			</data>
 		</dict>
 		<key>BoardItemHistoryCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aSem554on39eGgSprKsE54slL/nINXU0MAXEWm0rKLk=
+			xqd3R72epuHLt04HRtcu8LvrckJIAqQ1EX21tTXmUik=
 			</data>
 		</dict>
 		<key>BookingPaidTableViewCell.nib</key>
@@ -297,14 +297,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QmE2zpV0JDtYN12wHJQV+BxqfmW2QQ9ArSmKJV3ipiE=
+			NSHSM+6wtyaVDL2gmFd+OdfZN8j0cCi1wNXD9l0Jnm4=
 			</data>
 		</dict>
 		<key>HistoryHeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MybMkEQJNFp2rupx1vhbM62byXTZIW1n45nKPiwesEo=
+			Zw8QwJ2AsHnnuDtbzbbBlq+9UuIGsKjsYEs3a+XkiNg=
 			</data>
 		</dict>
 		<key>HistoryTabHeaderCollectionViewCell.nib</key>
@@ -367,7 +367,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fasOvj6pKNeKKZYDZG21B2d6g5lkcb15EHYNT7m+ZsA=
+			JNc6H+Qv3QhZzx3ToQauUrwDO0QSY5ef8qkzbvtI+/0=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -395,14 +395,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vlt1p0zMdZKyaSUWd4LJZ9iHoOzhgfCmEEN5dJpR6O4=
+			KftFo4B/e8odKclfQ5lMfgJ7r08aEDbsKO9z0n75tC8=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fasOvj6pKNeKKZYDZG21B2d6g5lkcb15EHYNT7m+ZsA=
+			JNc6H+Qv3QhZzx3ToQauUrwDO0QSY5ef8qkzbvtI+/0=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -430,7 +430,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iwxY4AzVpD1Vu+VUPZ4J73R/0JOfpZH83AsmohNNgSA=
+			WP2JO6efUOu4H+QrLqfMgOGpUASs4tQZihlP45xsa3A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -507,7 +507,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ynhFTgwa+Hi6K8GSzGZHzboZISn/lRXi3u7/j6F+bcQ=
+			9528BMq1+qCCpChFB72ONVEjMIGyeZ7ylghvLfOrnUs=
 			</data>
 		</dict>
 		<key>match.json</key>
