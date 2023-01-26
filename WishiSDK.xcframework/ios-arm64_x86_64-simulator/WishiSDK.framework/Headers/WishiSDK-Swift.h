@@ -339,7 +339,6 @@ SWIFT_CLASS_NAMED("PersistentMessageDataItem")
 @end
 
 
-
 @class NSSet;
 
 @interface PersistentMessageDataItem (SWIFT_EXTENSION(WishiSDK))
@@ -878,7 +877,6 @@ SWIFT_CLASS_NAMED("PersistentMessageDataItem")
 @interface PersistentMessageDataItem : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 @class NSSet;

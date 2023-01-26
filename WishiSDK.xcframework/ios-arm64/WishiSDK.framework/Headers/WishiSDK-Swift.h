@@ -339,7 +339,6 @@ SWIFT_CLASS_NAMED("PersistentMessageDataItem")
 @end
 
 
-
 @class NSSet;
 
 @interface PersistentMessageDataItem (SWIFT_EXTENSION(WishiSDK))
