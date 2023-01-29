@@ -209,6 +209,9 @@ public enum ConfigurationStyle {
   case quizProgressSubheaderFont
   case themeFont
   case themeBoldFont
+  case functionalHeading
+  case largeBody
+  case largeBodyBold
   case quizProgressHeaderColor
   case quizProgressSubheaderColor
   case headerColor
@@ -302,6 +305,7 @@ public protocol WishiSDKDelegate : AnyObject {
   func presented(viewController: UIKit.UIViewController)
   func sdkFailure(error: WishiSDK.SDKError)
   func onItemClick(url: Swift.String)
+  func onReadMessages(unreadMessage: Swift.Int)
 }
 @objc @_inheritsConvenienceInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
   public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
