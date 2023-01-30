@@ -530,6 +530,7 @@ SWIFT_CLASS("_TtC8WishiSDK5Wishi")
 
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -1067,6 +1068,7 @@ SWIFT_CLASS("_TtC8WishiSDK5Wishi")
 @interface Wishi : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

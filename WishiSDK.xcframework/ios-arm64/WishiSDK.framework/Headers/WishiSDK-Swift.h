@@ -530,6 +530,7 @@ SWIFT_CLASS("_TtC8WishiSDK5Wishi")
 
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif
