@@ -2670,8 +2670,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "WishiSDK",
         "declAttributes": [
@@ -5383,16 +5383,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WishiSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6730,6 +6720,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WishiSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "WishiSDK",
         "declAttributes": [
@@ -23693,6 +23693,20 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
+      "offset": 1908,
+      "length": 53,
+      "value": "\"Here, you can check all the boards and items shared\""
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
+      "kind": "StringLiteral",
+      "offset": 1992,
+      "length": 88,
+      "value": "\"Upload your favourite photos here and we’ll work on the best recommendations for you\""
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
+      "kind": "StringLiteral",
       "offset": 182,
       "length": 16,
       "value": "\"items_selected\""
@@ -23920,6 +23934,20 @@
       "offset": 1701,
       "length": 15,
       "value": "\"session_ended\""
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
+      "kind": "StringLiteral",
+      "offset": 1908,
+      "length": 53,
+      "value": "\"Here, you can check all the boards and items shared\""
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
+      "kind": "StringLiteral",
+      "offset": 1992,
+      "length": 88,
+      "value": "\"Upload your favourite photos here and we’ll work on the best recommendations for you\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/Session Status\/SessionStatusTableViewCell.swift",
@@ -24162,455 +24190,455 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 17879,
+      "offset": 17878,
       "length": 5,
       "value": "0.447"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 17893,
+      "offset": 17892,
       "length": 5,
       "value": "0.447"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 17906,
+      "offset": 17905,
       "length": 5,
       "value": "0.447"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 17920,
+      "offset": 17919,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 17981,
+      "offset": 17980,
       "length": 5,
       "value": "0.133"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 17995,
+      "offset": 17994,
       "length": 5,
       "value": "0.133"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18008,
+      "offset": 18007,
       "length": 5,
       "value": "0.133"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18022,
+      "offset": 18021,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18084,
+      "offset": 18083,
       "length": 4,
       "value": "0.96"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18097,
+      "offset": 18096,
       "length": 4,
       "value": "0.96"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18109,
+      "offset": 18108,
       "length": 4,
       "value": "0.96"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18122,
+      "offset": 18121,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18185,
+      "offset": 18184,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18198,
+      "offset": 18197,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18210,
+      "offset": 18209,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18223,
+      "offset": 18222,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18288,
+      "offset": 18287,
       "length": 4,
       "value": "0.13"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18301,
+      "offset": 18300,
       "length": 4,
       "value": "0.13"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18313,
+      "offset": 18312,
       "length": 4,
       "value": "0.13"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18326,
+      "offset": 18325,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18390,
+      "offset": 18389,
       "length": 4,
       "value": "0.71"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18403,
+      "offset": 18402,
       "length": 4,
       "value": "0.71"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18415,
+      "offset": 18414,
       "length": 4,
       "value": "0.71"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18428,
+      "offset": 18427,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18501,
+      "offset": 18500,
       "length": 4,
       "value": "0.96"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18514,
+      "offset": 18513,
       "length": 4,
       "value": "0.96"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18526,
+      "offset": 18525,
       "length": 4,
       "value": "0.96"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18539,
+      "offset": 18538,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18607,
+      "offset": 18606,
       "length": 4,
       "value": "0.13"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18620,
+      "offset": 18619,
       "length": 4,
       "value": "0.13"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 18632,
+      "offset": 18631,
       "length": 4,
       "value": "0.13"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18645,
+      "offset": 18644,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18701,
+      "offset": 18700,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18764,
+      "offset": 18763,
       "length": 3,
       "value": "172"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18777,
+      "offset": 18776,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18830,
+      "offset": 18829,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18910,
+      "offset": 18909,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 18960,
+      "offset": 18959,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19010,
+      "offset": 19009,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19113,
+      "offset": 19112,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19166,
+      "offset": 19165,
       "length": 3,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19215,
+      "offset": 19214,
       "length": 2,
       "value": "42"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19323,
+      "offset": 19322,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19376,
+      "offset": 19375,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19429,
+      "offset": 19428,
       "length": 2,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19477,
+      "offset": 19476,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19573,
+      "offset": 19572,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19618,
+      "offset": 19617,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19696,
+      "offset": 19695,
       "length": 33,
       "value": "\"Are you enjoying Style Advisor?\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19779,
+      "offset": 19778,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19827,
+      "offset": 19826,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19923,
+      "offset": 19922,
       "length": 25,
       "value": "\"Add additional feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19998,
+      "offset": 19997,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20050,
+      "offset": 20049,
       "length": 2,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20098,
+      "offset": 20097,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20198,
+      "offset": 20197,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20250,
+      "offset": 20249,
       "length": 2,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20295,
+      "offset": 20294,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "StringLiteral",
-      "offset": 20375,
+      "offset": 20374,
       "length": 17,
       "value": "\"Submit Feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20440,
+      "offset": 20439,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20490,
+      "offset": 20489,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20541,
+      "offset": 20540,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20594,
+      "offset": 20593,
       "length": 3,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20646,
+      "offset": 20645,
       "length": 3,
       "value": "50"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/RateExperienceViewController\/RateExperienceViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20692,
+      "offset": 20691,
       "length": 2,
       "value": "44"
     },
@@ -25471,7 +25499,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 536,
+      "offset": 1012,
       "length": 4,
       "value": "true"
     },
@@ -26997,14 +27025,14 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ChatHeaderView\/ChatHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 705,
+      "offset": 798,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ChatHeaderView\/ChatHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 795,
+      "offset": 888,
       "length": 2,
       "value": "\"\""
     },
@@ -28397,77 +28425,77 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2631,
+      "offset": 2630,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2647,
+      "offset": 2646,
       "length": 33,
       "value": "\"application\/json; charset=UTF-8\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2940,
+      "offset": 2939,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2956,
+      "offset": 2955,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3416,
+      "offset": 3415,
       "length": 12,
       "value": "\"background\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3674,
+      "offset": 3673,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3694,
+      "offset": 3693,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3711,
+      "offset": 3710,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3754,
+      "offset": 3753,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3800,
+      "offset": 3799,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 3816,
+      "offset": 3815,
       "length": 33,
       "value": "\"application\/json; charset=UTF-8\""
     },
@@ -31771,7 +31799,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "Array",
-      "offset": 11221,
+      "offset": 11222,
       "length": 2,
       "value": "[]"
     },
@@ -31809,6 +31837,97 @@
       "offset": 518,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 156,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 171,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 187,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 156,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 171,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 187,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 156,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 171,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 187,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "FloatLiteral",
+      "offset": 311,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "FloatLiteral",
+      "offset": 349,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "FloatLiteral",
+      "offset": 420,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/ToolTipView\/ToolTipView.swift",
+      "kind": "FloatLiteral",
+      "offset": 456,
+      "length": 5,
+      "value": "196.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Model\/Answer\/WSQuizAnswer.swift",
@@ -32021,7 +32140,7 @@
       "value": "\"item_id\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Participants\/ParticipantsManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ParticipantsManager.swift",
       "kind": "Array",
       "offset": 370,
       "length": 2,
@@ -33330,112 +33449,112 @@
       "value": "\"WishiSDK.WSChatSessionState\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 381,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 381,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 381,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 455,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 479,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 502,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 517,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 535,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 455,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 479,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 502,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 517,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
       "offset": 535,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
       "offset": 712,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
       "offset": 765,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Conversation\/ConversationManager.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ConversationManager.swift",
       "kind": "Array",
       "offset": 912,
       "length": 2,
