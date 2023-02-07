@@ -396,7 +396,6 @@ SWIFT_CLASS_NAMED("PersistentParticipantDataItem")
 SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 @interface QuizViewController : UIViewController
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -487,10 +486,13 @@ SWIFT_CLASS("_TtC8WishiSDK13SocketManager")
 
 
 
+
+
+
+
 @interface UINavigationController (SWIFT_EXTENSION(WishiSDK))
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 @end
-
 
 
 
@@ -937,7 +939,6 @@ SWIFT_CLASS_NAMED("PersistentParticipantDataItem")
 SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 @interface QuizViewController : UIViewController
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -1028,10 +1029,13 @@ SWIFT_CLASS("_TtC8WishiSDK13SocketManager")
 
 
 
+
+
+
+
 @interface UINavigationController (SWIFT_EXTENSION(WishiSDK))
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 @end
-
 
 
 

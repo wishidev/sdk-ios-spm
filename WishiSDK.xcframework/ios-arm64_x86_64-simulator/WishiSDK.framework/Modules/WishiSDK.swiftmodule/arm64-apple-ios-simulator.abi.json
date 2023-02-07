@@ -688,16 +688,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WishiSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2777,16 +2767,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WishiSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3726,38 +3706,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "viewDidAppear",
-            "printedName": "viewDidAppear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@WishiSDK@objc(cs)QuizViewController(im)viewDidAppear:",
-            "mangledName": "$s8WishiSDK18QuizViewControllerC13viewDidAppearyySbF",
-            "moduleName": "WishiSDK",
-            "overriding": true,
-            "objc_name": "viewDidAppear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(nibName:bundle:)",
@@ -3941,6 +3889,16 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "WishiSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WishiSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -23707,6 +23665,13 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
+      "offset": 2154,
+      "length": 18,
+      "value": "\"chevron.backward\""
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
+      "kind": "StringLiteral",
       "offset": 182,
       "length": 16,
       "value": "\"items_selected\""
@@ -23948,6 +23913,13 @@
       "offset": 2002,
       "length": 88,
       "value": "\"Upload your favourite photos here and we’ll work on the best recommendations for you\""
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
+      "kind": "StringLiteral",
+      "offset": 2154,
+      "length": 18,
+      "value": "\"chevron.backward\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/Session Status\/SessionStatusTableViewCell.swift",
@@ -24650,11 +24622,39 @@
       "value": "44"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Views\/NavHeaderView\/NavHeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 234,
-      "length": 2,
-      "value": "44"
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/ViewControllers\/QuizContainerViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1193,
+      "length": 5,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/ViewControllers\/QuizContainerViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1233,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/ViewControllers\/QuizContainerViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1270,
+      "length": 4,
+      "value": "44.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/ViewControllers\/QuizContainerViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1310,
+      "length": 4,
+      "value": "22.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/ViewControllers\/QuizContainerViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1335,
+      "length": 4,
+      "value": "17.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/ThreadSafeDictionary.swift",
@@ -24700,17 +24700,24 @@
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/MatchHeader\/MatchHeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 212,
-      "length": 2,
-      "value": "88"
+      "kind": "FloatLiteral",
+      "offset": 183,
+      "length": 4,
+      "value": "87.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/MatchHeader\/MatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 224,
+      "offset": 232,
       "length": 2,
-      "value": "88"
+      "value": "87"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/MatchHeader\/MatchHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 2,
+      "value": "87"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/APIClient\/RequestBuilder.swift",
@@ -25105,34 +25112,6 @@
       "value": "\"WishiSDK.WSChatLook\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/Views\/QuizNavigation\/QuizNavigationView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 230,
-      "length": 3,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/Views\/QuizNavigation\/QuizNavigationView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 288,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/Views\/QuizNavigation\/QuizNavigationView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 346,
-      "length": 3,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Quiz\/Views\/QuizNavigation\/QuizNavigationView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 403,
-      "length": 1,
-      "value": "3"
-    },
-    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Starscream\/Compression\/WSCompression.swift",
       "kind": "StringLiteral",
       "offset": 1370,
@@ -25511,6 +25490,20 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/SingleImage\/SingleImageViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 344,
+      "length": 5,
+      "value": "497.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/SingleImage\/SingleImageViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 376,
+      "length": 4,
+      "value": "28.0"
+    },
+    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/CoreData\/PersistentConversationDataItem+CoreDataExt.swift",
       "kind": "IntegerLiteral",
       "offset": 159,
@@ -25702,7 +25695,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/SingleTextField\/SingleTextFieldViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 702,
+      "offset": 525,
       "length": 5,
       "value": "false"
     },
@@ -25840,749 +25833,749 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 441,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 651,
       "length": 11,
       "value": "\"iPhone1,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 687,
       "length": 8,
       "value": "\"iPhone\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 707,
       "length": 11,
       "value": "\"iPhone1,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 11,
       "value": "\"iPhone 3G\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 766,
       "length": 11,
       "value": "\"iPhone2,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 802,
       "length": 12,
       "value": "\"iPhone 3GS\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 826,
       "length": 11,
       "value": "\"iPhone3,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 862,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 884,
       "length": 11,
       "value": "\"iPhone3,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 920,
       "length": 20,
       "value": "\"iPhone 4 GSM Rev A\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 952,
       "length": 11,
       "value": "\"iPhone3,3\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 988,
       "length": 15,
       "value": "\"iPhone 4 CDMA\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1015,
       "length": 11,
       "value": "\"iPhone4,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1051,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1074,
       "length": 11,
       "value": "\"iPhone5,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1110,
       "length": 16,
       "value": "\"iPhone 5 (GSM)\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1138,
       "length": 11,
       "value": "\"iPhone5,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1174,
       "length": 21,
       "value": "\"iPhone 5 (GSM+CDMA)\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1207,
       "length": 11,
       "value": "\"iPhone5,3\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1243,
       "length": 17,
       "value": "\"iPhone 5C (GSM)\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1272,
       "length": 11,
       "value": "\"iPhone5,4\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1308,
       "length": 20,
       "value": "\"iPhone 5C (Global)\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1340,
       "length": 11,
       "value": "\"iPhone6,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1376,
       "length": 17,
       "value": "\"iPhone 5S (GSM)\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1405,
       "length": 11,
       "value": "\"iPhone6,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1441,
       "length": 20,
       "value": "\"iPhone 5S (Global)\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1473,
       "length": 11,
       "value": "\"iPhone7,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1509,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1536,
       "length": 11,
       "value": "\"iPhone7,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1572,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1594,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1630,
       "length": 11,
       "value": "\"iPhone 6s\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1653,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1689,
       "length": 16,
       "value": "\"iPhone 6s Plus\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1717,
       "length": 11,
       "value": "\"iPhone8,4\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1753,
       "length": 17,
       "value": "\"iPhone SE (GSM)\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1782,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1818,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1840,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1876,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1903,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1939,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1961,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1997,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2024,
       "length": 12,
       "value": "\"iPhone10,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2060,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2082,
       "length": 12,
       "value": "\"iPhone10,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2118,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2145,
       "length": 12,
       "value": "\"iPhone10,3\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2181,
       "length": 17,
       "value": "\"iPhone X Global\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2210,
       "length": 12,
       "value": "\"iPhone10,4\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2246,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2268,
       "length": 12,
       "value": "\"iPhone10,5\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2304,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2331,
       "length": 12,
       "value": "\"iPhone10,6\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2367,
       "length": 14,
       "value": "\"iPhone X GSM\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2393,
       "length": 12,
       "value": "\"iPhone11,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2429,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2452,
       "length": 12,
       "value": "\"iPhone11,4\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2488,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2515,
       "length": 12,
       "value": "\"iPhone11,6\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2551,
       "length": 22,
       "value": "\"iPhone XS Max Global\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2585,
       "length": 12,
       "value": "\"iPhone11,8\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2621,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2644,
       "length": 12,
       "value": "\"iPhone12,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2680,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2703,
       "length": 12,
       "value": "\"iPhone12,3\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2739,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2766,
       "length": 12,
       "value": "\"iPhone12,5\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2802,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2833,
       "length": 12,
       "value": "\"iPhone12,8\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2869,
       "length": 19,
       "value": "\"iPhone SE 2nd Gen\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2900,
       "length": 12,
       "value": "\"iPhone13,1\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2936,
       "length": 16,
       "value": "\"iPhone 12 Mini\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2964,
       "length": 12,
       "value": "\"iPhone13,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3000,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3023,
       "length": 12,
       "value": "\"iPhone13,3\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3059,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3086,
       "length": 12,
       "value": "\"iPhone13,4\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3122,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3153,
       "length": 12,
       "value": "\"iPhone14,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3189,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3216,
       "length": 12,
       "value": "\"iPhone14,3\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3252,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3283,
       "length": 12,
       "value": "\"iPhone14,4\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3319,
       "length": 16,
       "value": "\"iPhone 13 Mini\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3347,
       "length": 12,
       "value": "\"iPhone14,5\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3383,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3406,
       "length": 12,
       "value": "\"iPhone14,6\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3442,
       "length": 19,
       "value": "\"iPhone SE 3rd Gen\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3473,
       "length": 12,
       "value": "\"iPhone14,7\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3509,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3532,
       "length": 12,
       "value": "\"iPhone14,8\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3568,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3596,
       "length": 12,
       "value": "\"iPhone15,2\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3632,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3659,
       "length": 12,
       "value": "\"iPhone15,3\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3695,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3726,
       "length": 6,
       "value": "\"i386\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3734,
       "length": 8,
       "value": "\"x86_64\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3744,
       "length": 7,
       "value": "\"arm64\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3762,
       "length": 104,
       "value": "\"Simulator \""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3825,
       "length": 28,
       "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3858,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extensions.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
       "offset": 3865,
       "length": 1,
@@ -26654,14 +26647,14 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/MessagesManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 762,
+      "offset": 761,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/MessagesManager.swift",
       "kind": "Array",
-      "offset": 1065,
+      "offset": 1064,
       "length": 2,
       "value": "[]"
     },
@@ -26731,42 +26724,42 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/LookViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 367,
+      "offset": 448,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/LookViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 401,
+      "offset": 482,
       "length": 5,
       "value": "166.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/LookViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 437,
+      "offset": 518,
       "length": 5,
       "value": "358.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/LookViewController.swift",
       "kind": "Array",
-      "offset": 589,
+      "offset": 670,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/LookViewController.swift",
       "kind": "Array",
-      "offset": 1171,
+      "offset": 1254,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/LookViewController.swift",
       "kind": "Array",
-      "offset": 6476,
+      "offset": 7094,
       "length": 2,
       "value": "[]"
     },
@@ -26995,7 +26988,7 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIImage.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIImage+Extention.swift",
       "kind": "FloatLiteral",
       "offset": 254,
       "length": 3,
@@ -27058,21 +27051,21 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIColor+Helpers.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIColor+Extention.swift",
       "kind": "FloatLiteral",
       "offset": 133,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIColor+Helpers.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIColor+Extention.swift",
       "kind": "StringLiteral",
       "offset": 1311,
       "length": 20,
       "value": "\"defaultPrimaryText\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIColor+Helpers.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/UIColor+Extention.swift",
       "kind": "StringLiteral",
       "offset": 1397,
       "length": 15,
@@ -27625,6 +27618,20 @@
       "value": "\"WishiSDK.BindableGestureRecognizer\""
     },
     {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/Color\/UIColor+Extentions.swift",
+      "kind": "StringLiteral",
+      "offset": 1008,
+      "length": 9,
+      "value": "\"#222222\""
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/Color\/UIColor+Extentions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1026,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Starscream\/Server\/WebSocketServer.swift",
       "kind": "StringLiteral",
       "offset": 1387,
@@ -27704,23 +27711,58 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1505,
+      "offset": 1509,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1543,
+      "offset": 1547,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1573,
+      "offset": 1577,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1815,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1846,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1878,
+      "length": 5,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1919,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1944,
+      "length": 4,
+      "value": "50.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Abstract\/QuizViewController.swift",
@@ -27905,6 +27947,27 @@
       "value": "\"DELETE\""
     },
     {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/Button+Extention.swift",
+      "kind": "FloatLiteral",
+      "offset": 169,
+      "length": 4,
+      "value": "44.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/Button+Extention.swift",
+      "kind": "FloatLiteral",
+      "offset": 216,
+      "length": 4,
+      "value": "22.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/Button+Extention.swift",
+      "kind": "FloatLiteral",
+      "offset": 248,
+      "length": 4,
+      "value": "17.0"
+    },
+    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/HistoryHeaderCollectionViewCell.swift",
       "kind": "StringLiteral",
       "offset": 242,
@@ -27959,6 +28022,27 @@
       "offset": 672,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/MatchViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 936,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/MatchViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 967,
+      "length": 4,
+      "value": "26.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/MatchViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 995,
+      "length": 4,
+      "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/DropDown\/Cells\/DropDown\/DropDownCollectionViewCell.swift",
@@ -28285,28 +28369,28 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3188,
+      "offset": 3539,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3708,
+      "offset": 4059,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3748,
+      "offset": 4099,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Managers\/ChatSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 3769,
+      "offset": 4120,
       "length": 1,
       "value": "\".jpeg\""
     },
@@ -30957,6 +31041,27 @@
       "value": "3007"
     },
     {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Reviews\/MatchReviewsCollectionViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 433,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Reviews\/MatchReviewsCollectionViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 458,
+      "length": 5,
+      "value": "271.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Reviews\/MatchReviewsCollectionViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 485,
+      "length": 5,
+      "value": "289.0"
+    },
+    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Starscream\/Engine\/WSEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 653,
@@ -31834,12 +31939,12 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "Array",
-      "offset": 11974,
+      "offset": 12165,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/Bundle+Helpers.swift",
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Extentions\/Bundle+Extension.swift",
       "kind": "StringLiteral",
       "offset": 138,
       "length": 19,
@@ -32047,6 +32152,34 @@
       "offset": 163,
       "length": 20,
       "value": "\"WishiSDK.WSSessionFlowSubline\""
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/UploadPhoto\/UploadPhotoViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 622,
+      "length": 5,
+      "value": "0.961"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/UploadPhoto\/UploadPhotoViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 636,
+      "length": 5,
+      "value": "0.961"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/UploadPhoto\/UploadPhotoViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 649,
+      "length": 5,
+      "value": "0.961"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/UploadPhoto\/UploadPhotoViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 663,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Helpers\/Operations\/Operation.swift",
@@ -32782,6 +32915,20 @@
       "offset": 2897,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/SingleImage\/Cells\/SingleImage\/SingleImageCollectionViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 445,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/SingleImage\/Cells\/SingleImage\/SingleImageCollectionViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 488,
+      "length": 5,
+      "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Starscream\/Transport\/FoundationTransport.swift",
