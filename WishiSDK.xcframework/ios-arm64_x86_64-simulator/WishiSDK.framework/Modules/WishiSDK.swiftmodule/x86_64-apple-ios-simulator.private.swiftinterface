@@ -123,18 +123,6 @@ public struct KeychainSwiftConstants {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @objc deinit
 }
-public enum KeychainSwiftAccessOptions {
-  case accessibleWhenUnlocked
-  case accessibleWhenUnlockedThisDeviceOnly
-  case accessibleAfterFirstUnlock
-  case accessibleAfterFirstUnlockThisDeviceOnly
-  case accessibleWhenPasscodeSetThisDeviceOnly
-  public static func == (a: WishiSDK.KeychainSwiftAccessOptions, b: WishiSDK.KeychainSwiftAccessOptions) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public enum WishiEnviroment {
   case production
   case development
@@ -146,15 +134,13 @@ public enum WishiEnviroment {
     get
   }
 }
-public enum SDKError : Swift.Error {
-  case sdkNotInitialized
-  case missingClientInfoAndUserData
-  case missingClientId
-  case failToInitSDK
-  case failToAuthenticate
-  case failToGenerateToken
-  case failToGetUserStatus
-  public static func == (a: WishiSDK.SDKError, b: WishiSDK.SDKError) -> Swift.Bool
+public enum KeychainSwiftAccessOptions {
+  case accessibleWhenUnlocked
+  case accessibleWhenUnlockedThisDeviceOnly
+  case accessibleAfterFirstUnlock
+  case accessibleAfterFirstUnlockThisDeviceOnly
+  case accessibleWhenPasscodeSetThisDeviceOnly
+  public static func == (a: WishiSDK.KeychainSwiftAccessOptions, b: WishiSDK.KeychainSwiftAccessOptions) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -197,35 +183,85 @@ public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringC
   open func removeSocket(_ socket: WishiSDK.SocketIOClient) -> WishiSDK.SocketIOClient?
   open func socket(forNamespace nsp: Swift.String) -> WishiSDK.SocketIOClient
 }
+public enum SDKError : Swift.Error {
+  case sdkNotInitialized
+  case missingClientInfoAndUserData
+  case missingClientId
+  case failToInitSDK
+  case failToAuthenticate
+  case failToGenerateToken
+  case failToGetUserStatus
+  case fail401UnAuthorized
+  public static func == (a: WishiSDK.SDKError, b: WishiSDK.SDKError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers public class WSQuizAnswer : ObjectiveC.NSObject {
   @objc deinit
 }
 public enum ConfigurationStyle {
-  case headerFont
-  case subheaderFont
-  case freeTextHeaderFont
-  case quizProgressHeaderFont
-  case quizProgressSubheaderFont
-  case themeFont
-  case themeBoldFont
-  case functionalHeading
-  case largeBody
-  case largeBodyBold
-  case quizProgressHeaderColor
-  case quizProgressSubheaderColor
-  case headerColor
-  case subheaderColor
-  case themeColor
-  case unselectedBorderColor
-  case nextButtonFont
-  case nextButtonBackgroundColor
-  case nextButtonTextColor
-  case freeTextCheckedImage
-  case uploadPhotoImage
-  case checkImage
+  case lookViewPriceFont
+  case lookViewNameFont
+  case itemViewPriceFont
+  case itemViewNameFont
+  case itemViewReviseItFont
+  case chatMessageTimestempFont
+  case chatSectionHeaderFont
+  case chatLoveItReStyleItFont
+  case rateTitleFont
+  case rateTitleColor
+  case rateTextiewFont
+  case rateTextiewColor
+  case ratePlaceholderFont
+  case rateSubmitButtonFont
+  case rateDoneButtonFont
+  case rateAnswerTextCellFont
+  case rateUnderscoreViewColor
+  case matchActivityIndicatorFont
+  case matchActivityIndicatorColor
+  case matchExpertNameFont
+  case matchExpertNameColor
+  case matchExpertCityNameFont
+  case matchExpertCityNameColor
+  case matchLooksCellTitleFont
+  case matchLooksCellTitleColor
+  case matchLookCellBorderColor
+  case matchInfoCellHeaderFont
+  case matchInfoCellHeaderColor
+  case matchInfoCellTitleFont
+  case matchInfoCellTitleColor
+  case matchReviewCellNameFont
+  case matchReviewCellNameColor
+  case matchReviewCellTitleFont
+  case matchReviewCellTitleColor
+  case matchReviewCellTextFont
+  case matchReviewCellTextColor
+  case quizAnswerSelectedFont
+  case quizAnswerUnselectedFont
+  case quizAnswerLabelColor
+  case quizBorderUnselectedColor
+  case quizBorderSelectedColor
+  case uploadBackgroundColor
+  case uploadDeleteImage
+  case uploadPhotoButtonFont
+  case uploadPhotoButtonColor
+  case navigationTitleFont
+  case navigationSubTitleFont
+  case navigationTitleColor
+  case navigationSubTitleColor
+  case quizButtonFont
+  case quizButtonColor
+  case quizHeaderFont
+  case quizSubHeaderFont
+  case quizSubHeaderColor
+  case quizHeaderColor
+  case quizButtonTextColor
+  case historyProductsSectionHeaderFont
+  case historyProductsSectionHeaderColor
+  case tooltipTitleFont
   case deleteImage
-  case closeImage
-  case backImage
   public static func == (a: WishiSDK.ConfigurationStyle, b: WishiSDK.ConfigurationStyle) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -290,9 +326,9 @@ public struct UserStatus {
   public var unreadMessageCount: Swift.Int?
 }
 public struct ClientInfo {
-  public var firstName: Swift.String!
-  public var lastName: Swift.String!
-  public var email: Swift.String!
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var email: Swift.String
   public var birthday: Swift.String?
   public var phone: Swift.String?
   public var gender: WishiSDK.Gender?
@@ -311,11 +347,11 @@ public protocol WishiSDKDelegate : AnyObject {
   public typealias ClientSDKFailure = ((Swift.Error?) -> Swift.Void)?
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
-  public func initSDK(clientInfo: WishiSDK.ClientInfo, apiKey: Swift.String, partnerToken: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiSDKDelegate, isDebug: Swift.Bool = false, completion: ((Swift.Bool) -> Swift.Void))
+  public func initSDK(clientInfo: WishiSDK.ClientInfo, partnerKey: Swift.String, partnerToken: Swift.String, partnerUserId: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiSDKDelegate, isDebug: Swift.Bool = false, completion: @escaping ((Swift.Bool) -> Swift.Void))
   public func launch(from presentingController: UIKit.UINavigationController)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
-  public func generateAccessToken(parameters: [Swift.String : Swift.String], success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public func wishiSDKVersion() -> Swift.String
+  public func logout()
   @objc override dynamic public init()
   public typealias ID = Foundation.UUID
   @objc deinit
@@ -610,10 +646,10 @@ extension WishiSDK.PersistentParticipantDataItem {
 extension WishiSDK.PersistentParticipantDataItem : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-extension WishiSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
-extension WishiSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
 extension WishiSDK.WishiEnviroment : Swift.Equatable {}
 extension WishiSDK.WishiEnviroment : Swift.Hashable {}
+extension WishiSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
+extension WishiSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
 extension WishiSDK.SDKError : Swift.Equatable {}
 extension WishiSDK.SDKError : Swift.Hashable {}
 extension WishiSDK.ConfigurationStyle : Swift.Equatable {}
