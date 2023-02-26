@@ -29807,69 +29807,69 @@
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 1089,
-      "length": 27,
-      "value": "\"\/user\/%wishiUserId%\/looks\""
+      "length": 33,
+      "value": "\"\/proxy\/user\/%wishiUserId%\/looks\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1163,
-      "length": 46,
-      "value": "\"\/message\/%conversationId%\/%messageSid%\/reply\""
+      "offset": 1170,
+      "length": 52,
+      "value": "\"\/proxy\/message\/%conversationId%\/%messageSid%\/reply\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1268,
+      "offset": 1282,
       "length": 48,
       "value": "\"\/onboardingQuestions\/respondAndGetNextQuestion\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1367,
+      "offset": 1381,
       "length": 26,
       "value": "\"\/images\/generatePhotoUrl\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1435,
+      "offset": 1449,
       "length": 47,
       "value": "\"\/chat\/channel\/%conversationId%\/status\/styling\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1522,
+      "offset": 1536,
       "length": 30,
       "value": "\"\/chat\/%conversationId%\/items\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1614,
       "length": 38,
       "value": "\"\/chat\/conversations\/%conversationId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1677,
+      "offset": 1691,
       "length": 14,
       "value": "\"\/auth\/sdk\/v2\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1740,
+      "offset": 1754,
       "length": 18,
       "value": "\"\/onboarding\/done\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1828,
+      "offset": 1842,
       "length": 39,
       "value": "\"\/onboardingQuestions\/previousQuestion\""
     },
