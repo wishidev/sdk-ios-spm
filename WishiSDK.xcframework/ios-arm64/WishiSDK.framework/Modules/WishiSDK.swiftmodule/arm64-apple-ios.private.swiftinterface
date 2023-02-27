@@ -187,11 +187,9 @@ public enum SDKError : Swift.Error {
   case sdkNotInitialized
   case missingClientInfoAndUserData
   case missingClientId
-  case failToInitSDK
-  case failToAuthenticate
-  case failToGenerateToken
   case failToGetUserStatus
-  case fail401UnAuthorized
+  case unAuthorized
+  case newloginSessionRequired
   public static func == (a: WishiSDK.SDKError, b: WishiSDK.SDKError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
