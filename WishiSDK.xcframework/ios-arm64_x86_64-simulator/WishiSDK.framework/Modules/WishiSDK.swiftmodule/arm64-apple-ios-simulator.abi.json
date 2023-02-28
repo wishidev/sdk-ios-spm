@@ -110,16 +110,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WishiSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1190,16 +1180,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WishiSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "WishiSDK",
         "declAttributes": [
@@ -24430,756 +24410,756 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 138,
+      "offset": 191,
       "length": 10,
       "value": "\"Feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 165,
+      "offset": 218,
       "length": 6,
       "value": "\"Look\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 201,
+      "offset": 254,
       "length": 21,
       "value": "\"Online Stylist Quiz\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 266,
+      "offset": 319,
       "length": 15,
       "value": "\"Style Advisor\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 307,
+      "offset": 360,
       "length": 16,
       "value": "\"items_selected\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 476,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 507,
+      "offset": 560,
       "length": 9,
       "value": "\"Version\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 575,
+      "offset": 628,
       "length": 13,
       "value": "\"wishiUserID\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 663,
+      "offset": 716,
       "length": 12,
       "value": "\"Select all\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 696,
+      "offset": 749,
       "length": 11,
       "value": "\"Clear all\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 974,
+      "offset": 1027,
       "length": 10,
       "value": "\"me.wishi\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 1082,
       "length": 14,
       "value": "\"Upload photo\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1092,
+      "offset": 1145,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1146,
+      "offset": 1199,
       "length": 11,
       "value": "\"extension\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1210,
+      "offset": 1263,
       "length": 8,
       "value": "\"system\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 1288,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1272,
+      "offset": 1325,
       "length": 23,
       "value": "\"check_out_your_outfit\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1324,
+      "offset": 1377,
       "length": 18,
       "value": "\"items_collection\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1370,
+      "offset": 1423,
       "length": 17,
       "value": "\"update_calendar\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 1461,
       "length": 11,
       "value": "\"add_items\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1446,
+      "offset": 1499,
       "length": 18,
       "value": "\"items_to_replace\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1489,
+      "offset": 1542,
       "length": 24,
       "value": "\"select_budget_per_look\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1548,
+      "offset": 1601,
       "length": 24,
       "value": "\"select_budget_per_item\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1650,
       "length": 21,
       "value": "\"satisfaction_survey\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1637,
+      "offset": 1690,
       "length": 16,
       "value": "\"stylist_review\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1678,
+      "offset": 1731,
       "length": 15,
       "value": "\"look_feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1730,
+      "offset": 1783,
       "length": 13,
       "value": "\"ps_feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1814,
       "length": 13,
       "value": "\"media_image\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1801,
+      "offset": 1854,
       "length": 18,
       "value": "\"media_type_image\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1837,
+      "offset": 1890,
       "length": 15,
       "value": "\"audio_message\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1874,
+      "offset": 1927,
       "length": 11,
       "value": "\"moodboard\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1914,
+      "offset": 1967,
       "length": 37,
       "value": "\"items_to_replace_size_not_available\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1974,
+      "offset": 2027,
       "length": 17,
       "value": "\"items_you_liked\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2008,
+      "offset": 2061,
       "length": 6,
       "value": "\"item\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2031,
+      "offset": 2084,
       "length": 6,
       "value": "\"like\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2054,
+      "offset": 2107,
       "length": 6,
       "value": "\"love\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2091,
+      "offset": 2144,
       "length": 38,
       "value": "\"subscription_updated_status_canceled\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2160,
+      "offset": 2213,
       "length": 36,
       "value": "\"subscription_updated_status_active\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2277,
       "length": 39,
       "value": "\"status_update_pending_client_approval\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2294,
+      "offset": 2347,
       "length": 23,
       "value": "\"style_photos_you_like\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2342,
+      "offset": 2395,
       "length": 15,
       "value": "\"session_ended\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2620,
+      "offset": 2673,
       "length": 53,
       "value": "\"Here, you can check all the boards and items shared\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2704,
+      "offset": 2757,
       "length": 88,
       "value": "\"Upload your favourite photos here and we’ll work on the best recommendations for you\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2861,
+      "offset": 2914,
       "length": 24,
       "value": "\"selected_reply_options\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2911,
+      "offset": 2964,
       "length": 16,
       "value": "\"selected_items\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2955,
+      "offset": 3008,
       "length": 18,
       "value": "\"chevron.backward\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3027,
+      "offset": 3080,
       "length": 14,
       "value": "\"%partnerKey%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3072,
+      "offset": 3125,
       "length": 17,
       "value": "\"%partnerUserId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3116,
+      "offset": 3169,
       "length": 15,
       "value": "\"%wishiUserId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3164,
+      "offset": 3217,
       "length": 18,
       "value": "\"%conversationId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3210,
+      "offset": 3263,
       "length": 14,
       "value": "\"%messageSid%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3247,
+      "offset": 3300,
       "length": 8,
       "value": "\"%uuid%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3279,
+      "offset": 3332,
       "length": 10,
       "value": "\"%userId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3342,
+      "offset": 3395,
       "length": 16,
       "value": "\"session_status\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 138,
+      "offset": 191,
       "length": 10,
       "value": "\"Feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 165,
+      "offset": 218,
       "length": 6,
       "value": "\"Look\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 201,
+      "offset": 254,
       "length": 21,
       "value": "\"Online Stylist Quiz\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 266,
+      "offset": 319,
       "length": 15,
       "value": "\"Style Advisor\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 307,
+      "offset": 360,
       "length": 16,
       "value": "\"items_selected\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 476,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 507,
+      "offset": 560,
       "length": 9,
       "value": "\"Version\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 575,
+      "offset": 628,
       "length": 13,
       "value": "\"wishiUserID\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 663,
+      "offset": 716,
       "length": 12,
       "value": "\"Select all\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 696,
+      "offset": 749,
       "length": 11,
       "value": "\"Clear all\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 974,
+      "offset": 1027,
       "length": 10,
       "value": "\"me.wishi\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 1082,
       "length": 14,
       "value": "\"Upload photo\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1092,
+      "offset": 1145,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1146,
+      "offset": 1199,
       "length": 11,
       "value": "\"extension\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1210,
+      "offset": 1263,
       "length": 8,
       "value": "\"system\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 1288,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1272,
+      "offset": 1325,
       "length": 23,
       "value": "\"check_out_your_outfit\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1324,
+      "offset": 1377,
       "length": 18,
       "value": "\"items_collection\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1370,
+      "offset": 1423,
       "length": 17,
       "value": "\"update_calendar\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 1461,
       "length": 11,
       "value": "\"add_items\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1446,
+      "offset": 1499,
       "length": 18,
       "value": "\"items_to_replace\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1489,
+      "offset": 1542,
       "length": 24,
       "value": "\"select_budget_per_look\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1548,
+      "offset": 1601,
       "length": 24,
       "value": "\"select_budget_per_item\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1650,
       "length": 21,
       "value": "\"satisfaction_survey\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1637,
+      "offset": 1690,
       "length": 16,
       "value": "\"stylist_review\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1678,
+      "offset": 1731,
       "length": 15,
       "value": "\"look_feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1730,
+      "offset": 1783,
       "length": 13,
       "value": "\"ps_feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1814,
       "length": 13,
       "value": "\"media_image\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1801,
+      "offset": 1854,
       "length": 18,
       "value": "\"media_type_image\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1837,
+      "offset": 1890,
       "length": 15,
       "value": "\"audio_message\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1874,
+      "offset": 1927,
       "length": 11,
       "value": "\"moodboard\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1914,
+      "offset": 1967,
       "length": 37,
       "value": "\"items_to_replace_size_not_available\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 1974,
+      "offset": 2027,
       "length": 17,
       "value": "\"items_you_liked\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2008,
+      "offset": 2061,
       "length": 6,
       "value": "\"item\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2031,
+      "offset": 2084,
       "length": 6,
       "value": "\"like\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2054,
+      "offset": 2107,
       "length": 6,
       "value": "\"love\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2091,
+      "offset": 2144,
       "length": 38,
       "value": "\"subscription_updated_status_canceled\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2160,
+      "offset": 2213,
       "length": 36,
       "value": "\"subscription_updated_status_active\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2277,
       "length": 39,
       "value": "\"status_update_pending_client_approval\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2294,
+      "offset": 2347,
       "length": 23,
       "value": "\"style_photos_you_like\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2342,
+      "offset": 2395,
       "length": 15,
       "value": "\"session_ended\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2620,
+      "offset": 2673,
       "length": 53,
       "value": "\"Here, you can check all the boards and items shared\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2704,
+      "offset": 2757,
       "length": 88,
       "value": "\"Upload your favourite photos here and we’ll work on the best recommendations for you\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2861,
+      "offset": 2914,
       "length": 24,
       "value": "\"selected_reply_options\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2911,
+      "offset": 2964,
       "length": 16,
       "value": "\"selected_items\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 2955,
+      "offset": 3008,
       "length": 18,
       "value": "\"chevron.backward\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3027,
+      "offset": 3080,
       "length": 14,
       "value": "\"%partnerKey%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3072,
+      "offset": 3125,
       "length": 17,
       "value": "\"%partnerUserId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3116,
+      "offset": 3169,
       "length": 15,
       "value": "\"%wishiUserId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3164,
+      "offset": 3217,
       "length": 18,
       "value": "\"%conversationId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3210,
+      "offset": 3263,
       "length": 14,
       "value": "\"%messageSid%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3247,
+      "offset": 3300,
       "length": 8,
       "value": "\"%uuid%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3279,
+      "offset": 3332,
       "length": 10,
       "value": "\"%userId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/Keys.swift",
       "kind": "StringLiteral",
-      "offset": 3342,
+      "offset": 3395,
       "length": 16,
       "value": "\"session_status\""
     },
@@ -26068,112 +26048,112 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2344,
+      "offset": 2363,
       "length": 9,
       "value": "\"buy_url\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2380,
+      "offset": 2399,
       "length": 12,
       "value": "\"pictureUrl\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2413,
+      "offset": 2432,
       "length": 8,
       "value": "\"unique\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2446,
+      "offset": 2465,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2481,
+      "offset": 2500,
       "length": 11,
       "value": "\"item_type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2518,
+      "offset": 2537,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2558,
+      "offset": 2577,
       "length": 14,
       "value": "\"retail_price\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2596,
+      "offset": 2615,
       "length": 9,
       "value": "\"created\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2344,
+      "offset": 2363,
       "length": 9,
       "value": "\"buy_url\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2380,
+      "offset": 2399,
       "length": 12,
       "value": "\"pictureUrl\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2413,
+      "offset": 2432,
       "length": 8,
       "value": "\"unique\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2446,
+      "offset": 2465,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2481,
+      "offset": 2500,
       "length": 11,
       "value": "\"item_type\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2518,
+      "offset": 2537,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2558,
+      "offset": 2577,
       "length": 14,
       "value": "\"retail_price\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/Structures\/WSItem.swift",
       "kind": "StringLiteral",
-      "offset": 2596,
+      "offset": 2615,
       "length": 9,
       "value": "\"created\""
     },
@@ -27002,34 +26982,6 @@
       "offset": 100,
       "length": 4,
       "value": "\"WishiSDK.Look\""
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/ProductItemCollectionViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 291,
-      "length": 2,
-      "value": "75"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/ProductItemCollectionViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 303,
-      "length": 2,
-      "value": "95"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/ProductItemCollectionViewCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 692,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/ProductItemCollectionViewCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 861,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/KeychainSwift\/KeychainSwift.swift",
@@ -27972,14 +27924,14 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/LookViewController.swift",
       "kind": "Array",
-      "offset": 1199,
+      "offset": 1158,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/LookViewController.swift",
       "kind": "Array",
-      "offset": 6527,
+      "offset": 5984,
       "length": 2,
       "value": "[]"
     },
@@ -32373,6 +32325,34 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/HistoryViewControllers\/ProductHistoryViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 494,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/HistoryViewControllers\/ProductHistoryViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 536,
+      "length": 5,
+      "value": "166.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/HistoryViewControllers\/ProductHistoryViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 580,
+      "length": 5,
+      "value": "358.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/HistoryViewControllers\/ProductHistoryViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 620,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Helpers\/TinyConstraints\/Constraints.swift",
       "kind": "IntegerLiteral",
       "offset": 1436,
@@ -33019,7 +32999,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/LookCollectionViewCell .swift",
       "kind": "BooleanLiteral",
-      "offset": 426,
+      "offset": 257,
       "length": 5,
       "value": "false"
     },
@@ -33180,7 +33160,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "Array",
-      "offset": 12097,
+      "offset": 11525,
       "length": 2,
       "value": "[]"
     },
