@@ -114,7 +114,7 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		OFzdY9Jn7HnaRmTLUJxRVwvVpUY=
+		c/OjyetNndWXvEVrSByE4x8UBCw=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BmwHtKezptplzpFSwVruJ+k/qao=
+		SvTzEA87j7YwYS9ovKY3nPMpPM8=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OFzdY9Jn7HnaRmTLUJxRVwvVpUY=
+		c/OjyetNndWXvEVrSByE4x8UBCw=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IaKrlbyEfczTqtRcPUub8LGjAW8=
+		z8nm0u0qSuUS9BNFRNJlEZ82Di8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Version.plist</key>
 		<data>
-		Kptyiuj6ABKW1VoSfBfFJ/+4w/w=
+		+euHAmQn/xsYK8O2v2mjzsaTwUs=
 		</data>
 		<key>match.json</key>
 		<data>
@@ -385,7 +385,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RHczmpRR+mKilgTj4bK3xNysTXnFN99eMRbuePvhvqU=
+			Ddq2NRJJNJR85pOOLxLV9BFbS2RrBx+PRMqfXMNbXb4=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -413,14 +413,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IdqsjDvKBaHM0lpKEAA6UG8G+QwYgVu0xAWuzhf9xiQ=
+			DC9mDZpZkwSbq1j8Ije8X8rLTCsbtknirANy9R857eM=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RHczmpRR+mKilgTj4bK3xNysTXnFN99eMRbuePvhvqU=
+			Ddq2NRJJNJR85pOOLxLV9BFbS2RrBx+PRMqfXMNbXb4=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -448,7 +448,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xpcthmFwIYRnE8q6WwPu+7ZzB+w76/wUvSR/Bnv2nPY=
+			k3K/sf7SrRsrXTxf3sMzPdrrBAn5nUQlegwQtuzahTI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -518,7 +518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XlSLegtXJElzpf3P9A9UPaBDVKPJxsUUFwy8zKJap2U=
+			AGli2a3tA7c9nK+WGKUzfAmEi/DhZ0HQspg7Y1lMkY4=
 			</data>
 		</dict>
 		<key>match.json</key>
