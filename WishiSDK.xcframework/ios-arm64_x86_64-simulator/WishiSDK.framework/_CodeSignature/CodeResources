@@ -106,7 +106,7 @@
 		</data>
 		<key>LookViewController.nib</key>
 		<data>
-		wi+Euwz7O2MkVANhXM3GAvcc3xE=
+		EqG6u+hV/P47JO6Ny9UhhJvOJW8=
 		</data>
 		<key>MessagesViewController.nib</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		c/OjyetNndWXvEVrSByE4x8UBCw=
+		wZVUoFa9m55A1bCb4a6XzPsUh/U=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SvTzEA87j7YwYS9ovKY3nPMpPM8=
+		wYw3i4NNNK10ciBEuL/E1gzz2do=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		c/OjyetNndWXvEVrSByE4x8UBCw=
+		wZVUoFa9m55A1bCb4a6XzPsUh/U=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		z8nm0u0qSuUS9BNFRNJlEZ82Di8=
+		yBgzwYge3xaOTYXqCzvmPK4N5uk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Version.plist</key>
 		<data>
-		+euHAmQn/xsYK8O2v2mjzsaTwUs=
+		LoSzn4knusdypcCOeAIr1W/VPx8=
 		</data>
 		<key>match.json</key>
 		<data>
@@ -371,7 +371,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k4+qxjLOpZ31qf+QK6iJj7QYyqSkwQy+MOmGE8rz/PE=
+			bFZqb8W1BxVqBWzyuAVtYplNjLvmpmGw9LBQzN70RKI=
 			</data>
 		</dict>
 		<key>MessagesViewController.nib</key>
@@ -385,7 +385,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ddq2NRJJNJR85pOOLxLV9BFbS2RrBx+PRMqfXMNbXb4=
+			ABMak2NbxBRJWdu+opBmi79fqqqp6BUtTdfDEYnfLww=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -413,14 +413,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DC9mDZpZkwSbq1j8Ije8X8rLTCsbtknirANy9R857eM=
+			0zcigAe4OAf6DETInSd6PaaxW9FJLWuqy0B5YNi6Rqo=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ddq2NRJJNJR85pOOLxLV9BFbS2RrBx+PRMqfXMNbXb4=
+			ABMak2NbxBRJWdu+opBmi79fqqqp6BUtTdfDEYnfLww=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -448,7 +448,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k3K/sf7SrRsrXTxf3sMzPdrrBAn5nUQlegwQtuzahTI=
+			tEIJCidy4g6TfZzTGZnSCiWBFJw5YeMNZDgPawXGWBI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -518,7 +518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGli2a3tA7c9nK+WGKUzfAmEi/DhZ0HQspg7Y1lMkY4=
+			D5J9SaPiF6fTWDU/7Qjx1mWZsY36/8jFwp5Q+yn73WY=
 			</data>
 		</dict>
 		<key>match.json</key>
