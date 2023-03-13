@@ -26,7 +26,7 @@
 		</data>
 		<key>ChatHeaderView.nib</key>
 		<data>
-		61NeDqW7Cby2f1GhoDg6qYDeP50=
+		FGnSxieZzE8ozWC6RLZ4RGHuWec=
 		</data>
 		<key>ChatSessionTableViewCell.nib</key>
 		<data>
@@ -114,11 +114,11 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		o6cRAKYfjPiE/3IpQEtadJk+Bxg=
+		ADzjplo7o0PP3swi5vIW/kAETEA=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bAvhXvvwmhagVpPPBggrCyW261k=
+		N8vcrgKtSg70k5dxyxZmlBKhR/A=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -126,19 +126,19 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bAvhXvvwmhagVpPPBggrCyW261k=
+		N8vcrgKtSg70k5dxyxZmlBKhR/A=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0dnSkRTpSLXkg56EdLSMWZjftJA=
+		+Syczxsuuom9bw4J8csHWS3Ifc4=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		o6cRAKYfjPiE/3IpQEtadJk+Bxg=
+		ADzjplo7o0PP3swi5vIW/kAETEA=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Fuot5R4CvtJ/OOOS13ZxA8hDoJg=
+		rJ20nneSkY5tq+YHA5zZ9ASeUso=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -146,11 +146,11 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Fuot5R4CvtJ/OOOS13ZxA8hDoJg=
+		rJ20nneSkY5tq+YHA5zZ9ASeUso=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4u9z2ezyeWLB7pL2Vzm9YsAtJrs=
+		o//rLFd3AIsVQe9/jcRaxN7PmjM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Version.plist</key>
 		<data>
-		cL5Gq/IiWdqOYv/gMgYHJL7zwVA=
+		oXRh2/2iyiJ3QtZzH/9JmzXfnFY=
 		</data>
 		<key>match.json</key>
 		<data>
@@ -238,7 +238,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zOXQYqHvcduDSdjjOWy1XiTaXrywcnjrENvMJp68igs=
+			U1wvjJGj3nrVA6H7QAQ+fYFUwg+XHZLkvJBDFeaB71s=
 			</data>
 		</dict>
 		<key>ChatSessionTableViewCell.nib</key>
@@ -385,14 +385,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6G2eFy3JKRfAMxNtKDAMhyMyZPd5j+Z2tApNYe/viTU=
+			348NINJmXOBQbksGDN/l3M5+TPpuxSSbXll9g2wejqE=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYOSvoSHnP7p1q/aLKTycYipvrM0bIBAL94lvV9eucE=
+			X4bBK+Spe8OHEvNLcMCcKVU3AMrNtS7Cu1gwQn99FPg=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -406,28 +406,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYOSvoSHnP7p1q/aLKTycYipvrM0bIBAL94lvV9eucE=
+			X4bBK+Spe8OHEvNLcMCcKVU3AMrNtS7Cu1gwQn99FPg=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			atW4Yj08FN7JDfqjLrDD83vfEhgBWF3LJMYMkzomZ6A=
+			R8u1svz0cDI3YsWRtQFt6nNBD1hmSWlt1GKNkwMGGes=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6G2eFy3JKRfAMxNtKDAMhyMyZPd5j+Z2tApNYe/viTU=
+			348NINJmXOBQbksGDN/l3M5+TPpuxSSbXll9g2wejqE=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8y9HPySdaa1I0EjNenkUUEZ3+w2kHNZl6k5LG69cPjM=
+			TH7Tmtp5kMN3vOpYFTnao2DC50u9loY8FSFOI4wQUfo=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -441,14 +441,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8y9HPySdaa1I0EjNenkUUEZ3+w2kHNZl6k5LG69cPjM=
+			TH7Tmtp5kMN3vOpYFTnao2DC50u9loY8FSFOI4wQUfo=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1kpJONMZArDGyOkTrmVuCo2BImvymNRAoKqbEt2LNq8=
+			IgEB9tcRp9vPoQpb9HQiGMWCI6udmCi9N7DIZ9hXq2A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -518,7 +518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FBYxFYJwumv88DoecvADxQM4kl/7DKRzSEFFlBdknzs=
+			1AXWWPuSRojbLKQydHwOyQvNpD1kY2kmwYq3Pe/wNGI=
 			</data>
 		</dict>
 		<key>match.json</key>

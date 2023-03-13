@@ -209,6 +209,7 @@ public enum ConfigurationStyle {
   case chatSectionHeaderFont
   case chatLoveItReStyleItFont
   case lookViewSelectedBorderColor
+  case chatMessageTextFont
   case rateTitleFont
   case rateTitleColor
   case rateTextiewFont
