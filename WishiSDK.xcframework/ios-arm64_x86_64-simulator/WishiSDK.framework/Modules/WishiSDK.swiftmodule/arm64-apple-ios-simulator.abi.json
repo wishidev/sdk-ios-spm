@@ -4174,43 +4174,6 @@
             "moduleName": "WishiSDK"
           },
           {
-            "kind": "Var",
-            "name": "local",
-            "printedName": "local",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WishiSDK.WishiEnviroment.Type) -> WishiSDK.WishiEnviroment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WishiEnviroment",
-                    "printedName": "WishiSDK.WishiEnviroment",
-                    "usr": "s:8WishiSDK0A10EnviromentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WishiSDK.WishiEnviroment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WishiEnviroment",
-                        "printedName": "WishiSDK.WishiEnviroment",
-                        "usr": "s:8WishiSDK0A10EnviromentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8WishiSDK0A10EnviromentO5localyA2CmF",
-            "mangledName": "$s8WishiSDK0A10EnviromentO5localyA2CmF",
-            "moduleName": "WishiSDK"
-          },
-          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -29216,7 +29179,7 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/CoreData\/CoreDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 404,
+      "offset": 405,
       "length": 5,
       "value": "false"
     },
@@ -29697,27 +29660,6 @@
       "value": "\"👎\""
     },
     {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Env.swift",
-      "kind": "StringLiteral",
-      "offset": 229,
-      "length": 33,
-      "value": "\"https:\/\/dev-api-gw.api.wishi.me\""
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Env.swift",
-      "kind": "StringLiteral",
-      "offset": 306,
-      "length": 42,
-      "value": "\"https:\/\/legacy-api-dev.wishi.me\/api\/slim\""
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Env.swift",
-      "kind": "StringLiteral",
-      "offset": 393,
-      "length": 30,
-      "value": "\"https:\/\/dev-styling.wishi.me\""
-    },
-    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/Model\/CoreData\/ObservableResultPublisher.swift",
       "kind": "IntegerLiteral",
       "offset": 681,
@@ -29825,133 +29767,133 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 448,
       "length": 20,
       "value": "\"media-dev.wishi.me\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "FloatLiteral",
-      "offset": 722,
+      "offset": 500,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 766,
+      "offset": 544,
       "length": 16,
       "value": "\"\/partner\/event\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 814,
+      "offset": 592,
       "length": 26,
       "value": "\"\/session\/%uuid%\/feedback\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 867,
+      "offset": 645,
       "length": 9,
       "value": "\"\/logger\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 918,
+      "offset": 696,
       "length": 28,
       "value": "\"\/images\/createPresignedUrl\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 983,
+      "offset": 761,
       "length": 58,
       "value": "\"\/chat\/partner\/%partnerKey%\/%partnerUserId%\/sessionStatus\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1069,
+      "offset": 847,
       "length": 33,
       "value": "\"\/proxy\/user\/%wishiUserId%\/looks\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1139,
+      "offset": 917,
       "length": 52,
       "value": "\"\/proxy\/message\/%conversationId%\/%messageSid%\/reply\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1240,
+      "offset": 1018,
       "length": 48,
       "value": "\"\/onboardingQuestions\/respondAndGetNextQuestion\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1328,
+      "offset": 1106,
       "length": 26,
       "value": "\"\/images\/generatePhotoUrl\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 1163,
       "length": 47,
       "value": "\"\/chat\/channel\/%conversationId%\/status\/styling\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1239,
       "length": 30,
       "value": "\"\/chat\/%conversationId%\/items\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1528,
+      "offset": 1306,
       "length": 38,
       "value": "\"\/chat\/conversations\/%conversationId%\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1594,
+      "offset": 1372,
       "length": 14,
       "value": "\"\/auth\/sdk\/v2\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1646,
+      "offset": 1424,
       "length": 18,
       "value": "\"\/onboarding\/done\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1723,
+      "offset": 1501,
       "length": 39,
       "value": "\"\/onboardingQuestions\/previousQuestion\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1802,
+      "offset": 1580,
       "length": 35,
       "value": "\"\/chat\/user\/%wishiUserId%\/register\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Managers\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11375,
+      "offset": 11153,
       "length": 1,
       "value": "2"
     },
@@ -35187,14 +35129,14 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Wishi.swift",
       "kind": "Array",
-      "offset": 3643,
+      "offset": 3585,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Wishi.swift",
       "kind": "BooleanLiteral",
-      "offset": 4591,
+      "offset": 4405,
       "length": 5,
       "value": "false"
     },

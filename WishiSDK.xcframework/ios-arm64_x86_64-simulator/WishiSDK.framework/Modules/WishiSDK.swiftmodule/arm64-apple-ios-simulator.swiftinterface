@@ -127,7 +127,6 @@ public enum WishiEnviroment {
   case production
   case development
   case mock
-  case local
   public static func == (a: WishiSDK.WishiEnviroment, b: WishiSDK.WishiEnviroment) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
