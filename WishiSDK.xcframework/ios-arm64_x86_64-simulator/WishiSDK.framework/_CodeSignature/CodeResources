@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		e23lPkhG8kLjiOHXZLEDzl8jcpc=
+		gMblR1ga8diNdrausayI5b6UrB4=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -126,11 +126,11 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		T8e4r0Znf1i5eyzPu+n6NQ9fTZU=
+		khPba+coTfEL81f8cUMM+HhIkII=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		e23lPkhG8kLjiOHXZLEDzl8jcpc=
+		gMblR1ga8diNdrausayI5b6UrB4=
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OvR//uVQlwgwpJsal+etz65s4eM=
+		gBI7u0ILt3BRXaRKFCSukBVkbIg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -182,11 +182,11 @@
 		</data>
 		<key>ToolTipView.nib</key>
 		<data>
-		Xz4a3lFTRL7fRiwFs8RDJ8oyquM=
+		oZcXSCuS2xwzKjN3yo1UHG0WLZo=
 		</data>
 		<key>Version.plist</key>
 		<data>
-		NfLi7bp6Kol/L4Z7Vrhz+gDwP9k=
+		WhT+h7OQxK/rxelvAC+MGz9hWiM=
 		</data>
 		<key>match.json</key>
 		<data>
@@ -374,7 +374,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u3Xi25I7tAtzKyeiPVQNXuOKbwJTbS0TYpLQVohlMNk=
+			1OryKEQmqsctbDdMmgFeVWNSDINz1fevYdJ1QTT6zF8=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -402,14 +402,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BFsEqDcUo96JsVmQtc85HpnXjw5oBuR3qKqJoc9Wv8Y=
+			4gGohjPFiL76h5Lm7mYSjyqy/1vUVXcTTv7iZwdZah4=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u3Xi25I7tAtzKyeiPVQNXuOKbwJTbS0TYpLQVohlMNk=
+			1OryKEQmqsctbDdMmgFeVWNSDINz1fevYdJ1QTT6zF8=
 			</data>
 		</dict>
 		<key>Modules/WishiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -437,7 +437,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bqiI+oAnxKDstXYnQRViFAWpTQTiNyR+u0PBxV+hHwE=
+			zMLMhBlvs01LvhGx/DH87F0xwZLeoYME5NYnum3TRLY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -500,14 +500,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XA/BpDFMFjbAMt57q9hWr+r+aaxxLAiiMR3dQu7R3JE=
+			HOhvupVWvTyuObstsmTPoQfawyHH7ZIgMDzoF79sSJw=
 			</data>
 		</dict>
 		<key>Version.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YGFzCAt9JAMmGoT3TgZPy+blmWJSfYiyJ55mjxEktgw=
+			sBWgNo+GdkxttCSqj/pooOFEh/pVN6e/AcZxyEyOJGA=
 			</data>
 		</dict>
 		<key>match.json</key>
