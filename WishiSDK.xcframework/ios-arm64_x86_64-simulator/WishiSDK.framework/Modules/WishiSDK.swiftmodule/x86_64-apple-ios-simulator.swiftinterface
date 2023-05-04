@@ -204,6 +204,7 @@ public enum ConfigurationStyle {
   case itemViewPriceFont
   case itemViewNameFont
   case itemViewReviseItFont
+  case itemViewReviseItColor
   case chatMessageTimestempFont
   case chatSectionHeaderFont
   case chatLoveItReStyleItFont
@@ -331,7 +332,9 @@ public struct ClientInfo {
   public var birthday: Swift.String?
   public var phone: Swift.String?
   public var gender: WishiSDK.Gender?
-  public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil)
+  public var currency: Swift.String?
+  public var country: Swift.String?
+  public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil, currency: Swift.String? = nil, country: Swift.String? = nil)
 }
 public protocol WishiSDKDelegate : AnyObject {
   func itemsSelected(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer], lastSelectedOption: WishiSDK.WSQuizAnswer)
