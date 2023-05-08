@@ -265,7 +265,6 @@ using UInt = size_t;
 
 
 
-
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -370,24 +369,6 @@ SWIFT_CLASS_NAMED("PersistentMessageDataItem")
 @property (nonatomic, copy) NSString * _Nullable url;
 @property (nonatomic, copy) NSUUID * _Nullable uuid;
 @property (nonatomic, strong) NSSet * _Nullable attachedMedia;
-@end
-
-
-SWIFT_CLASS_NAMED("PersistentParticipantDataItem")
-@interface PersistentParticipantDataItem : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-@interface PersistentParticipantDataItem (SWIFT_EXTENSION(WishiSDK))
-@property (nonatomic, copy) NSString * _Nullable attributes;
-@property (nonatomic, copy) NSString * _Nullable conversationSid;
-@property (nonatomic, copy) NSString * _Nullable identity;
-@property (nonatomic) int64_t lastReadMessage;
-@property (nonatomic, copy) NSString * _Nullable sid;
-@property (nonatomic) int16_t type;
 @end
 
 @class NSCoder;

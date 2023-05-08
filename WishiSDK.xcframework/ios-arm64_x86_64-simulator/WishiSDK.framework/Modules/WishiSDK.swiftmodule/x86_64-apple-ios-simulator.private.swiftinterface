@@ -614,40 +614,6 @@ extension WishiSDK.PersistentMessageDataItem {
 extension WishiSDK.PersistentMessageDataItem : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@_inheritsConvenienceInitializers @objc(PersistentParticipantDataItem) public class PersistentParticipantDataItem : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
-extension WishiSDK.PersistentParticipantDataItem {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<WishiSDK.PersistentParticipantDataItem>
-  @objc @NSManaged dynamic public var attributes: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var conversationSid: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var identity: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var lastReadMessage: Swift.Int64 {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var sid: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var type: Swift.Int16 {
-    @objc get
-    @objc set
-  }
-}
-extension WishiSDK.PersistentParticipantDataItem : Swift.Identifiable {
-  public typealias ID = Swift.ObjectIdentifier
-}
 extension WishiSDK.WishiEnviroment : Swift.Equatable {}
 extension WishiSDK.WishiEnviroment : Swift.Hashable {}
 extension WishiSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
