@@ -377,6 +377,7 @@ SWIFT_CLASS_NAMED("PersistentMessageDataItem")
 SWIFT_CLASS("_TtC8WishiSDK18QuizViewController")
 @interface QuizViewController : UIViewController
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end

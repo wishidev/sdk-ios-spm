@@ -121,6 +121,7 @@ public struct KeychainSwiftConstants {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class QuizViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
 }
 public enum WishiEnviroment {
@@ -262,6 +263,9 @@ public enum ConfigurationStyle {
   case historyProductsSectionHeaderColor
   case tooltipTitleFont
   case deleteImage
+  case deleteImageTintColor
+  case errorLabelFont
+  case errorBackgroundColor
   public static func == (a: WishiSDK.ConfigurationStyle, b: WishiSDK.ConfigurationStyle) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
