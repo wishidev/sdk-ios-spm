@@ -9205,43 +9205,6 @@
           },
           {
             "kind": "Var",
-            "name": "deleteImageTintColor",
-            "printedName": "deleteImageTintColor",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WishiSDK.ConfigurationStyle.Type) -> WishiSDK.ConfigurationStyle",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ConfigurationStyle",
-                    "printedName": "WishiSDK.ConfigurationStyle",
-                    "usr": "s:8WishiSDK18ConfigurationStyleO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WishiSDK.ConfigurationStyle.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ConfigurationStyle",
-                        "printedName": "WishiSDK.ConfigurationStyle",
-                        "usr": "s:8WishiSDK18ConfigurationStyleO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:8WishiSDK18ConfigurationStyleO20deleteImageTintColoryA2CmF",
-            "mangledName": "$s8WishiSDK18ConfigurationStyleO20deleteImageTintColoryA2CmF",
-            "moduleName": "WishiSDK"
-          },
-          {
-            "kind": "Var",
             "name": "errorLabelFont",
             "printedName": "errorLabelFont",
             "children": [
@@ -33867,252 +33830,252 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 2764,
+      "offset": 2734,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 2835,
+      "offset": 2805,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 2903,
+      "offset": 2873,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 2974,
+      "offset": 2944,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 3049,
+      "offset": 3019,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 3231,
+      "offset": 3201,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 3301,
+      "offset": 3271,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 3373,
+      "offset": 3343,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 3451,
+      "offset": 3421,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 3559,
+      "offset": 3529,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 3712,
+      "offset": 3682,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 3833,
+      "offset": 3803,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 3992,
+      "offset": 3962,
       "length": 4,
       "value": "22.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 4228,
+      "offset": 4198,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 4352,
+      "offset": 4322,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 4501,
+      "offset": 4471,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 4631,
+      "offset": 4601,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 4757,
+      "offset": 4727,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 4907,
+      "offset": 4877,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 4972,
+      "offset": 4942,
       "length": 4,
       "value": "22.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 5082,
+      "offset": 5052,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 5192,
+      "offset": 5162,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 5738,
+      "offset": 5708,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 5813,
+      "offset": 5783,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 6215,
+      "offset": 6185,
       "length": 4,
       "value": "22.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 6322,
+      "offset": 6292,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 6435,
+      "offset": 6405,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 6506,
+      "offset": 6476,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 6579,
+      "offset": 6549,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 6652,
+      "offset": 6622,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 6794,
+      "offset": 6764,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 6991,
+      "offset": 6961,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 7141,
+      "offset": 7111,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 7261,
+      "offset": 7231,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 7436,
+      "offset": 7406,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Common\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 7683,
+      "offset": 7606,
       "length": 4,
       "value": "16.0"
     },

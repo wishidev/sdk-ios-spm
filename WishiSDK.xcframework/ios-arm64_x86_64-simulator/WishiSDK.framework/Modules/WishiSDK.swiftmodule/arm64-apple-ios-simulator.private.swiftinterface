@@ -263,7 +263,6 @@ public enum ConfigurationStyle {
   case historyProductsSectionHeaderColor
   case tooltipTitleFont
   case deleteImage
-  case deleteImageTintColor
   case errorLabelFont
   case errorBackgroundColor
   public static func == (a: WishiSDK.ConfigurationStyle, b: WishiSDK.ConfigurationStyle) -> Swift.Bool
