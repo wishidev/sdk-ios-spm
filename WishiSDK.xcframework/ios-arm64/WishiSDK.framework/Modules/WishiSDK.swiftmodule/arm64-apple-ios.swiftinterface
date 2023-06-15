@@ -357,7 +357,7 @@ public protocol WishiSDKDelegate : AnyObject {
   public func initSDK(clientInfo: WishiSDK.ClientInfo, partnerKey: Swift.String, partnerToken: Swift.String, partnerUserId: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiSDKDelegate, isDebug: Swift.Bool = false, completion: @escaping ((Swift.Bool) -> Swift.Void))
   public func launch(from presentingController: UIKit.UINavigationController)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
-  public func wishiSDKVersion() -> Swift.String
+  public func wishiSDKVersion(short: Swift.Bool = false) -> Swift.String
   public func logout()
   @objc override dynamic public init()
   public typealias ID = Foundation.UUID
