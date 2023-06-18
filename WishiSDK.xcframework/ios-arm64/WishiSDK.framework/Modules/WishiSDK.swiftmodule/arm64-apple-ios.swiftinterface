@@ -15,6 +15,146 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import zlib
+public enum Keys : Swift.String {
+  case toolTipDictionaryKey
+  case country
+  case currency
+  case gender
+  case phone
+  case birthday
+  case finishQuiz
+  case howAreYouFinding
+  case tellUsMore
+  case curatedPieces
+  case styleBoards
+  case stylistPicks
+  case getStyled
+  case unauthorizedNotif
+  case somethingWentWorngNotif
+  case updateItemPricesNotif
+  case offlineNotif
+  case onlineNotif
+  case onItemClickNotif
+  case feedback
+  case look
+  case onlineStylistQuiz
+  case meetYourStylist
+  case eventType
+  case itemsSelected
+  case properties
+  case channelSid
+  case itemId
+  case lookId
+  case clientId
+  case bundleVersion
+  case bucket
+  case clientInfo
+  case version
+  case plist
+  case wishiToken
+  case wishiUserId
+  case wishiClientId
+  case userId
+  case uuid
+  case selectAll
+  case clearAll
+  case picture
+  case url
+  case fileName
+  case file
+  case png
+  case token
+  case partnerToken
+  case partnerKey
+  case partnerUserId
+  case firstName
+  case lastName
+  case wishiJwt
+  case email
+  case accessToken
+  case keychain
+  case twilioToken
+  case uploadPhoto
+  case wishiUserUUID
+  case authorization
+  case xUserUuid
+  case xOsVersion
+  case xPlatform
+  case xClientVersion
+  case xDevice
+  case iosSdk
+  case type
+  case extensionKey
+  case freeText
+  case option
+  case system
+  case text
+  case checkOutYourOutfit
+  case personalShopping
+  case updateCalendear
+  case addItems
+  case itemsToReplace
+  case outfitBudget
+  case personalShoppingBudget
+  case satisfaction
+  case review
+  case lookFeedback
+  case personalShoppingFeedback
+  case media
+  case mediaTypeImage
+  case audio
+  case moodboard
+  case sizeNotAvailable
+  case itemsLiked
+  case item
+  case like
+  case love
+  case subscriptionCancel
+  case subscriptionActive
+  case pendingApproval
+  case stylePhotosYouLike
+  case sessionEnded
+  case feedbackMessage
+  case labelOptions
+  case displayText
+  case key
+  case messageSid
+  case sessionId
+  case session
+  case sub
+  case send
+  case status
+  case expert
+  case unauthorized
+  case envelope
+  case toolTipHistory
+  case toolTipUploadPhoto
+  case toolTipReStyleIt
+  case xmark
+  case selectedReplyOptions
+  case selectedItems
+  case chevronBackward
+  case twilioChannelSid
+  case partnerKeyParam
+  case partnerUserIdParam
+  case wishiUuidParam
+  case conversationSidParam
+  case messageSidParam
+  case uuidParams
+  case userIdParam
+  case currentQuestionId
+  case sessionStatus
+  case params
+  case iconHanger
+  case data
+  case price
+  case outOfStock
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public func decode(jwt: Swift.String) throws -> WishiSDK.JWT
 public struct Claim {
   public var rawValue: Any? {
@@ -280,6 +420,26 @@ public struct Configurations {
   public static func getDefaultConfigurations() -> WishiSDK.Configurations
   @objc deinit
 }
+public enum ToolTipType : Swift.String {
+  case coatHanger
+  case imageUpload
+  case firstBoard
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class SessionManager {
+  public static let shared: WishiSDK.SessionManager
+  @objc deinit
+  @objc public func logout()
+  public func update(twilioChannelSid: Swift.String)
+  public func update(twilioToken: Swift.String)
+  public func initialized(with params: [Swift.String : Any], complition: (() -> Swift.Void)?)
+  public func saveToolTipToDictionary(for wishiUserUUID: Swift.String, toolTipType: WishiSDK.ToolTipType)
+  public func shouldShowToolTip(for wishiUserUUID: Swift.String, toolTipType: WishiSDK.ToolTipType) -> Swift.Bool
+}
 @objc @_hasMissingDesignatedInitializers public class WSQuiz : ObjectiveC.NSObject {
   @objc deinit
 }
@@ -337,9 +497,9 @@ public struct ClientInfo {
   public var birthday: Swift.String?
   public var phone: Swift.String?
   public var gender: WishiSDK.Gender?
-  public var currency: Swift.String?
-  public var country: Swift.String?
-  public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil, currency: Swift.String? = nil, country: Swift.String? = nil)
+  public var currency: Swift.String
+  public var country: Swift.String
+  public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthday: Swift.String? = nil, phone: Swift.String? = nil, gender: WishiSDK.Gender? = nil, currency: Swift.String = "USD", country: Swift.String = "US")
 }
 public protocol WishiSDKDelegate : AnyObject {
   func itemsSelected(fromController controller: WishiSDK.QuizViewController, quizObject: WishiSDK.WSQuiz, selectedOptions: [WishiSDK.WSQuizAnswer], lastSelectedOption: WishiSDK.WSQuizAnswer)
@@ -619,6 +779,9 @@ extension WishiSDK.PersistentMessageDataItem {
 extension WishiSDK.PersistentMessageDataItem : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
+extension WishiSDK.Keys : Swift.Equatable {}
+extension WishiSDK.Keys : Swift.Hashable {}
+extension WishiSDK.Keys : Swift.RawRepresentable {}
 extension WishiSDK.WishiEnviroment : Swift.Equatable {}
 extension WishiSDK.WishiEnviroment : Swift.Hashable {}
 extension WishiSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
@@ -627,6 +790,9 @@ extension WishiSDK.SDKError : Swift.Equatable {}
 extension WishiSDK.SDKError : Swift.Hashable {}
 extension WishiSDK.ConfigurationStyle : Swift.Equatable {}
 extension WishiSDK.ConfigurationStyle : Swift.Hashable {}
+extension WishiSDK.ToolTipType : Swift.Equatable {}
+extension WishiSDK.ToolTipType : Swift.Hashable {}
+extension WishiSDK.ToolTipType : Swift.RawRepresentable {}
 extension WishiSDK.Gender : Swift.Equatable {}
 extension WishiSDK.Gender : Swift.Hashable {}
 extension WishiSDK.Gender : Swift.RawRepresentable {}
