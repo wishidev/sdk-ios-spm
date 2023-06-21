@@ -34636,6 +34636,27 @@
       "value": "17.0"
     },
     {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Info\/MatchInfoCollectionViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 409,
+      "length": 4,
+      "value": "24.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Info\/MatchInfoCollectionViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 444,
+      "length": 5,
+      "value": "284.0"
+    },
+    {
+      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Info\/MatchInfoCollectionViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 481,
+      "length": 5,
+      "value": "379.0"
+    },
+    {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/Cells\/HistoryHeaderCollectionViewCell.swift",
       "kind": "StringLiteral",
       "offset": 242,
@@ -37662,21 +37683,21 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Reviews\/MatchReviewsCollectionViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 433,
+      "offset": 392,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Reviews\/MatchReviewsCollectionViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 458,
+      "offset": 417,
       "length": 5,
       "value": "271.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/ViewControllers\/Match\/Cells\/Reviews\/MatchReviewsCollectionViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 485,
+      "offset": 444,
       "length": 5,
       "value": "289.0"
     },
