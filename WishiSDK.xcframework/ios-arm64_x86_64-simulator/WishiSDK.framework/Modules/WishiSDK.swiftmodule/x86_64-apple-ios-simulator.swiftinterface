@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios13.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name WishiSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
@@ -155,7 +155,7 @@ public enum Keys : Swift.String {
     get
   }
 }
-public func decode(jwt: Swift.String) throws -> WishiSDK.JWT
+public func decode(jwt: Swift.String) throws -> any WishiSDK.JWT
 public struct Claim {
   public var rawValue: Any? {
     get
@@ -511,10 +511,10 @@ public protocol WishiSDKDelegate : AnyObject {
 }
 @objc @_inheritsConvenienceInitializers public class Wishi : ObjectiveC.NSObject, Swift.Identifiable {
   public typealias ClientSDKSuccess = ((Any?) -> Swift.Void)?
-  public typealias ClientSDKFailure = ((Swift.Error?) -> Swift.Void)?
+  public typealias ClientSDKFailure = (((any Swift.Error)?) -> Swift.Void)?
   final public let id: Foundation.UUID
   public static let shared: WishiSDK.Wishi
-  public func initSDK(clientInfo: WishiSDK.ClientInfo, partnerKey: Swift.String, partnerToken: Swift.String, partnerUserId: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: WishiSDK.WishiSDKDelegate, isDebug: Swift.Bool = false, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  public func initSDK(clientInfo: WishiSDK.ClientInfo, partnerKey: Swift.String, partnerToken: Swift.String, partnerUserId: Swift.String, enviroment: WishiSDK.WishiEnviroment = .development, configuration: WishiSDK.Configurations?, delegate: any WishiSDK.WishiSDKDelegate, isDebug: Swift.Bool = false, completion: @escaping ((Swift.Bool) -> Swift.Void))
   public func launch(from presentingController: UIKit.UINavigationController)
   public func getUserStatus(success: WishiSDK.Wishi.ClientSDKSuccess, failure: WishiSDK.Wishi.ClientSDKFailure)
   public func wishiSDKVersion(short: Swift.Bool = false) -> Swift.String
