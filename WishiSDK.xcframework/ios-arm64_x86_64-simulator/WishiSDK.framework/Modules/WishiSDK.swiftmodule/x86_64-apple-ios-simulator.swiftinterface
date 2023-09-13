@@ -336,6 +336,12 @@ public enum SDKError : Swift.Error {
     get
   }
 }
+public class MessageViewModel {
+  public init(conversation: WishiSDK.PersistentConversationDataItem)
+  public func updateMessagesArray(message: [[WishiSDK.PersistentMessageDataItem]])
+  public func getLastMessageIndexPath() -> Foundation.IndexPath?
+  @objc deinit
+}
 @objc @_hasMissingDesignatedInitializers public class WSQuizAnswer : ObjectiveC.NSObject {
   @objc deinit
 }
