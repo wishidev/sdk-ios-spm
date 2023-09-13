@@ -35884,224 +35884,224 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5906,
+      "offset": 5901,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5975,
+      "offset": 5965,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6941,
+      "offset": 6921,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7198,
+      "offset": 7178,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7233,
+      "offset": 7213,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7371,
+      "offset": 7351,
       "length": 26,
       "value": "\"message emitted: \""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7396,
+      "offset": 7376,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 7460,
+      "offset": 7440,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7521,
+      "offset": 7501,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7635,
+      "offset": 7615,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7685,
+      "offset": 7665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8257,
+      "offset": 8237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8566,
+      "offset": 8546,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8955,
+      "offset": 8935,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8961,
+      "offset": 8941,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9004,
+      "offset": 8984,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9010,
+      "offset": 8990,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9059,
+      "offset": 9039,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9065,
+      "offset": 9045,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9506,
+      "offset": 9486,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9692,
+      "offset": 9672,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 10344,
+      "offset": 10324,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 10547,
+      "offset": 10527,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10585,
+      "offset": 10565,
       "length": 33,
       "value": "\"[MessagesViewController] deinit\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10901,
+      "offset": 10881,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11161,
+      "offset": 11141,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 12096,
+      "offset": 12076,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12457,
+      "offset": 12437,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12697,
+      "offset": 12677,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12772,
+      "offset": 12752,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12878,
+      "offset": 12858,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/ViewControllers\/MessagesViewController\/MessagesViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13043,
+      "offset": 13023,
       "length": 4,
       "value": "true"
     },
@@ -54413,182 +54413,175 @@
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 10964,
+      "offset": 11031,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11032,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11044,
+      "offset": 11043,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11260,
+      "offset": 11364,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11356,
+      "offset": 11522,
       "length": 27,
       "value": "\"[MessageViewModel] deinit\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "Array",
-      "offset": 11504,
+      "offset": 11670,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11603,
+      "offset": 11769,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 11616,
+      "offset": 11782,
       "length": 7,
       "value": "\" missing messageSid\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11720,
+      "offset": 11886,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11949,
+      "offset": 12115,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12065,
+      "offset": 12231,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12078,
+      "offset": 12244,
       "length": 6,
       "value": "\" LikeIt successfuly\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12429,
+      "offset": 12595,
       "length": 25,
       "value": "\"[\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12443,
+      "offset": 12609,
       "length": 1,
       "value": "\"] \""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12453,
+      "offset": 12619,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12824,
+      "offset": 12990,
       "length": 31,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 12837,
+      "offset": 13003,
       "length": 7,
       "value": "\" missing itemUDID\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 12945,
+      "offset": 13111,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 13226,
+      "offset": 13392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13342,
+      "offset": 13508,
       "length": 36,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13355,
+      "offset": 13521,
       "length": 9,
       "value": "\" RestyleIt successfuly\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13709,
+      "offset": 13875,
       "length": 25,
       "value": "\"[\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13723,
+      "offset": 13889,
       "length": 1,
       "value": "\"] \""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 13733,
+      "offset": 13899,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 14401,
+      "offset": 14567,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tomerharyoffi\/Development\/sdk-ios\/WishiSDK\/WishiSDK\/Chat\/UI\/VIewModels\/MessagesViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 14414,
+      "offset": 14580,
       "length": 7,
       "value": "\" missing conversation\""
     },
